@@ -98,6 +98,7 @@ This is a kawaii-themed website showcasing the Yaki & Dori characters - adorable
 ```
 Changelog:
 - June 30, 2025. Initial setup
+- June 30, 2025. Updated hero section to replace character cards with user-provided video
 ```
 
 ## User Preferences

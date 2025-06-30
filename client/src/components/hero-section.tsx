@@ -49,44 +49,28 @@ export default function HeroSection() {
           </p>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 mt-12">
-          {yaki && (
-            <div className="character-card rounded-3xl p-8 border border-white/30 animate-bounce-slow">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full gradient-yaki flex items-center justify-center overflow-hidden">
-                <img 
-                  src={yaki.avatarUrl} 
-                  alt="Yaki dancing chick" 
-                  className="w-24 h-24 rounded-full object-cover" 
-                />
-              </div>
+        <div className="flex justify-center items-center mt-12">
+          <div className="character-card rounded-3xl p-8 border border-white/30 max-w-4xl">
+            <video 
+              src="/attached_assets/e21e-910b-46ef-833c-72f1024cb81e_1751285187310.mp4"
+              autoPlay 
+              loop 
+              muted 
+              className="w-full h-auto rounded-2xl shadow-lg"
+              style={{ maxHeight: "400px" }}
+            >
+              Your browser does not support the video tag.
+            </video>
+            <div className="text-center mt-4">
               <h3 
                 className="text-2xl font-bold text-gray-800 mb-2"
                 style={{ fontFamily: "Comic Neue, cursive" }}
               >
-                {yaki.name}
+                Meet Yaki & Dori
               </h3>
-              <p className="text-gray-600">The energetic yellow chick</p>
+              <p className="text-gray-600">Watch our adorable characters in action!</p>
             </div>
-          )}
-          
-          {dori && (
-            <div className="character-card rounded-3xl p-8 border border-white/30 animate-bounce-slow" style={{ animationDelay: "1s" }}>
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full gradient-dori flex items-center justify-center overflow-hidden">
-                <img 
-                  src={dori.avatarUrl} 
-                  alt="Dori dancing penguin" 
-                  className="w-24 h-24 rounded-full object-cover" 
-                />
-              </div>
-              <h3 
-                className="text-2xl font-bold text-gray-800 mb-2"
-                style={{ fontFamily: "Comic Neue, cursive" }}
-              >
-                {dori.name}
-              </h3>
-              <p className="text-gray-600">The playful blue penguin</p>
-            </div>
-          )}
+          </div>
         </div>
         
         <div className="mt-12">
