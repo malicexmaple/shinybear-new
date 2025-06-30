@@ -85,7 +85,7 @@ export class MemStorage implements IStorage {
       { title: "Penguin Kiss", url: "/attached_assets/Penguin Kiss Sticker_1751292354200.gif", category: "dori", tags: ["kiss", "love", "cuddle"] },
       { title: "I Love You Heart Dori", url: "/attached_assets/I Love You Heart Sticker(1)_1751292354200.gif", category: "dori", tags: ["love", "heart", "penguin"] },
       { title: "Excited Jump Dori", url: "/attached_assets/Excited Jump Sticker(1)_1751292354200.gif", category: "dori", tags: ["jumping", "excited", "happy"] },
-      { title: "I Love You Kiss", url: "/attached_assets/I Love You Kiss Sticker_1751292354200.gif", category: "dori", tags: ["love", "kiss", "heart"] },
+      { title: "I Love You Kiss", url: "/attached_assets/I Love You Kiss Sticker_1751295478948.gif", category: "dori", tags: ["love", "kiss", "heart"] },
       { title: "Penguin Kawaii", url: "/attached_assets/Penguin Kawai Sticker_1751292354200.gif", category: "dori", tags: ["kawaii", "penguin", "cute"] },
       { title: "Penguin Dancing 2", url: "/attached_assets/Penguin Dancingpenguin Sticker(1)_1751292354200.gif", category: "dori", tags: ["dancing", "penguin", "excited"] },
       { title: "Sad Chick", url: "/attached_assets/Sad Chick Sticker_1751292354200.gif", category: "yaki", tags: ["sad", "upset", "down"] },
