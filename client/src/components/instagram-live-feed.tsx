@@ -19,21 +19,40 @@ export default function InstagramLiveFeed() {
   return (
     <>
       <style>{`
-        /* Simple CSS overlay approach - covers bottom area where branding typically appears */
+        /* Overlay to cover branding without touching widget code */
         .instagram-widget-container {
           position: relative;
+          overflow: hidden;
         }
         
+        /* Create a white box positioned to cover the bottom-right corner where branding typically appears */
         .instagram-widget-container::after {
           content: '';
           position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 50px;
-          background: linear-gradient(to top, white 60%, rgba(255,255,255,0.8) 80%, transparent 100%);
+          bottom: 10px;
+          right: 10px;
+          width: 200px;
+          height: 30px;
+          background: #f3f4f6;
+          border-radius: 6px;
           pointer-events: none;
-          z-index: 100;
+          z-index: 9999;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Alternative overlay for center-bottom positioning if needed */
+        .instagram-widget-container::before {
+          content: '';
+          position: absolute;
+          bottom: 5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 180px;
+          height: 25px;
+          background: #f3f4f6;
+          border-radius: 4px;
+          pointer-events: none;
+          z-index: 9998;
         }
       `}</style>
       <section className="w-full py-16 bg-gray-50" id="instagram">
