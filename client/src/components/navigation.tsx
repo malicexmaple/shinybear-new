@@ -31,7 +31,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <h1 className="text-2xl font-bold text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
-              Yaki & Dori
+              {t('nav.title')}
             </h1>
           </div>
           

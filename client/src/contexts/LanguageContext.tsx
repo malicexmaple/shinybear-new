@@ -11,6 +11,7 @@ interface LanguageContextType {
 const translations = {
   en: {
     // Navigation
+    'nav.title': 'Yaki & Dori',
     'nav.home': 'Home',
     'nav.yaki': 'Yaki',
     'nav.dori': 'Dori',
@@ -51,6 +52,7 @@ const translations = {
   },
   ko: {
     // Navigation
+    'nav.title': '야키 & 도리',
     'nav.home': '홈',
     'nav.yaki': '야키',
     'nav.dori': '도리',
