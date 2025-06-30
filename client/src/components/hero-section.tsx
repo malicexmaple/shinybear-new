@@ -48,21 +48,21 @@ export default function HeroSection() {
             {t('hero.title')}
           </h1>
           <div className="curved-text-container relative z-10">
-            <svg viewBox="0 0 800 150" className="w-full h-24 md:h-28">
+            <svg viewBox="0 0 1200 250" className="w-full h-32 md:h-40">
               <defs>
                 <path
                   id="curve"
-                  d="M 80 120 Q 400 40 720 120"
+                  d="M 100 200 Q 600 80 1100 200"
                   fill="transparent"
                 />
               </defs>
               <text
-                fontSize="24"
+                fontSize="72"
                 fill="#000000"
                 fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive"
                 fontWeight="600"
                 stroke="#ffffff"
-                strokeWidth="1"
+                strokeWidth="2"
               >
                 <textPath href="#curve" startOffset="50%" textAnchor="middle">
                   {t('hero.subtitle')}

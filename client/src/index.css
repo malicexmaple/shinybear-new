@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 10;
@@ -25,12 +25,12 @@
 
 .curved-text-container svg {
   overflow: visible;
-  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+  filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.4));
 }
 
 @media (min-width: 768px) {
   .curved-text-container svg text {
-    font-size: 28px;
+    font-size: 84px;
   }
 }
 
