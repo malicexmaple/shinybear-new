@@ -3,16 +3,16 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export default function AboutSection() {
   const { t } = useLanguage();
   return (
-    <section id="about" className="py-12 gradient-kawaii">
+    <section id="about" className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 
-            className="md:text-6xl font-bold text-white mb-4 text-[70px]"
+            className="md:text-6xl font-bold text-black mb-4 text-[70px]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t('about.title')}
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             {t('about.story')}
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function AboutSection() {
           
           <div className="space-y-6">
             <h3 
-              className="text-3xl font-bold text-white"
+              className="text-3xl font-bold text-black"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Meet the Creator

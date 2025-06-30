@@ -22,7 +22,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
 
   if (charactersLoading || !character) {
     return (
-      <section className={`py-20 ${characterName === 'yaki' ? 'yaki-yellow-light' : 'dori-blue-light'}`}>
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="animate-pulse">
             <div className="h-16 bg-white/50 rounded-lg mb-8 mx-auto max-w-md"></div>
@@ -50,7 +50,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   return (
     <section 
       id={characterName} 
-      className="py-12 dori-blue-light bg-[#ffffff]"
+      className="py-12 bg-white"
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">

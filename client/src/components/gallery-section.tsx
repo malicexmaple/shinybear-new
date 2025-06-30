@@ -86,11 +86,7 @@ export default function GallerySection() {
                 alt={gif.title} 
                 className="w-full h-56 object-contain" 
               />
-              <div className={`p-3 ${
-                gif.category === 'yaki' ? 'yaki-yellow-light' :
-                gif.category === 'dori' ? 'dori-blue-light' :
-                'bg-pink-50'
-              }`}>
+              <div className="p-3 bg-white">
                 <p className="text-sm font-medium text-black">{gif.title}</p>
               </div>
             </div>
@@ -102,7 +98,7 @@ export default function GallerySection() {
             href="https://giphy.com/sickyaki" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 kawaii-pink text-white rounded-full font-semibold hover:opacity-80 transition-all transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-semibold hover:opacity-80 transition-all transform hover:scale-105"
           >
             <span>View More on GIPHY</span>
             <ExternalLink className="ml-2 w-5 h-5" />
