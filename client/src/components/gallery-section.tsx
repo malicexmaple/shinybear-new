@@ -48,13 +48,12 @@ export default function GallerySection() {
         <div className="text-center mb-16">
           <h2 
             className="text-5xl md:text-6xl font-bold text-gray-800 mb-4"
-            style={{ fontFamily: "Comic Neue, cursive" }}
+            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
-            GIF Gallery 🎨
+            {t('gallery.title')} 🎨
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Explore all the amazing moments with Yaki and Dori! From dancing to spreading love, 
-            these adorable characters have captured hearts worldwide.
+            {t('gallery.subtitle')}
           </p>
         </div>
         

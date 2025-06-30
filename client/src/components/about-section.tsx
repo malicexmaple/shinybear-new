@@ -1,16 +1,19 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function AboutSection() {
+  const { t } = useLanguage();
   return (
     <section id="about" className="py-20 gradient-kawaii">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 
             className="text-5xl md:text-6xl font-bold text-white mb-4"
-            style={{ fontFamily: "Comic Neue, cursive" }}
+            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
-            About Our Story 📖
+            {t('about.title')} 📖
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Discover the magical world of Yaki and Dori, where kawaii meets creativity!
+            {t('about.story')}
           </p>
         </div>
         
