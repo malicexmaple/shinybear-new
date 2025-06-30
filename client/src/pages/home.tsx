@@ -13,13 +13,13 @@ export default function Home() {
     <div className="min-h-screen bg-white relative">
       <Navigation />
       <HeroSection />
+      <InstagramLiveFeed />
       <InstagramFeed />
       <CharacterSection characterName="yaki" />
       <DoriScroll />
       <CharacterSection characterName="dori" />
       <GallerySection />
       <AboutSection />
-      <InstagramLiveFeed />
       <Footer />
     </div>
   );

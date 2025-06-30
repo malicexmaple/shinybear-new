@@ -17,8 +17,8 @@ export default function InstagramLiveFeed() {
   }, []);
 
   return (
-    <section className="py-16 bg-gray-50" id="instagram">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="w-full py-16 bg-gray-50" id="instagram">
+      <div className="w-full px-4">
         <div className="text-center mb-12">
           <h2 
             className="text-4xl font-bold text-black mb-4"
@@ -34,10 +34,10 @@ export default function InstagramLiveFeed() {
           </p>
         </div>
         
-        {/* Elfsight Instagram Feed */}
-        <div className="flex justify-center">
+        {/* Elfsight Instagram Feed - Full Width */}
+        <div className="w-full">
           <div 
-            className="elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b" 
+            className="elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b w-full" 
             data-elfsight-app-lazy
           ></div>
         </div>
