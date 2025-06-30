@@ -61,10 +61,10 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
             {t(`character.${characterName}.name`)} {isYaki ? '🐣' : '🐧'}
           </h2>
           <div className="space-y-2">
-            <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <p className="text-sm font-semibold text-black uppercase tracking-wide" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               {t(`character.${characterName}.type`)}
             </p>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <p className="text-lg text-black max-w-3xl mx-auto" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               {t(`character.${characterName}.description`)}
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
         <div className={`grid md:grid-cols-2 gap-12 items-center mb-16 ${!isYaki ? 'md:grid-flow-col-dense' : ''}`}>
           <div className={`space-y-6 ${!isYaki ? 'md:col-start-2' : ''}`}>
             <h3 
-              className="text-3xl font-bold text-gray-800"
+              className="text-3xl font-bold text-black"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t(`character.${characterName}.personality`)}
@@ -86,7 +86,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                     index % 4 === 1 ? 'bg-pink-400' :
                     index % 4 === 2 ? 'bg-green-400' : 'bg-purple-400'
                   }`}></div>
-                  <span className="text-lg text-gray-700" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{trait}</span>
+                  <span className="text-lg text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{trait}</span>
                 </div>
               ))}
             </div>

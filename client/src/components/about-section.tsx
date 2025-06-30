@@ -20,22 +20,22 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="character-card rounded-3xl p-8 border border-white/30">
             <h3 
-              className="text-3xl font-bold text-gray-800 mb-6"
+              className="text-3xl font-bold text-black mb-6"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               The Beginning
             </h3>
-            <p className="text-gray-700 mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <p className="text-black mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               {t('about.story')}
             </p>
-            <p className="text-gray-700 mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <p className="text-black mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               {t('about.mission')}
             </p>
             <div className="flex items-center space-x-4 mt-6">
               <div className="bg-yellow-400 rounded-full p-3">
                 <span className="text-white text-xl">❤️</span>
               </div>
-              <span className="text-gray-700 font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>925.4M+ GIF Views</span>
+              <span className="text-black font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>925.4M+ GIF Views</span>
             </div>
           </div>
           
@@ -55,15 +55,15 @@ export default function AboutSection() {
                 />
                 <div>
                   <h4 
-                    className="text-xl font-bold text-gray-800"
+                    className="text-xl font-bold text-black"
                     style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                   >
                     @sickyaki
                   </h4>
-                  <p className="text-gray-600" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Character Creator</p>
+                  <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Character Creator</p>
                 </div>
               </div>
-              <p className="text-gray-700" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+              <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
                 {t('about.creator')}
               </p>
             </div>

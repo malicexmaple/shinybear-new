@@ -47,12 +47,12 @@ export default function GallerySection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 
-            className="text-5xl md:text-6xl font-bold text-gray-800 mb-4"
+            className="text-5xl md:text-6xl font-bold text-black mb-4"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t('gallery.title')} 🎨
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             {t('gallery.subtitle')}
           </p>
         </div>
@@ -66,8 +66,8 @@ export default function GallerySection() {
                 onClick={() => setActiveFilter(button.key)}
                 className={`px-6 py-2 rounded-full font-semibold transition-all ${
                   activeFilter === button.key
-                    ? "bg-pink-500 text-white"
-                    : "text-gray-600 hover:text-gray-800"
+                    ? "bg-black text-white"
+                    : "text-gray-600 hover:text-black"
                 }`}
                 style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >

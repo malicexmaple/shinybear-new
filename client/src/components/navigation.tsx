@@ -41,35 +41,35 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection("home")}
-              className="text-gray-700 hover:text-pink-500 transition-colors font-medium"
+              className="text-black hover:text-gray-600 transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.home')}
             </button>
             <button 
               onClick={() => scrollToSection("yaki")}
-              className="text-gray-700 hover:text-yellow-500 transition-colors font-medium"
+              className="text-black hover:text-gray-600 transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Yaki
             </button>
             <button 
               onClick={() => scrollToSection("dori")}
-              className="text-gray-700 hover:text-blue-500 transition-colors font-medium"
+              className="text-black hover:text-gray-600 transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Dori
             </button>
             <button 
               onClick={() => scrollToSection("gallery")}
-              className="text-gray-700 hover:text-purple-500 transition-colors font-medium"
+              className="text-black hover:text-gray-600 transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.gallery')}
             </button>
             <button 
               onClick={() => scrollToSection("about")}
-              className="text-gray-700 hover:text-green-500 transition-colors font-medium"
+              className="text-black hover:text-gray-600 transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.about')}
@@ -82,7 +82,7 @@ export default function Navigation() {
               href="https://instagram.com/sick_yaki" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-pink-500 hover:text-pink-400 transition-colors"
+              className="text-black hover:text-gray-600 transition-colors"
             >
               <Instagram className="w-5 h-5" />
             </a>
@@ -90,7 +90,7 @@ export default function Navigation() {
               href="https://giphy.com/sickyaki" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-purple-500 hover:text-purple-400 transition-colors"
+              className="text-black hover:text-gray-600 transition-colors"
             >
               <Gift className="w-5 h-5" />
             </a>
