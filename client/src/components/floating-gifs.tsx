@@ -62,7 +62,7 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
       id: gif.id,
       url: gif.url,
       angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
-      radius: 300 + (index * 50), // Varying radius 300-500px to prevent overlap
+      radius: 450 + (index * 60), // Varying radius 450-690px - much further from video
       size: 200, // Fixed 200px size
       duration: 30 + (index * 3), // 30s to 42s animation duration
       delay: index * 5, // More staggered animations
