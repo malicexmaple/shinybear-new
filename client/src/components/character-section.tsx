@@ -54,7 +54,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-4">
           <h2 
-            className="md:text-6xl font-bold mb-2 text-[#000000] text-[80px]"
+            className="md:text-6xl font-bold mb-2 text-[#000000] text-[90px]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t(`character.${characterName}.name`)}
