@@ -41,7 +41,7 @@ export default function InstagramLiveFeed() {
         <div className="w-full px-4">
           <div className="text-center mb-12">
             <h2 
-              className="text-4xl font-bold text-black mb-4 animate-wiggle-pulse"
+              className="text-4xl font-bold text-black mb-4 animate-wiggle-pulse-alt"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('instagram.title')}

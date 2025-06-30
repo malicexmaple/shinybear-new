@@ -41,50 +41,67 @@
   }
 }
 
-/* Cute wiggle and pulse animation for character names */
-@keyframes wiggle-pulse {
-  0% { 
-    transform: rotate(0deg) scale(1); 
-  }
-  10% { 
-    transform: rotate(2deg) scale(1.02); 
-  }
-  20% { 
-    transform: rotate(-1deg) scale(1.01); 
-  }
-  30% { 
-    transform: rotate(1deg) scale(1.03); 
-  }
-  40% { 
-    transform: rotate(0deg) scale(1.02); 
-  }
-  50% { 
-    transform: rotate(-2deg) scale(1.04); 
-  }
-  60% { 
-    transform: rotate(1deg) scale(1.03); 
-  }
-  70% { 
-    transform: rotate(-1deg) scale(1.02); 
-  }
-  80% { 
-    transform: rotate(2deg) scale(1.01); 
-  }
-  90% { 
-    transform: rotate(0deg) scale(1.02); 
-  }
-  100% { 
-    transform: rotate(0deg) scale(1); 
-  }
+/* Multiple wiggle animations with different timing and intensity */
+@keyframes wiggle-pulse-1 {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-2deg) scale(1.03); }
+  75% { transform: rotate(2deg) scale(1.03); }
 }
 
+@keyframes wiggle-pulse-2 {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  20% { transform: rotate(1deg) scale(1.02); }
+  40% { transform: rotate(-1.5deg) scale(1.04); }
+  60% { transform: rotate(1.5deg) scale(1.02); }
+  80% { transform: rotate(-1deg) scale(1.01); }
+}
+
+@keyframes wiggle-pulse-3 {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  15% { transform: rotate(-3deg) scale(1.05); }
+  35% { transform: rotate(2deg) scale(1.02); }
+  55% { transform: rotate(-1deg) scale(1.04); }
+  75% { transform: rotate(3deg) scale(1.01); }
+}
+
+@keyframes wiggle-pulse-4 {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  30% { transform: rotate(1.5deg) scale(1.03); }
+  70% { transform: rotate(-1.5deg) scale(1.03); }
+}
+
+@keyframes wiggle-pulse-5 {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  10% { transform: rotate(-2.5deg) scale(1.02); }
+  30% { transform: rotate(2.5deg) scale(1.04); }
+  50% { transform: rotate(-1deg) scale(1.03); }
+  70% { transform: rotate(1deg) scale(1.01); }
+  90% { transform: rotate(-0.5deg) scale(1.02); }
+}
+
+/* Animation classes with different timings */
 .wiggle-pulse-text {
-  animation: wiggle-pulse 3s ease-in-out infinite;
+  animation: wiggle-pulse-1 3s ease-in-out infinite;
   transform-origin: center;
 }
 
 .animate-wiggle-pulse {
-  animation: wiggle-pulse 3s ease-in-out infinite;
+  animation: wiggle-pulse-2 2.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-wiggle-pulse-alt {
+  animation: wiggle-pulse-3 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-wiggle-pulse-fast {
+  animation: wiggle-pulse-4 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-wiggle-pulse-slow {
+  animation: wiggle-pulse-5 5s ease-in-out infinite;
   transform-origin: center;
 }
 

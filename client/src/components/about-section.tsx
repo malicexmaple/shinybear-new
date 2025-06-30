@@ -20,7 +20,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="character-card rounded-3xl p-8 border border-white/30">
             <h3 
-              className="text-3xl font-bold text-black mb-6 animate-wiggle-pulse"
+              className="text-3xl font-bold text-black mb-6 animate-wiggle-pulse-fast"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               The Beginning
@@ -43,7 +43,7 @@ export default function AboutSection() {
           
           <div className="space-y-6">
             <h3 
-              className="text-3xl font-bold text-black animate-wiggle-pulse"
+              className="text-3xl font-bold text-black animate-wiggle-pulse-slow"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Meet the Creator

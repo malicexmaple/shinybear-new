@@ -73,7 +73,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
         <div className="grid md:grid-cols-2 gap-6 items-center pt-[0px] pb-[0px] mt-[-15px] mb-[-15px] ml-[220px] mr-[220px]">
           <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''}`}>
             <h3 
-              className="text-3xl font-bold text-black sinchon-font animate-wiggle-pulse"
+              className="text-3xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
             >
               {t(`character.${characterName}.personality`)}
             </h3>
@@ -100,7 +100,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
               />
               <div className="text-center">
                 <h4 
-                  className="text-xl font-bold text-black mb-1 sinchon-font animate-wiggle-pulse"
+                  className="text-xl font-bold text-black mb-1 sinchon-font animate-wiggle-pulse-alt"
                 >
                   {mainGif.title}
                 </h4>
