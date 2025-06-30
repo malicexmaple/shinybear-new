@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   position: relative;
   z-index: 10;
@@ -30,7 +30,13 @@
 
 @media (min-width: 768px) {
   .curved-text-container svg text {
-    font-size: 84px;
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .curved-text-container svg text {
+    font-size: 72px;
   }
 }
 

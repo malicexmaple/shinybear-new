@@ -48,16 +48,16 @@ export default function HeroSection() {
             {t('hero.title')}
           </h1>
           <div className="curved-text-container relative z-10">
-            <svg viewBox="0 0 1200 250" className="w-full h-32 md:h-40">
+            <svg viewBox="0 0 1800 300" className="w-full h-40 md:h-48">
               <defs>
                 <path
                   id="curve"
-                  d="M 100 200 Q 600 80 1100 200"
+                  d="M 50 250 Q 900 100 1750 250"
                   fill="transparent"
                 />
               </defs>
               <text
-                fontSize="72"
+                fontSize="48"
                 fill="#000000"
                 fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive"
                 fontWeight="600"
