@@ -63,7 +63,7 @@ export default function GallerySection() {
         
         {/* Filter Tabs */}
         <div className="flex justify-center mb-8">
-          <div className="bg-white rounded-full p-2 flex space-x-2 border-2 border-black">
+          <div className="bg-white rounded-full p-2 flex space-x-2">
             {filterButtons.map((button) => (
               <button
                 key={button.key}
