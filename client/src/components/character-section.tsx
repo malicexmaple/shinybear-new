@@ -99,7 +99,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
               <img 
                 src={mainGif.url} 
                 alt={mainGif.title} 
-                className="w-full h-64 object-cover rounded-2xl mb-4" 
+                className="w-full h-64 object-contain rounded-2xl mb-4" 
               />
               <div className="text-center">
                 <h4 
@@ -123,7 +123,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                 <img 
                   src={gif.url} 
                   alt={gif.title} 
-                  className="w-full h-32 object-cover" 
+                  className="w-full h-32 object-contain" 
                 />
               </div>
             ))}
