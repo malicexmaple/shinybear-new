@@ -1,9 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import { Character } from "@shared/schema";
 import { Heart } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroVideo from "@assets/e21e-910b-46ef-833c-72f1024cb81e_1751285187310.mp4";
 
 export default function HeroSection() {
+  const { t } = useLanguage();
   const { data: characters, isLoading } = useQuery<Character[]>({
     queryKey: ["/api/characters"],
   });
@@ -43,9 +45,9 @@ export default function HeroSection() {
             className="text-6xl md:text-8xl font-bold mb-4 drop-shadow-lg text-[#000000]"
             style={{ fontFamily: "Comic Neue, cursive" }}
           >
-            Yaki & Dori
+            {t('hero.title')}
           </h1>
-          <p className="text-xl md:text-2xl font-medium text-[#000000e6]">The cutest kawaii characters bringing joy to your day! </p>
+          <p className="text-xl md:text-2xl font-medium text-[#000000e6]">{t('hero.subtitle')}</p>
         </div>
         
         <div className="flex justify-center items-center mt-12">
@@ -73,7 +75,7 @@ export default function HeroSection() {
             onClick={scrollToGallery}
             className="inline-flex items-center px-8 py-4 bg-white/90 text-gray-800 rounded-full font-semibold hover:bg-white transition-all transform hover:scale-105 shadow-lg"
           >
-            <span>Explore Our World</span>
+            <span>{t('hero.exploreButton')}</span>
             <Heart className="ml-2 w-5 h-5 text-pink-500 fill-current" />
           </button>
         </div>

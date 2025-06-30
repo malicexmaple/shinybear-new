@@ -43,7 +43,7 @@ export default function Navigation() {
               onClick={() => scrollToSection("home")}
               className="text-gray-700 hover:text-pink-500 transition-colors font-medium"
             >
-              Home
+              {t('nav.home')}
             </button>
             <button 
               onClick={() => scrollToSection("yaki")}
@@ -61,17 +61,18 @@ export default function Navigation() {
               onClick={() => scrollToSection("gallery")}
               className="text-gray-700 hover:text-purple-500 transition-colors font-medium"
             >
-              Gallery
+              {t('nav.gallery')}
             </button>
             <button 
               onClick={() => scrollToSection("about")}
               className="text-gray-700 hover:text-green-500 transition-colors font-medium"
             >
-              About
+              {t('nav.about')}
             </button>
           </div>
           
           <div className="flex items-center space-x-4">
+            <LanguageToggle />
             <a 
               href="https://instagram.com/sick_yaki" 
               target="_blank" 
