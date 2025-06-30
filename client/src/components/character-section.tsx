@@ -55,10 +55,10 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 
-            className="text-5xl md:text-6xl font-bold text-gray-800 mb-4"
+            className="text-5xl md:text-6xl font-bold mb-4 text-[#000000]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
-            {t(`character.${characterName}.name`)} {isYaki ? '🐣' : '🐧'}
+            {t(`character.${characterName}.name`)}
           </h2>
           <div className="space-y-2">
             <p className="text-sm font-semibold text-black uppercase tracking-wide" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>

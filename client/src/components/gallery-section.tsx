@@ -50,7 +50,7 @@ export default function GallerySection() {
             className="text-5xl md:text-6xl font-bold text-black mb-4"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
-            {t('gallery.title')} 🎨
+            {t('gallery.title')}
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto">
             {t('gallery.subtitle')}

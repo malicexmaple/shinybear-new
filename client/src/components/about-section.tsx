@@ -7,10 +7,10 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 
-            className="text-5xl md:text-6xl font-bold text-white mb-4"
+            className="md:text-6xl font-bold text-white mb-4 text-[70px]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
-            {t('about.title')} 📖
+            {t('about.title')}
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             {t('about.story')}
