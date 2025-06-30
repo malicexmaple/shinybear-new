@@ -45,9 +45,7 @@ export default function HeroSection() {
           >
             Yaki & Dori
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 font-medium">
-            The cutest kawaii characters bringing joy to your day! 🌈✨
-          </p>
+          <p className="text-xl md:text-2xl font-medium text-[#000000e6]">The cutest kawaii characters bringing joy to your day! </p>
         </div>
         
         <div className="flex justify-center items-center mt-12">
