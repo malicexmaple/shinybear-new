@@ -61,11 +61,11 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
     const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => ({
       id: gif.id,
       url: gif.url,
-      angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
-      radius: 1000, // Large radius to prevent collisions
+      angle: 0, // All start at same position
+      radius: 1500, // Much larger radius - further from center
       size: 200, // Fixed 200px size
-      duration: 40, // Same duration for all - synchronized movement
-      delay: 0, // No delay - all start together
+      duration: 60, // Longer duration for smoother movement
+      delay: index * 12, // Stagger delays so they follow one after another (12 seconds apart)
     }));
 
     setFloatingGifs(newFloatingGifs);
