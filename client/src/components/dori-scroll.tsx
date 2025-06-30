@@ -60,7 +60,7 @@ export default function DoriScroll() {
           }
         `}
       </style>
-      <section className="w-full overflow-hidden h-[150px]">
+      <section className="w-full overflow-hidden h-[150px] bg-white">
         <div
           id="dori-scroll"
           className="flex gap-0 overflow-x-hidden w-full h-full"

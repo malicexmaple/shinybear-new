@@ -24,13 +24,13 @@ export default function Navigation() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-pink-200/20 transition-all duration-300 ${
-      isScrolled ? "nav-sticky" : "bg-transparent"
+    <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-gray-200 transition-all duration-300 ${
+      isScrolled ? "bg-white/95 backdrop-blur-sm" : "bg-white"
     }`}>
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full gradient-kawaii flex items-center justify-center animate-float">
+            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center animate-float">
               <span className="text-xl">🐣</span>
             </div>
             <h1 className="text-2xl font-bold text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
