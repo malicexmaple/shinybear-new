@@ -22,33 +22,29 @@ export default function FloatingGifs() {
   useEffect(() => {
     if (!gifs) return;
 
-    // Select only transparent GIFs (avoiding ones with white backgrounds)
-    const transparentGifs = gifs.filter(gif => {
-      const title = gif.title.toLowerCase();
-      // Prefer GIFs that are more likely to be transparent
-      return gif.url.includes("giphy.com") && (
-        title.includes("dancing") ||
-        title.includes("jumping") ||
-        title.includes("heart") ||
-        title.includes("love") ||
-        title.includes("bounce") ||
-        title.includes("float")
-      ) && 
-      // Exclude GIFs that might have white backgrounds
-      !title.includes("button") &&
-      !title.includes("busy") &&
-      !title.includes("workout") &&
-      !title.includes("rocket");
-    }).slice(0, 6); // Limit to 6 floating GIFs
+    // Select only the most transparent GIFs based on the actual data
+    const transparentGifTitles = [
+      "Dancing Yaki",           // Known to be transparent
+      "Dancing Dori",           // Known to be transparent  
+      "Jumping Yaki",           // Character jumping, typically transparent
+      "Jumping Dori",           // Character jumping, typically transparent
+      "Heart Making Dori",      // Heart animation, likely transparent
+      "Heart Throw Dori",       // Heart throwing, likely transparent
+      "Twerking Yaki"           // Character animation, likely transparent
+    ];
+
+    const transparentGifs = gifs.filter(gif => 
+      transparentGifTitles.includes(gif.title)
+    ).slice(0, 5); // Limit to 5 floating GIFs
 
     const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => ({
       id: gif.id,
       url: gif.url,
-      x: Math.random() * 70 + 15, // 15% to 85% of screen width
-      y: Math.random() * 50 + 25, // 25% to 75% of screen height
-      size: Math.random() * 60 + 100, // 100px to 160px (much bigger)
+      x: Math.random() * 60 + 20, // 20% to 80% of screen width
+      y: Math.random() * 40 + 30, // 30% to 70% of screen height
+      size: 200, // Fixed 200px size
       duration: Math.random() * 8 + 12, // 12s to 20s animation duration
-      delay: index * 3, // Stagger the animations more
+      delay: index * 4, // Stagger the animations more
     }));
 
     setFloatingGifs(newFloatingGifs);
