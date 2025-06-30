@@ -99,6 +99,8 @@ This is a kawaii-themed website showcasing the Yaki & Dori characters - adorable
 Changelog:
 - June 30, 2025. Initial setup
 - June 30, 2025. Updated hero section to replace character cards with user-provided video
+- June 30, 2025. Applied custom Sinchon Rhapsody ExtraBold font to ALL text elements throughout entire website
+- June 30, 2025. Implemented comprehensive English/Korean translation system with instant language switching
 ```
 
 ## User Preferences

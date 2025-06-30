@@ -19,12 +19,12 @@ export default function Footer() {
               </div>
               <h3 
                 className="text-2xl font-bold"
-                style={{ fontFamily: "Comic Neue, cursive" }}
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 Yaki & Dori
               </h3>
             </div>
-            <p className="text-gray-400 mb-6 max-w-md">
+            <p className="text-gray-400 mb-6 max-w-md" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               Spreading joy and kawaii culture through adorable animations. 
               Join our community of 925.4M+ viewers worldwide!
             </p>
@@ -49,12 +49,13 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Characters</h4>
+            <h4 className="text-lg font-semibold mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Characters</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <button 
                   onClick={() => scrollToSection("yaki")}
                   className="hover:text-yellow-400 transition-colors"
+                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                 >
                   Yaki 🐣
                 </button>
@@ -63,6 +64,7 @@ export default function Footer() {
                 <button 
                   onClick={() => scrollToSection("dori")}
                   className="hover:text-blue-400 transition-colors"
+                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                 >
                   Dori 🐧
                 </button>
@@ -71,6 +73,7 @@ export default function Footer() {
                 <button 
                   onClick={() => scrollToSection("gallery")}
                   className="hover:text-pink-400 transition-colors"
+                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                 >
                   Gallery
                 </button>
@@ -79,18 +82,18 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Collections</h4>
+            <h4 className="text-lg font-semibold mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Collections</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Pingdori</li>
-              <li>Sickyaki</li>
-              <li>Yaki & Dori</li>
-              <li>Events</li>
+              <li style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Pingdori</li>
+              <li style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Sickyaki</li>
+              <li style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Yaki & Dori</li>
+              <li style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Events</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 pt-8 mt-12 text-center text-gray-400">
-          <p>&copy; 2024 Yaki & Dori. Bringing kawaii culture to the world with love! 💕</p>
+          <p style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>&copy; 2024 Yaki & Dori. Bringing kawaii culture to the world with love! 💕</p>
         </div>
       </div>
     </footer>
