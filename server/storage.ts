@@ -121,16 +121,16 @@ export class MemStorage implements IStorage {
       { title: "Penguin Dancing Classic", url: "/attached_assets/Penguin Dancingpenguin Sticker_1751290780488.gif", category: "dori", tags: ["dancing", "penguin", "retro"] },
       { title: "Shakeit Classic", url: "/attached_assets/Shakeit Sticker_1751290682699.gif", category: "yaki", tags: ["shaking", "dancing", "vintage"] },
       
-      // Download series from older batch  
-      { title: "Yaki Download 1", url: "/attached_assets/download(1)_1751292281717.gif", category: "yaki", tags: ["download", "classic", "cute"] },
-      { title: "Yaki Download 2", url: "/attached_assets/download(2)_1751292281717.gif", category: "yaki", tags: ["download", "vintage", "happy"] },
-      { title: "Yaki Download 3", url: "/attached_assets/download(3)_1751292281717.gif", category: "yaki", tags: ["download", "retro", "fun"] },
-      { title: "Yaki Download 4", url: "/attached_assets/download(4)_1751292281717.gif", category: "yaki", tags: ["download", "classic", "excited"] },
-      { title: "Yaki Download 5", url: "/attached_assets/download(5)_1751292281717.gif", category: "yaki", tags: ["download", "vintage", "cute"] },
-      { title: "Yaki Download 6", url: "/attached_assets/download(6)_1751292281717.gif", category: "yaki", tags: ["download", "retro", "dancing"] },
-      { title: "Yaki Download 7", url: "/attached_assets/download(7)_1751292281717.gif", category: "yaki", tags: ["download", "classic", "sad"] },
-      { title: "Yaki Download 8", url: "/attached_assets/download(8)_1751292281717.gif", category: "yaki", tags: ["download", "vintage", "workout"] },
-      { title: "Yaki Download Classic", url: "/attached_assets/download_1751292281717.gif", category: "yaki", tags: ["download", "retro", "kawaii"] }
+      // Download series from older batch - correctly categorized as Dori (penguins)
+      { title: "Dori Eating Classic", url: "/attached_assets/download(1)_1751292281717.gif", category: "dori", tags: ["eating", "classic", "cute"] },
+      { title: "Dori Happy Classic", url: "/attached_assets/download(2)_1751292281717.gif", category: "dori", tags: ["happy", "vintage", "joy"] },
+      { title: "Dori Rocket Classic", url: "/attached_assets/download(3)_1751292281717.gif", category: "dori", tags: ["rocket", "retro", "flying"] },
+      { title: "Dori Amazing Classic", url: "/attached_assets/download(4)_1751292281717.gif", category: "dori", tags: ["amazing", "classic", "excited"] },
+      { title: "Dori Computer Classic", url: "/attached_assets/download(5)_1751292281717.gif", category: "dori", tags: ["computer", "vintage", "work"] },
+      { title: "Yaki Twerking Classic", url: "/attached_assets/download(6)_1751292281717.gif", category: "yaki", tags: ["twerking", "retro", "fun"] },
+      { title: "Yaki Sad Classic", url: "/attached_assets/download(7)_1751292281717.gif", category: "yaki", tags: ["sad", "classic", "down"] },
+      { title: "Yaki Workout Classic", url: "/attached_assets/download(8)_1751292281717.gif", category: "yaki", tags: ["workout", "vintage", "exercise"] },
+      { title: "Dori Kawaii Classic", url: "/attached_assets/download_1751292281717.gif", category: "dori", tags: ["kawaii", "retro", "cute"] }
     ];
 
     // Deduplicate and categorize
