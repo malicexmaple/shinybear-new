@@ -109,6 +109,7 @@ Changelog:
 - June 30, 2025. Corrected "Excited Jump Classic" categorization from Dori to Yaki
 - June 30, 2025. Implemented curved text effect for hero subtitle using CSS transforms with perspective effects and white text outline for full text visibility
 - June 30, 2025. Added cute wiggle-pulse animation to hero title with 3-second cycle combining gentle rotation and scaling effects
+- June 30, 2025. Renamed all GIF titles to include character prefixes (Yaki/Dori) for better organization and clarity in gallery display
 ```
 
 ## User Preferences
