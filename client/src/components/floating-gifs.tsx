@@ -9,8 +9,6 @@ interface FloatingGif {
   radius: number;
   size: number;
   duration: number;
-  x: number;
-  y: number;
 }
 
 interface FloatingGifsProps {
@@ -19,7 +17,6 @@ interface FloatingGifsProps {
 
 export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsProps) {
   const [floatingGifs, setFloatingGifs] = useState<FloatingGif[]>([]);
-  const [centerPosition, setCenterPosition] = useState({ x: 50, y: 50 });
   
   const { data: gifs } = useQuery<Gif[]>({
     queryKey: ["/api/gifs"],
@@ -27,22 +24,6 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
 
   useEffect(() => {
     if (!gifs) return;
-
-    // Find the video element position specifically
-    const updateCenterPosition = () => {
-      const videoElement = document.querySelector('#home video');
-      if (videoElement) {
-        const rect = videoElement.getBoundingClientRect();
-        const centerX = ((rect.left + rect.width / 2) / window.innerWidth) * 100;
-        const centerY = ((rect.top + rect.height / 2) / window.innerHeight) * 100;
-        setCenterPosition({ x: centerX, y: centerY });
-      }
-    };
-
-    // Update position on scroll and resize
-    updateCenterPosition();
-    window.addEventListener('scroll', updateCenterPosition);
-    window.addEventListener('resize', updateCenterPosition);
 
     // Select only the most transparent GIFs based on the actual data
     const transparentGifTitles = [
@@ -59,37 +40,16 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
       transparentGifTitles.includes(gif.title)
     ).slice(0, 5); // Limit to 5 floating GIFs
 
-    // Calculate video position for positioning GIFs
-    const videoElement = document.querySelector('#home video');
-    if (!videoElement) return;
-    
-    const videoRect = videoElement.getBoundingClientRect();
-    const videoCenterX = videoRect.left + videoRect.width / 2;
-    const videoCenterY = videoRect.top + videoRect.height / 2;
-    
-    const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => {
-      const angle = (index * (360 / transparentGifs.length));
-      const angleRad = (angle * Math.PI) / 180;
-      const radius = 400; // Distance from video center
-      
-      return {
-        id: gif.id,
-        url: gif.url,
-        angle: angle,
-        radius: radius,
-        size: 120,
-        duration: 30,
-        x: videoCenterX + Math.cos(angleRad) * radius,
-        y: videoCenterY + Math.sin(angleRad) * radius,
-      };
-    });
+    const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => ({
+      id: gif.id,
+      url: gif.url,
+      angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
+      radius: 400, // Distance from video center
+      size: 120, // GIF size
+      duration: 30, // Animation duration
+    }));
 
     setFloatingGifs(newFloatingGifs);
-
-    return () => {
-      window.removeEventListener('scroll', updateCenterPosition);
-      window.removeEventListener('resize', updateCenterPosition);
-    };
   }, [gifs]);
 
   if (!floatingGifs.length) return null;
@@ -100,33 +60,41 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
         return (
           <div
             key={gif.id}
-            className="absolute opacity-70 hover:opacity-90 transition-opacity"
+            className="absolute"
             style={{
-              left: `${gif.x}px`,
-              top: `${gif.y}px`,
-              width: `${gif.size}px`,
-              height: `${gif.size}px`,
+              left: '50%',
+              top: '50%',
               transform: 'translate(-50%, -50%)',
               animationName: 'circleClockwise',
               animationDuration: `${gif.duration}s`,
               animationIterationCount: 'infinite',
               animationTimingFunction: 'linear',
-              transformOrigin: `${gif.radius}px 0px`,
+              transformOrigin: '0 0',
             }}
           >
             <div
               style={{
-                animationName: 'circleCounterClockwise',
-                animationDuration: `${gif.duration}s`,
-                animationIterationCount: 'infinite',
-                animationTimingFunction: 'linear',
+                width: `${gif.size}px`,
+                height: `${gif.size}px`,
+                transform: `rotate(${gif.angle}deg) translateX(${gif.radius}px)`,
+                opacity: 0.7,
               }}
             >
-              <img
-                src={gif.url}
-                alt="Floating character"
-                className="w-full h-full object-contain"
-              />
+              <div
+                style={{
+                  transform: `rotate(-${gif.angle}deg)`,
+                  animationName: 'circleCounterClockwise',
+                  animationDuration: `${gif.duration}s`,
+                  animationIterationCount: 'infinite',
+                  animationTimingFunction: 'linear',
+                }}
+              >
+                <img
+                  src={gif.url}
+                  alt="Floating character"
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
           </div>
         );
