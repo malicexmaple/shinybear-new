@@ -36,7 +36,7 @@ const translations = {
     'character.dori.description': 'Say hello to Dori, the cutest white penguin who brings smiles and loves making new friends!',
     
     // Gallery Section
-    'gallery.title': 'GIF Gallery',
+    'gallery.title': 'Gif Gallery',
     'gallery.subtitle': 'Discover our collection of kawaii GIFs',
     'gallery.all': 'All',
     'gallery.yaki': 'Yaki',
@@ -82,7 +82,7 @@ const translations = {
     'character.dori.description': '미소를 선사하고 새로운 친구 사귀기를 좋아하는 가장 귀여운 하얀 펭귄 도리에게 인사해보세요!',
     
     // Gallery Section
-    'gallery.title': 'GIF 갤러리',
+    'gallery.title': 'Gif 갤러리',
     'gallery.subtitle': '우리의 카와이 GIF 컬렉션을 둘러보세요',
     'gallery.all': '전체',
     'gallery.yaki': '야키',
