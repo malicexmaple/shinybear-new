@@ -10,42 +10,42 @@ interface InstagramPost {
   isVideo?: boolean;
 }
 
-// Sample Instagram posts based on @sick_yaki content
+// Sample Instagram posts with working placeholder content
 const instagramPosts: InstagramPost[] = [
   {
     id: "1",
-    imageUrl: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnVvcDlmdHp5cGI4djlhODlkNHVvNG9hbWM0dmZjc2k2M2E5anAyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aPYrFwkI4LoA4zKrT7/giphy.gif",
+    imageUrl: "https://picsum.photos/400/400?random=1",
     caption: "Yaki spreading love and positive vibes! 💛",
     likes: "2.5K"
   },
   {
     id: "2", 
-    imageUrl: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3QxczA4NjFrOGUzeXZ1ZzloYmNtZHE4NGg4OXdjeDQ1a3hrc3NzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LlhXLGk7pBsHKjvzh4/giphy.gif",
+    imageUrl: "https://picsum.photos/400/400?random=2",
     caption: "Dori's heart dance! So cute 💙",
     likes: "3.1K"
   },
   {
     id: "3",
-    imageUrl: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnVvcDlmdHp5cGI4djlhODlkNHVvNG9hbWM0dmZjc2k2M2E5anAyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aPYrFwkI4LoA4zKrT7/giphy.gif",
-    caption: "Behind the scenes: Creating Yaki animations ✨",
+    imageUrl: "https://picsum.photos/400/400?random=3",
+    caption: "Behind the scenes: Creating animations ✨",
     likes: "1.8K"
   },
   {
     id: "4",
-    imageUrl: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3QxczA4NjFrOGUzeXZ1ZzloYmNtZHE4NGg4OXdjeDQ1a3hrc3NzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LlhXLGk7pBsHKjvzh4/giphy.gif",
-    caption: "New Dori stickers coming soon! 🐧",
+    imageUrl: "https://picsum.photos/400/400?random=4",
+    caption: "New stickers coming soon! 🎁",
     likes: "4.2K"
   },
   {
     id: "5",
-    imageUrl: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnVvcDlmdHp5cGI4djlhODlkNHVvNG9hbWM0dmZjc2k2M2E5anAyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aPYrFwkI4LoA4zKrT7/giphy.gif",
-    caption: "Yaki's morning routine 🌅",
+    imageUrl: "https://picsum.photos/400/400?random=5",
+    caption: "Morning routine vibes 🌅",
     likes: "2.9K"
   },
   {
     id: "6",
-    imageUrl: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3QxczA4NjFrOGUzeXZ1ZzloYmNtZHE4NGg4OXdjeDQ1a3hrc3NzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LlhXLGk7pBsHKjvzh4/giphy.gif",
-    caption: "Weekend vibes with Dori! 🎉",
+    imageUrl: "https://picsum.photos/400/400?random=6",
+    caption: "Weekend mood! 🎉",
     likes: "3.7K"
   }
 ];
@@ -144,11 +144,15 @@ export default function InstagramFeed() {
                 style={{ scrollSnapAlign: 'start' }}
               >
                 {/* Post Image */}
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden bg-gray-100 flex items-center justify-center">
                   <img
                     src={post.imageUrl}
                     alt={post.caption}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = `https://via.placeholder.com/400x400/f0f0f0/333333?text=Yaki+%26+Dori`;
+                    }}
                   />
                 </div>
                 
