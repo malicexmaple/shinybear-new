@@ -12,7 +12,7 @@ export default function AboutSection() {
           >
             {t('about.title')}
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
             {t('about.story')}
           </p>
         </div>
