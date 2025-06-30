@@ -112,9 +112,9 @@ export class MemStorage implements IStorage {
       { title: "Chick Love Old", url: "/attached_assets/Chick Love Sticker(1)_1751292281717.gif", category: "yaki", tags: ["love", "heart", "classic"] },
       { title: "Chick in Box Old", url: "/attached_assets/Chick Sticker_1751292281717.gif", category: "yaki", tags: ["box", "hiding", "vintage"] },
       { title: "Excited Chick Old", url: "/attached_assets/Excited Chick Sticker_1751292281717.gif", category: "yaki", tags: ["excited", "happy", "classic"] },
-      { title: "Excited Jump Old", url: "/attached_assets/Excited Jump Sticker(1)_1751292281717.gif", category: "yaki", tags: ["jumping", "excited", "vintage"] },
+      { title: "Excited Jump Old", url: "/attached_assets/Excited Jump Sticker(1)_1751292281717.gif", category: "dori", tags: ["jumping", "excited", "vintage"] },
       { title: "Excited Jump 3", url: "/attached_assets/Excited Jump Sticker(2)_1751292281717.gif", category: "yaki", tags: ["jumping", "bounce", "classic"] },
-      { title: "Excited Jump Classic", url: "/attached_assets/Excited Jump Sticker_1751292281717.gif", category: "yaki", tags: ["jumping", "excited", "retro"] },
+      { title: "Excited Jump Classic", url: "/attached_assets/Excited Jump Sticker_1751292281717.gif", category: "dori", tags: ["jumping", "excited", "retro"] },
       { title: "Sad To Do Old", url: "/attached_assets/Sad To Do Sticker_1751292281717.gif", category: "yaki", tags: ["sad", "busy", "vintage"] },
       { title: "Sing A Song Old", url: "/attached_assets/Sing A Song Singing Sticker_1751292281717.gif", category: "yaki", tags: ["singing", "music", "classic"] },
       { title: "Way Back Home Old", url: "/attached_assets/Way Back Home Chick Sticker_1751292281717.gif", category: "yaki", tags: ["headphones", "music", "vintage"] },
@@ -130,7 +130,17 @@ export class MemStorage implements IStorage {
       { title: "Yaki Twerking Classic", url: "/attached_assets/download(6)_1751292281717.gif", category: "yaki", tags: ["twerking", "retro", "fun"] },
       { title: "Yaki Sad Classic", url: "/attached_assets/download(7)_1751292281717.gif", category: "yaki", tags: ["sad", "classic", "down"] },
       { title: "Yaki Workout Classic", url: "/attached_assets/download(8)_1751292281717.gif", category: "yaki", tags: ["workout", "vintage", "exercise"] },
-      { title: "Dori Kawaii Classic", url: "/attached_assets/download_1751292281717.gif", category: "dori", tags: ["kawaii", "retro", "cute"] }
+      { title: "Dori Kawaii Classic", url: "/attached_assets/download_1751292281717.gif", category: "dori", tags: ["kawaii", "retro", "cute"] },
+      
+      // Additional GIFs from newer batch that need proper categorization
+      { title: "Yaki Download Old 1", url: "/attached_assets/download(1)_1751292368299.gif", category: "yaki", tags: ["download", "classic", "cute"] },
+      { title: "Yaki Download Old 2", url: "/attached_assets/download(2)_1751292368299.gif", category: "yaki", tags: ["download", "vintage", "happy"] },
+      { title: "Yaki Download Old 3", url: "/attached_assets/download(3)_1751292368299.gif", category: "yaki", tags: ["download", "retro", "fun"] },
+      { title: "Yaki Download Old 4", url: "/attached_assets/download(4)_1751292368299.gif", category: "yaki", tags: ["download", "classic", "excited"] },
+      { title: "Yaki Download Old 5", url: "/attached_assets/download(5)_1751292368299.gif", category: "yaki", tags: ["download", "vintage", "cute"] },
+      { title: "Yaki Download Old 6", url: "/attached_assets/download(6)_1751292368299.gif", category: "yaki", tags: ["download", "retro", "dancing"] },
+      { title: "Yaki Download Old 7", url: "/attached_assets/download(7)_1751292368299.gif", category: "yaki", tags: ["download", "classic", "sad"] },
+      { title: "Yaki Download Old 8", url: "/attached_assets/download(8)_1751292368299.gif", category: "yaki", tags: ["download", "vintage", "workout"] }
     ];
 
     // Deduplicate and categorize
