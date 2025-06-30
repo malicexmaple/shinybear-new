@@ -96,7 +96,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
               <img 
                 src={mainGif.url} 
                 alt={mainGif.title} 
-                className="w-full h-80 object-contain rounded-2xl mb-2" 
+                className="w-full h-80 object-contain rounded-2xl mt-[-18px] mb-[-18px]" 
               />
               <div className="text-center">
                 <h4 
