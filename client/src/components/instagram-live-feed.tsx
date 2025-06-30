@@ -28,15 +28,22 @@ export default function InstagramLiveFeed() {
           }
         });
         
-        // Remove elements containing branding text
+        // Remove elements containing ONLY branding text (not Instagram content)
         const allElements = widget.querySelectorAll('*');
         allElements.forEach(el => {
-          const text = el.textContent?.toLowerCase() || '';
-          if (text.includes('free') || 
-              text.includes('widget') || 
-              text.includes('elfsight') ||
-              text.includes('powered by') ||
-              text.includes('created with')) {
+          const text = el.textContent?.toLowerCase().trim() || '';
+          const textWords = text.split(' ');
+          
+          // Only remove if it's pure branding text, not mixed with Instagram content
+          if ((text === 'free instagram feed widget' ||
+               text === 'free widget' ||
+               text.startsWith('powered by elfsight') ||
+               text.startsWith('created with elfsight') ||
+               (textWords.length <= 4 && text.includes('free') && text.includes('widget'))) &&
+              !text.includes('@') && // Keep Instagram handles
+              !text.includes('photo') && // Keep photo descriptions
+              !text.includes('post') && // Keep post content
+              !text.includes('ago')) { // Keep time stamps
             el.remove();
           }
         });
@@ -68,8 +75,7 @@ export default function InstagramLiveFeed() {
   return (
     <>
       <style>{`
-        /* Comprehensive Elfsight branding hiding */
-        .elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b a,
+        /* Selective Elfsight branding hiding - keep Instagram content */
         .elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b a[href*="elfsight"],
         .elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b a[href*="Elfsight"],
         .elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b [class*="footer"],
@@ -114,8 +120,8 @@ export default function InstagramLiveFeed() {
           display: none !important;
         }
         
-        /* Force hide any remaining links */
-        .elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b a:not([href*="instagram.com"]):not([href*="insta"]) {
+        /* Force hide external branding links only */
+        .elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b a[href*="elfsight"] {
           display: none !important;
         }
       `}</style>
