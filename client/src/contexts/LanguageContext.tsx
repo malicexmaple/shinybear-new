@@ -29,7 +29,7 @@ const translations = {
     'character.dori.name': 'Dori',
     'character.dori.type': 'Little Chick',
     'character.dori.personality': 'Sweet & Playful',
-    'character.dori.description': 'Say hello to Dori, the cutest blue chick who brings smiles and loves making new friends!',
+    'character.dori.description': 'Say hello to Dori, the cutest white chick who brings smiles and loves making new friends!',
     
     // Gallery Section
     'gallery.title': 'GIF Gallery',
@@ -67,7 +67,7 @@ const translations = {
     'character.dori.name': '도리',
     'character.dori.type': '작은 병아리',
     'character.dori.personality': '달콤하고 장난기 많은',
-    'character.dori.description': '미소를 선사하고 새로운 친구 사귀기를 좋아하는 가장 귀여운 파란 병아리 도리에게 인사해보세요!',
+    'character.dori.description': '미소를 선사하고 새로운 친구 사귀기를 좋아하는 가장 귀여운 하얀 병아리 도리에게 인사해보세요!',
     
     // Gallery Section
     'gallery.title': 'GIF 갤러리',
