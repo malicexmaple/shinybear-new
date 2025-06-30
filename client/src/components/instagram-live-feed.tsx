@@ -26,12 +26,6 @@ export default function InstagramLiveFeed() {
           >
             {t('instagram.title')}
           </h2>
-          <p 
-            className="text-lg text-gray-600"
-            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
-          >
-            {t('instagram.subtitle')}
-          </p>
         </div>
         
         {/* Elfsight Instagram Feed - Full Width */}
