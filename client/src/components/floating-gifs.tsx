@@ -25,25 +25,25 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
   useEffect(() => {
     if (!gifs) return;
 
-    // Select only the most transparent GIFs based on the actual data
-    const transparentGifTitles = [
-      "Dancing Yaki",           // Known to be transparent
-      "Dancing Dori",           // Known to be transparent  
-      "Jumping Yaki",           // Character jumping, typically transparent
-      "Jumping Dori",           // Character jumping, typically transparent
-      "Heart Making Dori",      // Heart animation, likely transparent
-      "Heart Throw Dori",       // Heart throwing, likely transparent
-      "Twerking Yaki"           // Character animation, likely transparent
+    // Select authentic GIFs from the uploaded collection for floating animation
+    const floatingGifTitles = [
+      "Chick Dancing",          // Authentic Yaki dancing
+      "Penguin Dancing",        // Authentic Dori dancing  
+      "Excited Jump",           // Authentic Yaki jumping
+      "Excited Jump Dori",      // Authentic Dori jumping
+      "Yaki Twerking",          // Authentic Yaki twerking
+      "Way Back Home",          // Authentic Yaki with headphones
+      "Penguin Kiss"            // Authentic Dori kiss
     ];
 
-    const transparentGifs = gifs.filter(gif => 
-      transparentGifTitles.includes(gif.title)
-    ).slice(0, 5); // Limit to 5 floating GIFs
+    const floatingGifs = gifs.filter(gif => 
+      floatingGifTitles.includes(gif.title)
+    ).slice(0, 6); // Limit to 6 floating GIFs
 
-    const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => ({
+    const newFloatingGifs: FloatingGif[] = floatingGifs.map((gif, index) => ({
       id: gif.id,
       url: gif.url,
-      angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
+      angle: (index * (360 / floatingGifs.length)), // Evenly distribute around circle
       radius: 400, // Distance from video center
       size: 120, // GIF size
       duration: 30, // Animation duration

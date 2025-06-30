@@ -59,62 +59,49 @@ export class MemStorage implements IStorage {
       avatarUrl: "https://media3.giphy.com/media/p5fbSOd0S4DaG6iZpo/giphy.gif"
     });
 
-    // Authentic GIFs from sick_yaki GIPHY profile
-    const yakiGifs = [
-      { title: "Dancing Yaki", url: "https://media1.giphy.com/media/7iEQNDmKV6xcbtymKd/giphy.gif", category: "yaki", tags: ["dancing", "excited", "fun"] },
-      { title: "Love Button Yaki", url: "https://media4.giphy.com/media/mmfnDaNegqw6wc6KnM/giphy.gif", category: "yaki", tags: ["love", "button", "heart"] },
-      { title: "Jumping Yaki", url: "https://media0.giphy.com/media/a73hd7MRKmel50my8F/giphy.gif", category: "yaki", tags: ["jumping", "excited", "happy"] },
-      { title: "Twerking Yaki", url: "https://media0.giphy.com/media/DkTw1nvliDssnqp3tl/giphy.gif", category: "yaki", tags: ["twerking", "fun", "dancing"] },
-      { title: "Sad Yaki", url: "https://media3.giphy.com/media/oew9USQmtsvRZO6JxY/giphy.gif", category: "yaki", tags: ["sad", "crying", "emotional"] },
-      { title: "Shake It Yaki", url: "https://media3.giphy.com/media/btrdlM9TkGwKMoJ1ih/giphy.gif", category: "yaki", tags: ["shaking", "dancing", "booty"] },
-      { title: "Busy Yaki", url: "https://media0.giphy.com/media/Gw4JnbB9d07B4RaOui/giphy.gif", category: "yaki", tags: ["busy", "working", "tasks"] },
-      { title: "Workout Yaki", url: "https://media2.giphy.com/media/iq5HoRZgBq5uFfPgHF/giphy.gif", category: "yaki", tags: ["workout", "tired", "legday"] },
-      { title: "Love Heart Yaki", url: "https://media0.giphy.com/media/Lv2VhwHrt6ljhvZ6LF/giphy.gif", category: "yaki", tags: ["love", "heart", "iloveyou"] },
-      { title: "Bouncy Yaki", url: "https://media0.giphy.com/media/fh5eelVRFjjODhkAki/giphy.gif", category: "yaki", tags: ["jumping", "belly", "bouncy"] },
-      { title: "Yaki Love Letter", url: "https://media2.giphy.com/media/Y4WPKhWwJhsT6krXlf/giphy.gif", category: "yaki", tags: ["love", "letter", "cute"] },
-      { title: "Yaki Blowing Kiss", url: "https://media1.giphy.com/media/XqpnXaeZPnupy/giphy.gif", category: "yaki", tags: ["kiss", "blow", "love"] },
-      { title: "Yaki Running", url: "https://media3.giphy.com/media/l0HlvtIPzPdt2usKs/giphy.gif", category: "yaki", tags: ["running", "fast", "motion"] },
-      { title: "Yaki Sleep Walking", url: "https://media2.giphy.com/media/3o7bukueGJmcVc6pKE/giphy.gif", category: "yaki", tags: ["sleep", "walking", "funny"] },
-      { title: "Yaki Stretching", url: "https://media4.giphy.com/media/l0Hlw2D8hrkkzCcjS/giphy.gif", category: "yaki", tags: ["stretch", "exercise", "morning"] },
-      { title: "Yaki Cooking", url: "https://media1.giphy.com/media/26u4cS5vSnWyepyfu/giphy.gif", category: "yaki", tags: ["cooking", "chef", "food"] },
-      { title: "Yaki Reading", url: "https://media3.giphy.com/media/l0HlKrfe2trd8xnFu/giphy.gif", category: "yaki", tags: ["reading", "book", "study"] },
-      { title: "Yaki Swimming", url: "https://media2.giphy.com/media/l0Hly7U1M3w5iRJ1S/giphy.gif", category: "yaki", tags: ["swimming", "water", "splash"] },
-      { title: "Yaki Meditation", url: "https://media4.giphy.com/media/l0HlwRzK1mqGeJ5Ww/giphy.gif", category: "yaki", tags: ["meditation", "zen", "peace"] },
-      { title: "Yaki Shopping", url: "https://media1.giphy.com/media/26u4cqiYI30juCOGY/giphy.gif", category: "yaki", tags: ["shopping", "bags", "retail"] }
+    // Authentic Yaki GIFs from uploaded collection - no duplicates
+    const yakiGifs: Array<{ title: string; url: string; category: string; tags: string[] }> = [
+      { title: "I Love You Chick", url: "@assets/I Love You Chick Sticker_1751292334055.gif", category: "yaki", tags: ["love", "hearts", "phone"] },
+      { title: "Chick Dancing", url: "@assets/Chick Dancing Sticker_1751292354200.gif", category: "yaki", tags: ["dancing", "excited", "fun"] },
+      { title: "Excited Chick", url: "@assets/Excited Chick Sticker_1751292354200.gif", category: "yaki", tags: ["excited", "happy", "lying"] },
+      { title: "Chick Love Heart", url: "@assets/Chick Love Sticker(1)_1751292354200.gif", category: "yaki", tags: ["love", "heart", "floating"] },
+      { title: "Sad To Do", url: "@assets/Sad To Do Sticker_1751292354200.gif", category: "yaki", tags: ["sad", "busy", "work"] },
+      { title: "Excited Jump", url: "@assets/Excited Jump Sticker_1751292354200.gif", category: "yaki", tags: ["jumping", "excited", "bounce"] },
+      { title: "I Love You Heart", url: "@assets/I Love You Heart Sticker_1751292354200.gif", category: "yaki", tags: ["love", "heart", "lying"] },
+      { title: "Love You Heart", url: "@assets/Love You Heart Sticker_1751292354200.gif", category: "yaki", tags: ["love", "paper", "note"] },
+      { title: "Chick Kawaii", url: "@assets/Chick Kawai Sticker_1751292354200.gif", category: "yaki", tags: ["kawaii", "heart", "cute"] },
+      { title: "Yaki Workout", url: "@assets/download(8)_1751292368299.gif", category: "yaki", tags: ["workout", "exercise", "gym"] },
+      { title: "Yaki Sad", url: "@assets/download(7)_1751292368299.gif", category: "yaki", tags: ["sad", "down", "upset"] },
+      { title: "Yaki Twerking", url: "@assets/download(6)_1751292368299.gif", category: "yaki", tags: ["twerking", "dancing", "booty"] },
+      { title: "Chick in Box", url: "@assets/Chick Sticker_1751292368299.gif", category: "yaki", tags: ["box", "hiding", "cute"] },
+      { title: "Way Back Home", url: "@assets/Way Back Home Chick Sticker_1751292368299.gif", category: "yaki", tags: ["headphones", "music", "chill"] },
+      { title: "Excited Jump 2", url: "@assets/Excited Jump Sticker(2)_1751292368299.gif", category: "yaki", tags: ["jumping", "excited", "bounce"] },
+      { title: "Shake It", url: "@assets/Shakeit Sticker_1751292334055.gif", category: "yaki", tags: ["shaking", "dancing", "wiggle"] },
+      { title: "Voted Peace", url: "@assets/Voted Sticker_1751292334055.gif", category: "yaki", tags: ["peace", "vote", "politics"] },
+      { title: "Voted Paper", url: "@assets/Voted Sticker(1)_1751292334055.gif", category: "yaki", tags: ["vote", "paper", "ballot"] },
+      { title: "Gas Love Yaki", url: "@assets/Gas Love Sticker_1751292334055.gif", category: "yaki", tags: ["gas", "love", "funny"] },
+      { title: "Sing A Song", url: "@assets/Sing A Song Singing Sticker_1751292354200.gif", category: "yaki", tags: ["singing", "music", "performance"] }
     ];
 
-    // Authentic Dori GIFs from sick_yaki GIPHY profile
-    const doriGifs = [
-      { title: "Dancing Dori", url: "https://media3.giphy.com/media/p5fbSOd0S4DaG6iZpo/giphy.gif", category: "dori", tags: ["dancing", "penguin", "fun"] },
-      { title: "Heart Gas Dori", url: "https://media3.giphy.com/media/gxrPwY33qN4SeYxOKu/giphy.gif", category: "dori", tags: ["gas", "heart", "funny"] },
-      { title: "Jumping Dori", url: "https://media0.giphy.com/media/iUVfgxPrzpeRpzDSF2/giphy.gif", category: "dori", tags: ["jumping", "excited", "happy"] },
-      { title: "Rocket Dori", url: "https://media4.giphy.com/media/PV1biGIxur4ZFX3asi/giphy.gif", category: "dori", tags: ["rocket", "bye", "launch"] },
-      { title: "Kawaii Dori", url: "https://media2.giphy.com/media/nqBfOunAYh8ZMFbqka/giphy.gif", category: "dori", tags: ["kawaii", "cute", "penguin"] },
-      { title: "Amazing Dori", url: "https://media0.giphy.com/media/FXa5jwwhMTNWaPhqrv/giphy.gif", category: "dori", tags: ["wow", "amazing", "surprised"] },
-      { title: "Hungry Dori", url: "https://media1.giphy.com/media/80YE2AlUNazZeYXf9C/giphy.gif", category: "dori", tags: ["hungry", "lunch", "eating"] },
-      { title: "Gas Dori", url: "https://media4.giphy.com/media/zkrtaMqb1aA5MaNf3q/giphy.gif", category: "dori", tags: ["gas", "funny", "cute"] },
-      { title: "Heart Making Dori", url: "https://media4.giphy.com/media/oatDUchF0P6pFKnG5h/giphy.gif", category: "dori", tags: ["heart", "love", "making"] },
-      { title: "Heart Throw Dori", url: "https://media4.giphy.com/media/mHdQ2jlBwDAfQYyA2c/giphy.gif", category: "dori", tags: ["heart", "throwing", "ninja"] },
-      { title: "Dori Waving", url: "https://media1.giphy.com/media/UWNydALR5wc2UBQ7S5/giphy.gif", category: "dori", tags: ["waving", "hello", "greeting"] },
-      { title: "Dori Eating Fish", url: "https://media2.giphy.com/media/fW4e8C3XmnXY4cqhMQ/giphy.gif", category: "dori", tags: ["eating", "fish", "food"] },
-      { title: "Dori Sliding", url: "https://media3.giphy.com/media/ZGU2VJjSwNwWpAcDcz/giphy.gif", category: "dori", tags: ["sliding", "ice", "fun"] },
-      { title: "Dori Sleeping", url: "https://media4.giphy.com/media/eJ3RNJv0rFZyg/giphy.gif", category: "dori", tags: ["sleeping", "tired", "rest"] },
-      { title: "Dori Applauding", url: "https://media1.giphy.com/media/l0NwSPdJCGNCnX4bK/giphy.gif", category: "dori", tags: ["clapping", "applause", "praise"] },
-      { title: "Dori Ice Skating", url: "https://media2.giphy.com/media/xT9IgJlMNxLKdBw3nq/giphy.gif", category: "dori", tags: ["skating", "ice", "winter"] },
-      { title: "Dori Belly Rub", url: "https://media3.giphy.com/media/l0Hlv6eeqWvuLW5Xy/giphy.gif", category: "dori", tags: ["belly", "rub", "comfort"] },
-      { title: "Dori Flying", url: "https://media4.giphy.com/media/xT9IgMY2qJtC5bTrfO/giphy.gif", category: "dori", tags: ["flying", "wings", "freedom"] },
-      { title: "Dori Confused", url: "https://media1.giphy.com/media/l0HlJsC84oOTLF8ru/giphy.gif", category: "dori", tags: ["confused", "question", "thinking"] },
-      { title: "Dori Fishing", url: "https://media2.giphy.com/media/xT9IgKEjYu1Jy5KnMo/giphy.gif", category: "dori", tags: ["fishing", "rod", "hobby"] }
+    // Authentic Dori GIFs from uploaded collection - no duplicates  
+    const doriGifs: Array<{ title: string; url: string; category: string; tags: string[] }> = [
+      { title: "Penguin Dancing", url: "@assets/Penguin Dancingpenguin Sticker_1751292334055.gif", category: "dori", tags: ["dancing", "penguin", "fun"] },
+      { title: "Penguin Gas", url: "@assets/Penguin Gas Sticker_1751292334055.gif", category: "dori", tags: ["gas", "funny", "cute"] },
+      { title: "Penguin Kiss", url: "@assets/Penguin Kiss Sticker_1751292354200.gif", category: "dori", tags: ["kiss", "love", "cuddle"] },
+      { title: "I Love You Heart Dori", url: "@assets/I Love You Heart Sticker(1)_1751292354200.gif", category: "dori", tags: ["love", "heart", "penguin"] },
+      { title: "Excited Jump Dori", url: "@assets/Excited Jump Sticker(1)_1751292354200.gif", category: "dori", tags: ["jumping", "excited", "happy"] },
+      { title: "Dori Amazing", url: "@assets/download(4)_1751292368299.gif", category: "dori", tags: ["amazing", "wow", "surprised"] },
+      { title: "Dori Rocket", url: "@assets/download(3)_1751292368299.gif", category: "dori", tags: ["rocket", "flying", "launch"] },
+      { title: "Dori Happy", url: "@assets/download(2)_1751292368299.gif", category: "dori", tags: ["happy", "joy", "cute"] },
+      { title: "Dori Eating", url: "@assets/download(1)_1751292368299.gif", category: "dori", tags: ["eating", "food", "hungry"] },
+      { title: "Dori Kawaii", url: "@assets/download_1751292368299.gif", category: "dori", tags: ["kawaii", "cute", "penguin"] },
+      { title: "Dori Lunch Time", url: "@assets/download(5)_1751292368299.gif", category: "dori", tags: ["lunch", "computer", "work"] }
     ];
 
-    // Authentic Together GIFs from sick_yaki GIPHY profile
-    const togetherGifs = [
-      { title: "Sweet Kiss", url: "https://media1.giphy.com/media/xR5cPyPoL5HVXSphqA/giphy.gif", category: "together", tags: ["kiss", "love", "together"] },
-      { title: "Silly Together", url: "https://media4.giphy.com/media/nE59vl2e7rWzbskQZ9/giphy.gif", category: "together", tags: ["silly", "butt", "together"] },
-      { title: "Belly Kiss", url: "https://media1.giphy.com/media/BZUFTK3TYuCDG5N9jd/giphy.gif", category: "together", tags: ["belly", "kiss", "cute"] },
-      { title: "Missing You", url: "https://media3.giphy.com/media/cM4xsRxMkOsPlE1eFf/giphy.gif", category: "together", tags: ["miss", "kiss", "love"] },
-      { title: "Heart Exchange", url: "https://media2.giphy.com/media/l0HeMO8ewmXuKKO9a/giphy.gif", category: "together", tags: ["hearts", "exchange", "love"] },
-      { title: "Yaki Dori Hug", url: "https://media3.giphy.com/media/xT9IgH4rVqFJpZF5uw/giphy.gif", category: "together", tags: ["hug", "cuddle", "friendship"] }
+    // Authentic Together GIFs from uploaded collection - no duplicates
+    const togetherGifs: Array<{ title: string; url: string; category: string; tags: string[] }> = [
+      { title: "Miss You Kiss", url: "@assets/Miss You Kiss Sticker_1751292334055.gif", category: "together", tags: ["miss", "kiss", "love"] },
+      { title: "Chick Spank", url: "@assets/Chick Spank Sticker_1751292334055.gif", category: "together", tags: ["spank", "playful", "together"] }
     ];
 
     // Create all GIFs
