@@ -30,9 +30,6 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center animate-float">
-              <span className="text-xl">🐣</span>
-            </div>
             <h1 className="text-2xl font-bold text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               Yaki & Dori
             </h1>
