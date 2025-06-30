@@ -38,7 +38,7 @@ export default function HeroSection() {
   const dori = characters?.find(c => c.name === "Dori");
 
   return (
-    <section id="home" className="pt-20 pb-16 bg-white">
+    <section id="home" className="pt-20 pb-4 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="animate-float mb-8">
           <h1 
@@ -61,7 +61,7 @@ export default function HeroSection() {
                 playsInline
                 controls={false}
                 className="w-full h-auto rounded-2xl"
-                style={{ maxHeight: "500px", objectFit: "contain" }}
+                style={{ maxHeight: "575px", objectFit: "contain" }}
               >
                 Your browser does not support the video tag.
               </video>
