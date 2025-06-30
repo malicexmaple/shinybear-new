@@ -52,14 +52,14 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
       className="py-12 bg-white"
     >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-8">
+        <div className="text-center mb-4">
           <h2 
-            className="text-5xl md:text-6xl font-bold mb-4 text-[#000000]"
+            className="text-5xl md:text-6xl font-bold mb-2 text-[#000000]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t(`character.${characterName}.name`)}
           </h2>
-          <div className="space-y-2">
+          <div className="space-y-1">
             <p className="text-sm font-semibold text-black uppercase tracking-wide" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               {t(`character.${characterName}.type`)}
             </p>
@@ -69,15 +69,15 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
           </div>
         </div>
         
-        <div className={`grid md:grid-cols-2 gap-8 items-center mb-8 ${!isYaki ? 'md:grid-flow-col-dense' : ''}`}>
-          <div className={`space-y-6 ${!isYaki ? 'md:col-start-2' : ''}`}>
+        <div className={`grid md:grid-cols-2 gap-6 items-center ${!isYaki ? 'md:grid-flow-col-dense' : ''}`}>
+          <div className={`space-y-3 ${!isYaki ? 'md:col-start-2' : ''}`}>
             <h3 
               className="text-3xl font-bold text-black"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t(`character.${characterName}.personality`)}
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-2">
               {character.personality.map((trait, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className={`w-3 h-3 rounded-full ${
@@ -92,15 +92,15 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
           </div>
           
           {mainGif && (
-            <div className={`character-card rounded-3xl p-8 ${!isYaki ? 'md:col-start-1' : ''}`}>
+            <div className={`character-card rounded-3xl p-6 ${!isYaki ? 'md:col-start-1' : ''}`}>
               <img 
                 src={mainGif.url} 
                 alt={mainGif.title} 
-                className="w-full h-80 object-contain rounded-2xl mb-4" 
+                className="w-full h-80 object-contain rounded-2xl mb-2" 
               />
               <div className="text-center">
                 <h4 
-                  className="text-xl font-bold text-black mb-2"
+                  className="text-xl font-bold text-black mb-1"
                   style={{ fontFamily: "Comic Neue, cursive" }}
                 >
                   {mainGif.title}
