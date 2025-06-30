@@ -33,7 +33,7 @@ export default function Navigation() {
             <div className="w-10 h-10 rounded-full gradient-kawaii flex items-center justify-center animate-float">
               <span className="text-xl">🐣</span>
             </div>
-            <h1 className="text-2xl font-bold text-gray-800" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <h1 className="text-2xl font-bold text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               Yaki & Dori
             </h1>
           </div>
@@ -41,35 +41,35 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection("home")}
-              className="text-black hover:text-gray-600 transition-colors font-medium"
+              className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.home')}
             </button>
             <button 
               onClick={() => scrollToSection("yaki")}
-              className="text-black hover:text-gray-600 transition-colors font-medium"
+              className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Yaki
             </button>
             <button 
               onClick={() => scrollToSection("dori")}
-              className="text-black hover:text-gray-600 transition-colors font-medium"
+              className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Dori
             </button>
             <button 
               onClick={() => scrollToSection("gallery")}
-              className="text-black hover:text-gray-600 transition-colors font-medium"
+              className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.gallery')}
             </button>
             <button 
               onClick={() => scrollToSection("about")}
-              className="text-black hover:text-gray-600 transition-colors font-medium"
+              className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.about')}

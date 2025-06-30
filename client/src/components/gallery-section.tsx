@@ -91,7 +91,7 @@ export default function GallerySection() {
                 gif.category === 'dori' ? 'dori-blue-light' :
                 'bg-pink-50'
               }`}>
-                <p className="text-sm font-medium text-gray-700">{gif.title}</p>
+                <p className="text-sm font-medium text-black">{gif.title}</p>
               </div>
             </div>
           ))}
