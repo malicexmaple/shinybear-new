@@ -56,6 +56,8 @@ export default function HeroSection() {
               loop 
               muted 
               playsInline
+              controls={false}
+              preload="auto"
               className="w-full max-w-2xl h-auto"
             >
               <source src="/attached_assets/videoplayback (online-video-cutter.com)(7)_1751284628193.mp4" type="video/mp4" />
