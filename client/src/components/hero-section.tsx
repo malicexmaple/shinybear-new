@@ -49,7 +49,7 @@ export default function HeroSection() {
         </div>
         
         <div className="flex justify-center items-center mt-12">
-          <div className="character-card rounded-3xl p-8 border border-white/30 max-w-4xl w-full">
+          <div className="character-card rounded-3xl p-8 border border-white/30 max-w-4xl w-full animate-float">
             <div className="relative">
               <video 
                 src={heroVideo}
