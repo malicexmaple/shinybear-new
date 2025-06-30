@@ -80,7 +80,7 @@ export default function GallerySection() {
         {/* Main Gallery Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredGifs.map((gif) => (
-            <div key={gif.id} className="gif-container rounded-2xl overflow-hidden shadow-lg">
+            <div key={gif.id} className="gif-container rounded-2xl overflow-hidden">
               <img 
                 src={gif.url} 
                 alt={gif.title} 
