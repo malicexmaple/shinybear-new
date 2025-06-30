@@ -47,11 +47,28 @@ export default function HeroSection() {
           >
             {t('hero.title')}
           </h1>
-          <p className="text-xl md:text-2xl font-medium text-[#000000e6] curved-text" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
-            {t('hero.subtitle').split('').map((char, index) => (
-              <span key={index}>{char === ' ' ? '\u00A0' : char}</span>
-            ))}
-          </p>
+          <div className="curved-text-container">
+            <svg viewBox="0 0 400 100" className="w-full h-16 md:h-20">
+              <defs>
+                <path
+                  id="curve"
+                  d="M 50 80 Q 200 20 350 80"
+                  fill="transparent"
+                />
+              </defs>
+              <text
+                fontSize="16"
+                fill="#000000e6"
+                fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive"
+                fontWeight="500"
+                className="md:text-lg"
+              >
+                <textPath href="#curve" startOffset="50%" textAnchor="middle">
+                  {t('hero.subtitle')}
+                </textPath>
+              </text>
+            </svg>
+          </div>
         </div>
         
         <div className="flex justify-center items-center mt-12">

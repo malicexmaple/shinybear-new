@@ -107,6 +107,7 @@ Changelog:
 - June 30, 2025. Removed "Together" category from gallery, recategorized all GIFs to Yaki or Dori only
 - June 30, 2025. Fixed "I Love You Kiss" display issue with user-provided updated file
 - June 30, 2025. Corrected "Excited Jump Classic" categorization from Dori to Yaki
+- June 30, 2025. Implemented curved text effect for hero subtitle using SVG textPath
 ```
 
 ## User Preferences
