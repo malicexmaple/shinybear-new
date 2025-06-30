@@ -1,8 +1,13 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import express from "express";
+import path from "path";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve attached assets for GIFs
+  app.use("/attached_assets", express.static(path.resolve(process.cwd(), "attached_assets")));
+
   // Get all characters
   app.get("/api/characters", async (req, res) => {
     try {
