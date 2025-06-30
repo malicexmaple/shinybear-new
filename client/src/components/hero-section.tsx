@@ -40,7 +40,7 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="animate-float mb-8">
           <h1 
-            className="text-6xl md:text-8xl font-bold text-white mb-4 drop-shadow-lg"
+            className="text-6xl md:text-8xl font-bold mb-4 drop-shadow-lg text-[#000000]"
             style={{ fontFamily: "Comic Neue, cursive" }}
           >
             Yaki & Dori
