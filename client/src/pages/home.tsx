@@ -5,6 +5,7 @@ import CharacterSection from "@/components/character-section";
 import DoriScroll from "@/components/dori-scroll";
 import GallerySection from "@/components/gallery-section";
 import AboutSection from "@/components/about-section";
+import InstagramLiveFeed from "@/components/instagram-live-feed";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <CharacterSection characterName="dori" />
       <GallerySection />
       <AboutSection />
+      <InstagramLiveFeed />
       <Footer />
     </div>
   );
