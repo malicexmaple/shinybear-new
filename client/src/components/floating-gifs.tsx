@@ -62,10 +62,10 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
       id: gif.id,
       url: gif.url,
       angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
-      radius: 250 + (index * 30), // Varying radius 250-370px
+      radius: 300 + (index * 50), // Varying radius 300-500px to prevent overlap
       size: 200, // Fixed 200px size
-      duration: 25 + (index * 5), // 25s to 45s animation duration for smooth varied rotation
-      delay: index * 3, // Stagger the animations
+      duration: 30 + (index * 3), // 30s to 42s animation duration
+      delay: index * 5, // More staggered animations
     }));
 
     setFloatingGifs(newFloatingGifs);
@@ -83,6 +83,7 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
       {floatingGifs.map((gif, index) => {
         const isClockwise = index % 2 === 0;
         const animationName = isClockwise ? 'circleClockwise' : 'circleCounterClockwise';
+        const counterAnimationName = isClockwise ? 'circleCounterClockwise' : 'circleClockwise';
         
         return (
           <div
@@ -105,6 +106,11 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
                 width: `${gif.size}px`,
                 height: `${gif.size}px`,
                 transform: `translateX(${gif.radius}px) translateY(-${gif.size/2}px)`,
+                animationName: counterAnimationName,
+                animationDuration: `${gif.duration}s`,
+                animationDelay: `${gif.delay}s`,
+                animationIterationCount: 'infinite',
+                animationTimingFunction: 'linear',
               }}
             >
               <img
