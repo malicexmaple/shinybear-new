@@ -5,15 +5,20 @@ import { useEffect, useState } from "react";
 interface FloatingGif {
   id: number;
   url: string;
-  x: number;
-  y: number;
+  angle: number;
+  radius: number;
   size: number;
   duration: number;
   delay: number;
 }
 
-export default function FloatingGifs() {
+interface FloatingGifsProps {
+  targetElement?: string; // CSS selector for the element to circle around
+}
+
+export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsProps) {
   const [floatingGifs, setFloatingGifs] = useState<FloatingGif[]>([]);
+  const [centerPosition, setCenterPosition] = useState({ x: 50, y: 50 });
   
   const { data: gifs } = useQuery<Gif[]>({
     queryKey: ["/api/gifs"],
@@ -21,6 +26,22 @@ export default function FloatingGifs() {
 
   useEffect(() => {
     if (!gifs) return;
+
+    // Find the video container position
+    const updateCenterPosition = () => {
+      const heroSection = document.querySelector('#home');
+      if (heroSection) {
+        const rect = heroSection.getBoundingClientRect();
+        const centerX = ((rect.left + rect.width / 2) / window.innerWidth) * 100;
+        const centerY = ((rect.top + rect.height / 2) / window.innerHeight) * 100;
+        setCenterPosition({ x: centerX, y: centerY });
+      }
+    };
+
+    // Update position on scroll and resize
+    updateCenterPosition();
+    window.addEventListener('scroll', updateCenterPosition);
+    window.addEventListener('resize', updateCenterPosition);
 
     // Select only the most transparent GIFs based on the actual data
     const transparentGifTitles = [
@@ -40,35 +61,39 @@ export default function FloatingGifs() {
     const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => ({
       id: gif.id,
       url: gif.url,
-      x: Math.random() * 60 + 20, // 20% to 80% of screen width
-      y: Math.random() * 40 + 30, // 30% to 70% of screen height
+      angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
+      radius: 250 + (index * 30), // Varying radius 250-370px
       size: 200, // Fixed 200px size
-      duration: Math.random() * 8 + 12, // 12s to 20s animation duration
-      delay: index * 4, // Stagger the animations more
+      duration: 25 + (index * 5), // 25s to 45s animation duration for smooth varied rotation
+      delay: index * 3, // Stagger the animations
     }));
 
     setFloatingGifs(newFloatingGifs);
+
+    return () => {
+      window.removeEventListener('scroll', updateCenterPosition);
+      window.removeEventListener('resize', updateCenterPosition);
+    };
   }, [gifs]);
 
   if (!floatingGifs.length) return null;
 
   return (
     <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
-      {floatingGifs.map((gif, index) => {
-        const animationClass = index % 3 === 0 ? 'animate-float-around' : 
-                              index % 3 === 1 ? 'animate-drift' : 'animate-float';
-        
+      {floatingGifs.map((gif) => {
         return (
           <div
             key={gif.id}
-            className={`absolute ${animationClass} opacity-60 hover:opacity-80 transition-opacity`}
+            className="absolute animate-spin opacity-60 hover:opacity-80 transition-opacity"
             style={{
-              left: `${gif.x}%`,
-              top: `${gif.y}%`,
+              left: `${centerPosition.x}%`,
+              top: `${centerPosition.y}%`,
               width: `${gif.size}px`,
               height: `${gif.size}px`,
               animationDuration: `${gif.duration}s`,
               animationDelay: `${gif.delay}s`,
+              transformOrigin: `0 0`,
+              transform: `translate(-50%, -50%) rotate(${gif.angle}deg) translateX(${gif.radius}px) translateY(-${gif.size/2}px)`,
             }}
           >
             <img
@@ -77,6 +102,7 @@ export default function FloatingGifs() {
               className="w-full h-full object-contain"
               style={{
                 filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
+                transform: `rotate(-${gif.angle}deg)`, // Counter-rotate to keep characters upright
               }}
             />
           </div>
