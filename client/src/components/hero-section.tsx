@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Character } from "@shared/schema";
 import { Heart } from "lucide-react";
+import heroVideo from "@assets/e21e-910b-46ef-833c-72f1024cb81e_1751285187310.mp4";
 
 export default function HeroSection() {
   const { data: characters, isLoading } = useQuery<Character[]>({
@@ -50,17 +51,21 @@ export default function HeroSection() {
         </div>
         
         <div className="flex justify-center items-center mt-12">
-          <div className="character-card rounded-3xl p-8 border border-white/30 max-w-4xl">
-            <video 
-              src="/attached_assets/e21e-910b-46ef-833c-72f1024cb81e_1751285187310.mp4"
-              autoPlay 
-              loop 
-              muted 
-              className="w-full h-auto rounded-2xl shadow-lg"
-              style={{ maxHeight: "400px" }}
-            >
-              Your browser does not support the video tag.
-            </video>
+          <div className="character-card rounded-3xl p-8 border border-white/30 max-w-4xl w-full">
+            <div className="relative">
+              <video 
+                src={heroVideo}
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                controls={false}
+                className="w-full h-auto rounded-2xl shadow-lg"
+                style={{ maxHeight: "500px", objectFit: "contain" }}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
             <div className="text-center mt-4">
               <h3 
                 className="text-2xl font-bold text-gray-800 mb-2"
