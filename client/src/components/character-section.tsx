@@ -93,9 +93,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
           </div>
           
           {mainGif && (
-            <div className={`character-card rounded-3xl p-8 border ${
-              isYaki ? 'border-yellow-400' : 'border-blue-400'
-            } ${!isYaki ? 'md:col-start-1' : ''}`}>
+            <div className={`character-card rounded-3xl p-8 ${!isYaki ? 'md:col-start-1' : ''}`}>
               <img 
                 src={mainGif.url} 
                 alt={mainGif.title} 
