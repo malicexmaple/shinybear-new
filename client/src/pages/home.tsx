@@ -15,11 +15,11 @@ export default function Home() {
       <HeroSection />
       <InstagramLiveFeed />
       <InstagramFeed />
+      <AboutSection />
       <CharacterSection characterName="yaki" />
       <DoriScroll />
       <CharacterSection characterName="dori" />
       <GallerySection />
-      <AboutSection />
       <Footer />
     </div>
   );
