@@ -59,7 +59,7 @@ export default function GallerySection() {
         
         {/* Filter Tabs */}
         <div className="flex justify-center mb-8">
-          <div className="bg-gray-100 rounded-full p-2 flex space-x-2">
+          <div className="bg-white rounded-full p-2 flex space-x-2 border-2 border-black">
             {filterButtons.map((button) => (
               <button
                 key={button.key}
@@ -67,7 +67,7 @@ export default function GallerySection() {
                 className={`px-6 py-2 rounded-full font-semibold transition-all ${
                   activeFilter === button.key
                     ? "bg-black text-white"
-                    : "text-gray-600 hover:text-black"
+                    : "text-black hover:bg-black hover:text-white"
                 }`}
                 style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
