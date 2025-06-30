@@ -6,6 +6,11 @@
   font-display: swap;
 }
 
+/* Global font class */
+.sinchon-font {
+  font-family: 'Sinchon Rhapsody', 'Comic Neue', cursive !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

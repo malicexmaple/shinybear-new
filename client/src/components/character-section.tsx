@@ -54,16 +54,15 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-4">
           <h2 
-            className="md:text-6xl font-bold mb-2 text-[#000000] text-[90px]"
-            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+            className="md:text-6xl font-bold mb-2 text-[#000000] text-[90px] sinchon-font"
           >
             {t(`character.${characterName}.name`)}
           </h2>
           <div className="space-y-1">
-            <p className="text-sm font-semibold text-black uppercase tracking-wide" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <p className="text-sm font-semibold text-black uppercase tracking-wide sinchon-font">
               {t(`character.${characterName}.type`)}
             </p>
-            <p className="text-lg text-black max-w-3xl mx-auto" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <p className="text-lg text-black max-w-3xl mx-auto sinchon-font">
               {t(`character.${characterName}.description`)}
             </p>
           </div>
@@ -72,8 +71,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
         <div className={`grid md:grid-cols-2 gap-6 items-center ${!isYaki ? 'md:grid-flow-col-dense' : ''}`}>
           <div className={`space-y-3 ${!isYaki ? 'md:col-start-2' : ''}`}>
             <h3 
-              className="text-3xl font-bold text-black"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              className="text-3xl font-bold text-black sinchon-font"
             >
               {t(`character.${characterName}.personality`)}
             </h3>
@@ -85,7 +83,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                     index % 4 === 1 ? 'bg-pink-400' :
                     index % 4 === 2 ? 'bg-green-400' : 'bg-purple-400'
                   }`}></div>
-                  <span className="text-lg text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{trait}</span>
+                  <span className="text-lg text-black sinchon-font">{trait}</span>
                 </div>
               ))}
             </div>
@@ -100,12 +98,11 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
               />
               <div className="text-center">
                 <h4 
-                  className="text-xl font-bold text-black mb-1"
-                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                  className="text-xl font-bold text-black mb-1 sinchon-font"
                 >
                   {mainGif.title}
                 </h4>
-                <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+                <p className="text-black sinchon-font">
                   {isYaki ? "Yaki loves to share hearts and positive vibes" : "Dori loves creating heart shapes to show affection"}
                 </p>
               </div>
