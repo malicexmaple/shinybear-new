@@ -101,11 +101,11 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
               <div className="text-center">
                 <h4 
                   className="text-xl font-bold text-black mb-1"
-                  style={{ fontFamily: "Comic Neue, cursive" }}
+                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                 >
                   {mainGif.title}
                 </h4>
-                <p className="text-black">
+                <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
                   {isYaki ? "Yaki loves to share hearts and positive vibes" : "Dori loves creating heart shapes to show affection"}
                 </p>
               </div>
