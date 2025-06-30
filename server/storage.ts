@@ -65,8 +65,8 @@ export class MemStorage implements IStorage {
       // Current batch of Yaki GIFs
       { title: "I Love You Chick", url: "/attached_assets/I Love You Chick Sticker_1751292334055.gif", category: "yaki", tags: ["love", "hearts", "phone"] },
       { title: "Gas Love Yaki", url: "/attached_assets/Gas Love Sticker_1751292334055.gif", category: "yaki", tags: ["gas", "love", "funny"] },
-      { title: "Miss You Kiss", url: "/attached_assets/Miss You Kiss Sticker_1751292334055.gif", category: "together", tags: ["miss", "kiss", "love"] },
-      { title: "Chick Spank", url: "/attached_assets/Chick Spank Sticker_1751292334055.gif", category: "together", tags: ["spank", "playful", "together"] },
+      { title: "Miss You Kiss", url: "/attached_assets/Miss You Kiss Sticker_1751292334055.gif", category: "yaki", tags: ["miss", "kiss", "love"] },
+      { title: "Chick Spank", url: "/attached_assets/Chick Spank Sticker_1751292334055.gif", category: "yaki", tags: ["spank", "playful", "cute"] },
       { title: "Shake It", url: "/attached_assets/Shakeit Sticker_1751292334055.gif", category: "yaki", tags: ["shaking", "dancing", "wiggle"] },
       { title: "Voted Peace", url: "/attached_assets/Voted Sticker_1751292334055.gif", category: "yaki", tags: ["peace", "vote", "politics"] },
       { title: "Voted Paper", url: "/attached_assets/Voted Sticker(1)_1751292334055.gif", category: "yaki", tags: ["vote", "paper", "ballot"] },

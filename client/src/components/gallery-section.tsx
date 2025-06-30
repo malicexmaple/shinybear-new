@@ -26,7 +26,6 @@ export default function GallerySection() {
     { key: "all", label: t('gallery.all') },
     { key: "yaki", label: t('gallery.yaki') },
     { key: "dori", label: t('gallery.dori') },
-    { key: "together", label: "Together" },
   ];
 
   if (isLoading) {

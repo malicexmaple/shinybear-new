@@ -104,6 +104,9 @@ Changelog:
 - June 30, 2025. Optimized layout: tighter spacing, larger GIFs, removed drop shadows, added subtle bounce animations
 - June 30, 2025. Integrated authentic GIF collection from sick_yaki GIPHY profile with comprehensive duplicate prevention system
 - June 30, 2025. Fixed GIF categorization to ensure proper character separation in gallery sections
+- June 30, 2025. Removed "Together" category from gallery, recategorized all GIFs to Yaki or Dori only
+- June 30, 2025. Fixed "I Love You Kiss" display issue with user-provided updated file
+- June 30, 2025. Corrected "Excited Jump Classic" categorization from Dori to Yaki
 ```
 
 ## User Preferences
