@@ -35,7 +35,7 @@ export default function InstagramFeed() {
   const yakiImages = Array.from({ length: 40 }, (_, index) => (
     <div
       key={index}
-      className="flex-shrink-0 w-[150px] h-[150px] flex items-center justify-center"
+      className="flex-shrink-0 w-[150px] h-[150px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-64px] mb-[-64px]"
     >
       <img
         src={yakiGif}
