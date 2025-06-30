@@ -43,9 +43,9 @@ export default function GallerySection() {
   }
 
   return (
-    <section id="gallery" className="py-20 bg-white">
+    <section id="gallery" className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 
             className="text-5xl md:text-6xl font-bold text-black mb-4"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
@@ -58,7 +58,7 @@ export default function GallerySection() {
         </div>
         
         {/* Filter Tabs */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-8">
           <div className="bg-gray-100 rounded-full p-2 flex space-x-2">
             {filterButtons.map((button) => (
               <button
@@ -84,7 +84,7 @@ export default function GallerySection() {
               <img 
                 src={gif.url} 
                 alt={gif.title} 
-                className="w-full h-40 object-cover" 
+                className="w-full h-56 object-contain" 
               />
               <div className={`p-3 ${
                 gif.category === 'yaki' ? 'yaki-yellow-light' :

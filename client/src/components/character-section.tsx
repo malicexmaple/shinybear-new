@@ -50,10 +50,10 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   return (
     <section 
       id={characterName} 
-      className="py-20 dori-blue-light bg-[#ffffff]"
+      className="py-12 dori-blue-light bg-[#ffffff]"
     >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 
             className="text-5xl md:text-6xl font-bold mb-4 text-[#000000]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
@@ -70,7 +70,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
           </div>
         </div>
         
-        <div className={`grid md:grid-cols-2 gap-12 items-center mb-16 ${!isYaki ? 'md:grid-flow-col-dense' : ''}`}>
+        <div className={`grid md:grid-cols-2 gap-8 items-center mb-8 ${!isYaki ? 'md:grid-flow-col-dense' : ''}`}>
           <div className={`space-y-6 ${!isYaki ? 'md:col-start-2' : ''}`}>
             <h3 
               className="text-3xl font-bold text-black"
@@ -99,7 +99,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
               <img 
                 src={mainGif.url} 
                 alt={mainGif.title} 
-                className="w-full h-64 object-contain rounded-2xl mb-4" 
+                className="w-full h-80 object-contain rounded-2xl mb-4" 
               />
               <div className="text-center">
                 <h4 
@@ -123,7 +123,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                 <img 
                   src={gif.url} 
                   alt={gif.title} 
-                  className="w-full h-32 object-contain" 
+                  className="w-full h-48 object-contain" 
                 />
               </div>
             ))}

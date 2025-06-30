@@ -3,9 +3,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export default function AboutSection() {
   const { t } = useLanguage();
   return (
-    <section id="about" className="py-20 gradient-kawaii">
+    <section id="about" className="py-12 gradient-kawaii">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 
             className="md:text-6xl font-bold text-white mb-4 text-[70px]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
