@@ -48,7 +48,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   return (
     <section 
       id={characterName} 
-      className={`py-20 ${isYaki ? 'yaki-yellow-light' : 'dori-blue-light'}`}
+      className="py-20 dori-blue-light bg-[#ffffff]"
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
