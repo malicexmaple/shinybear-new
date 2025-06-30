@@ -47,28 +47,15 @@ export default function HeroSection() {
           >
             {t('hero.title')}
           </h1>
-          <div className="curved-text-container relative z-10">
-            <svg viewBox="0 0 1800 300" className="w-full h-40 md:h-48">
-              <defs>
-                <path
-                  id="curve"
-                  d="M 50 250 Q 900 100 1750 250"
-                  fill="transparent"
-                />
-              </defs>
-              <text
-                fontSize="48"
-                fill="#000000"
-                fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive"
-                fontWeight="600"
-                stroke="#ffffff"
-                strokeWidth="2"
+          <div className="curved-text-fallback relative z-10">
+            <div className="curved-text-content">
+              <span 
+                className="curved-subtitle-text"
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
-                <textPath href="#curve" startOffset="50%" textAnchor="middle">
-                  {t('hero.subtitle')}
-                </textPath>
-              </text>
-            </svg>
+                {t('hero.subtitle')}
+              </span>
+            </div>
           </div>
         </div>
         
