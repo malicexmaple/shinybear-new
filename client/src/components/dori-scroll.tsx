@@ -37,7 +37,7 @@ export default function DoriScroll() {
   const doriImages = Array.from({ length: 40 }, (_, index) => (
     <div
       key={index}
-      className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-128px] mb-[-128px] relative z-[9999]"
+      className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] relative z-[9999] mt-[-85px] mb-[-85px]"
     >
       <img
         src={doriGif}
