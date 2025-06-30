@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Kawaii colors */
+  --yaki-yellow: hsl(54, 100%, 85%);
+  --yaki-yellow-light: hsl(54, 100%, 93%);
+  --dori-blue: hsl(193, 61%, 83%);
+  --dori-blue-light: hsl(193, 61%, 92%);
+  --kawaii-pink: hsl(332, 100%, 90%);
+  --kawaii-lavender: hsl(270, 100%, 90%);
+  --kawaii-mint: hsl(120, 43%, 88%);
+  --cream: hsl(57, 89%, 98%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .yaki-yellow {
+    background-color: var(--yaki-yellow);
+  }
+  
+  .yaki-yellow-light {
+    background-color: var(--yaki-yellow-light);
+  }
+  
+  .dori-blue {
+    background-color: var(--dori-blue);
+  }
+  
+  .dori-blue-light {
+    background-color: var(--dori-blue-light);
+  }
+  
+  .kawaii-pink {
+    background-color: var(--kawaii-pink);
+  }
+  
+  .kawaii-lavender {
+    background-color: var(--kawaii-lavender);
+  }
+  
+  .kawaii-mint {
+    background-color: var(--kawaii-mint);
+  }
+  
+  .cream {
+    background-color: var(--cream);
+  }
+
+  .gradient-yaki {
+    background: linear-gradient(135deg, var(--yaki-yellow) 0%, var(--yaki-yellow-light) 100%);
+  }
+  
+  .gradient-dori {
+    background: linear-gradient(135deg, var(--dori-blue) 0%, var(--dori-blue-light) 100%);
+  }
+  
+  .gradient-kawaii {
+    background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-lavender) 50%, var(--kawaii-mint) 100%);
+  }
+  
+  .nav-sticky {
+    backdrop-filter: blur(10px);
+    background: rgba(254, 253, 246, 0.95);
+  }
+  
+  .character-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .gif-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gif-container:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    75% { transform: rotate(-1deg); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+  
+  .animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+  }
+}
