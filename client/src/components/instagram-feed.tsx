@@ -58,7 +58,7 @@ export default function InstagramFeed() {
           }
         `}
       </style>
-      <section className="w-full overflow-hidden h-[300px] bg-white relative z-[9999]">
+      <section className="w-full overflow-hidden h-[300px] bg-white relative z-[9999] transform -rotate-2">
         <div
           id="yaki-scroll"
           className="flex gap-0 overflow-x-hidden w-full h-full relative z-[9999]"
