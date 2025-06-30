@@ -117,7 +117,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
         {!gifsLoading && galleryGifs.length > 0 && (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {galleryGifs.map((gif) => (
-              <div key={gif.id} className="gif-container rounded-2xl overflow-hidden shadow-md">
+              <div key={gif.id} className="gif-container rounded-2xl overflow-hidden animate-bounce-subtle">
                 <img 
                   src={gif.url} 
                   alt={gif.title} 

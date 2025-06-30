@@ -101,6 +101,7 @@ Changelog:
 - June 30, 2025. Updated hero section to replace character cards with user-provided video
 - June 30, 2025. Applied custom Sinchon Rhapsody ExtraBold font to ALL text elements throughout entire website
 - June 30, 2025. Implemented comprehensive English/Korean translation system with instant language switching
+- June 30, 2025. Optimized layout: tighter spacing, larger GIFs, removed drop shadows, added subtle bounce animations
 ```
 
 ## User Preferences
