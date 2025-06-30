@@ -27,11 +27,11 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
   useEffect(() => {
     if (!gifs) return;
 
-    // Find the video container position
+    // Find the video element position specifically
     const updateCenterPosition = () => {
-      const heroSection = document.querySelector('#home');
-      if (heroSection) {
-        const rect = heroSection.getBoundingClientRect();
+      const videoElement = document.querySelector('#home video');
+      if (videoElement) {
+        const rect = videoElement.getBoundingClientRect();
         const centerX = ((rect.left + rect.width / 2) / window.innerWidth) * 100;
         const centerY = ((rect.top + rect.height / 2) / window.innerHeight) * 100;
         setCenterPosition({ x: centerX, y: centerY });
@@ -61,11 +61,11 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
     const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => ({
       id: gif.id,
       url: gif.url,
-      angle: 0, // All start at same position
-      radius: 1500, // Much larger radius - further from center
-      size: 200, // Fixed 200px size
-      duration: 60, // Longer duration for smoother movement
-      delay: index * 12, // Stagger delays so they follow one after another (12 seconds apart)
+      angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
+      radius: 600, // Moderate radius around video
+      size: 150, // Smaller size so they fit better
+      duration: 40, // Consistent rotation speed
+      delay: 0, // No delay - all show at the same time
     }));
 
     setFloatingGifs(newFloatingGifs);
