@@ -198,10 +198,10 @@
 
   @keyframes bounce-subtle {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-3px); }
+    50% { transform: translateY(-8px); }
   }
   
   .animate-bounce-subtle {
-    animation: bounce-subtle 2s ease-in-out infinite;
+    animation: bounce-subtle 1.5s ease-in-out infinite;
   }
 }
