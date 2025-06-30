@@ -47,7 +47,11 @@ export default function HeroSection() {
           >
             {t('hero.title')}
           </h1>
-          <p className="text-xl md:text-2xl font-medium text-[#000000e6]" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{t('hero.subtitle')}</p>
+          <p className="text-xl md:text-2xl font-medium text-[#000000e6] curved-text" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            {t('hero.subtitle').split('').map((char, index) => (
+              <span key={index}>{char === ' ' ? '\u00A0' : char}</span>
+            ))}
+          </p>
         </div>
         
         <div className="flex justify-center items-center mt-12">
