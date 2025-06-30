@@ -23,26 +23,26 @@ export default function AboutSection() {
               className="text-3xl font-bold text-gray-800 mb-6"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              {t('about.beginning')}
+              The Beginning
             </h3>
             <p className="text-gray-700 mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
-              {t('about.beginning_text')}
+              {t('about.story')}
             </p>
             <p className="text-gray-700 mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
-              {t('about.views_text')}
+              {t('about.mission')}
             </p>
             <div className="flex items-center space-x-4 mt-6">
               <div className="bg-yellow-400 rounded-full p-3">
                 <span className="text-white text-xl">❤️</span>
               </div>
-              <span className="text-gray-700 font-medium">925.4M+ GIF Views</span>
+              <span className="text-gray-700 font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>925.4M+ GIF Views</span>
             </div>
           </div>
           
           <div className="space-y-6">
             <h3 
               className="text-3xl font-bold text-white"
-              style={{ fontFamily: "Comic Neue, cursive" }}
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Meet the Creator
             </h3>
@@ -56,16 +56,15 @@ export default function AboutSection() {
                 <div>
                   <h4 
                     className="text-xl font-bold text-gray-800"
-                    style={{ fontFamily: "Comic Neue, cursive" }}
+                    style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                   >
                     @sickyaki
                   </h4>
-                  <p className="text-gray-600">Character Creator</p>
+                  <p className="text-gray-600" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Character Creator</p>
                 </div>
               </div>
-              <p className="text-gray-700">
-                The creative mind behind these adorable characters, bringing kawaii culture 
-                to life through expressive animations and heartwarming stories.
+              <p className="text-gray-700" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+                {t('about.creator')}
               </p>
             </div>
             
@@ -77,7 +76,7 @@ export default function AboutSection() {
                 className="flex-1 bg-white/20 backdrop-blur-sm rounded-2xl p-4 text-center text-white hover:bg-white/30 transition-all"
               >
                 <div className="text-2xl mb-2">📷</div>
-                <p className="font-medium">Instagram</p>
+                <p className="font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Instagram</p>
               </a>
               <a 
                 href="https://giphy.com/sickyaki" 
@@ -86,7 +85,7 @@ export default function AboutSection() {
                 className="flex-1 bg-white/20 backdrop-blur-sm rounded-2xl p-4 text-center text-white hover:bg-white/30 transition-all"
               >
                 <div className="text-2xl mb-2">🎁</div>
-                <p className="font-medium">GIPHY</p>
+                <p className="font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>GIPHY</p>
               </a>
             </div>
           </div>
