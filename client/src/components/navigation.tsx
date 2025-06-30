@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import { Instagram, Gift } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageToggle from "@/components/language-toggle";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
