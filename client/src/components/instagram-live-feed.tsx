@@ -33,7 +33,7 @@ export default function InstagramLiveFeed() {
           width: 100%;
           height: 60px;
           background: white;
-          pointer-events: none;
+          pointer-events: auto;
           z-index: 99999;
         }
       `}</style>
