@@ -41,6 +41,48 @@
   }
 }
 
+/* Cute wiggle and pulse animation for character names */
+@keyframes wiggle-pulse {
+  0% { 
+    transform: rotate(0deg) scale(1); 
+  }
+  10% { 
+    transform: rotate(2deg) scale(1.02); 
+  }
+  20% { 
+    transform: rotate(-1deg) scale(1.01); 
+  }
+  30% { 
+    transform: rotate(1deg) scale(1.03); 
+  }
+  40% { 
+    transform: rotate(0deg) scale(1.02); 
+  }
+  50% { 
+    transform: rotate(-2deg) scale(1.04); 
+  }
+  60% { 
+    transform: rotate(1deg) scale(1.03); 
+  }
+  70% { 
+    transform: rotate(-1deg) scale(1.02); 
+  }
+  80% { 
+    transform: rotate(2deg) scale(1.01); 
+  }
+  90% { 
+    transform: rotate(0deg) scale(1.02); 
+  }
+  100% { 
+    transform: rotate(0deg) scale(1); 
+  }
+}
+
+.wiggle-pulse-text {
+  animation: wiggle-pulse 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

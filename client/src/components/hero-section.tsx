@@ -42,8 +42,7 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="animate-float mb-2">
           <h1 
-            className="text-6xl md:text-8xl font-bold text-[#000000] mt-[-22px] mb-[-22px] pt-[29px] pb-[29px]"
-            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+            className="text-6xl md:text-8xl font-bold text-[#000000] mt-[-22px] mb-[-22px] pt-[29px] pb-[29px] sinchon-font wiggle-pulse-text"
           >
             {t('hero.title')}
           </h1>

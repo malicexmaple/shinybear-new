@@ -108,6 +108,7 @@ Changelog:
 - June 30, 2025. Fixed "I Love You Kiss" display issue with user-provided updated file
 - June 30, 2025. Corrected "Excited Jump Classic" categorization from Dori to Yaki
 - June 30, 2025. Implemented curved text effect for hero subtitle using CSS transforms with perspective effects and white text outline for full text visibility
+- June 30, 2025. Added cute wiggle-pulse animation to hero title with 3-second cycle combining gentle rotation and scaling effects
 ```
 
 ## User Preferences
