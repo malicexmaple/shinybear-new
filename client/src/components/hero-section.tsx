@@ -43,7 +43,7 @@ export default function HeroSection() {
         <div className="animate-float mb-8">
           <h1 
             className="text-6xl md:text-8xl font-bold mb-4 drop-shadow-lg text-[#000000]"
-            style={{ fontFamily: "Comic Neue, cursive" }}
+            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t('hero.title')}
           </h1>
@@ -70,15 +70,7 @@ export default function HeroSection() {
           </div>
         </div>
         
-        <div className="mt-12">
-          <button 
-            onClick={scrollToGallery}
-            className="inline-flex items-center px-8 py-4 bg-white/90 text-gray-800 rounded-full font-semibold hover:bg-white transition-all transform hover:scale-105 shadow-lg"
-          >
-            <span>{t('hero.exploreButton')}</span>
-            <Heart className="ml-2 w-5 h-5 text-pink-500 fill-current" />
-          </button>
-        </div>
+        
       </div>
     </section>
   );
