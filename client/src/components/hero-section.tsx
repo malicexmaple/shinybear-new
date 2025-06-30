@@ -49,44 +49,19 @@ export default function HeroSection() {
           </p>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 mt-12">
-          {yaki && (
-            <div className="character-card rounded-3xl p-8 border border-white/30 animate-bounce-slow">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full gradient-yaki flex items-center justify-center overflow-hidden">
-                <img 
-                  src={yaki.avatarUrl} 
-                  alt="Yaki dancing chick" 
-                  className="w-24 h-24 rounded-full object-cover" 
-                />
-              </div>
-              <h3 
-                className="text-2xl font-bold text-gray-800 mb-2"
-                style={{ fontFamily: "Comic Neue, cursive" }}
-              >
-                {yaki.name}
-              </h3>
-              <p className="text-gray-600">The energetic yellow chick</p>
-            </div>
-          )}
-          
-          {dori && (
-            <div className="character-card rounded-3xl p-8 border border-white/30 animate-bounce-slow" style={{ animationDelay: "1s" }}>
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full gradient-dori flex items-center justify-center overflow-hidden">
-                <img 
-                  src={dori.avatarUrl} 
-                  alt="Dori dancing penguin" 
-                  className="w-24 h-24 rounded-full object-cover" 
-                />
-              </div>
-              <h3 
-                className="text-2xl font-bold text-gray-800 mb-2"
-                style={{ fontFamily: "Comic Neue, cursive" }}
-              >
-                {dori.name}
-              </h3>
-              <p className="text-gray-600">The playful blue penguin</p>
-            </div>
-          )}
+        <div className="flex justify-center mt-12">
+          <div className="character-card rounded-3xl overflow-hidden border border-white/30 shadow-2xl animate-float">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="w-full max-w-2xl h-auto"
+            >
+              <source src="/attached_assets/videoplayback (online-video-cutter.com)(7)_1751284628193.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
         
         <div className="mt-12">
