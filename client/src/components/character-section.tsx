@@ -51,7 +51,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   return (
     <section 
       id={characterName} 
-      className="py-12 bg-white"
+      className="py-12 bg-white pt-[27px] pb-[27px] mt-[0px] mb-[0px]"
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-4">
