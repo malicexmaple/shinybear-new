@@ -21,13 +21,6 @@ export default function GallerySection() {
 
   const displayedGifs = showAll ? filteredGifs : filteredGifs.slice(0, visibleCount);
   const hasMoreGifs = filteredGifs.length > visibleCount;
-  
-  // Debug logging
-  console.log('Total GIFs:', gifs?.length);
-  console.log('Filtered GIFs:', filteredGifs.length);
-  console.log('Displayed GIFs:', displayedGifs.length);
-  console.log('Show All:', showAll);
-  console.log('Has More:', hasMoreGifs);
 
   const filterButtons = [
     { key: "all", label: t('gallery.all') },
