@@ -95,7 +95,7 @@ export default function HeroSection() {
                 muted 
                 playsInline
                 controls={false}
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto rounded-2xl mt-[-41px] mb-[-41px]"
                 style={{ maxHeight: "575px", objectFit: "contain" }}
               >
                 Your browser does not support the video tag.
