@@ -52,10 +52,10 @@ export class MemStorage implements IStorage {
     // Create Dori character
     const dori = await this.createCharacter({
       name: "Dori",
-      type: "chick",
+      type: "penguin",
       color: "white",
-      personality: ["Cool and collected chick", "Loves giving kisses and hugs", "Great at expressing emotions", "Brings calm and peaceful vibes"],
-      description: "Dori is our lovable white chick who brings cool vibes and warm hearts! He's gentle, caring, and always ready to share a kiss or spread some love.",
+      personality: ["Cool and collected penguin", "Loves giving kisses and hugs", "Great at expressing emotions", "Brings calm and peaceful vibes"],
+      description: "Dori is our lovable white penguin who brings cool vibes and warm hearts! He's gentle, caring, and always ready to share a kiss or spread some love.",
       avatarUrl: "https://media3.giphy.com/media/p5fbSOd0S4DaG6iZpo/giphy.gif"
     });
 

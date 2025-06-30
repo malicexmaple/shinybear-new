@@ -1,18 +1,18 @@
 import { useEffect } from "react";
-import doriGif from "@assets/Penguin Dancingpenguin Sticker_1751290780488.gif";
+import doriGif from "@assets/Penguin Dancingpenguin Sticker_1751304751701.gif";
 
 export default function DoriScroll() {
   useEffect(() => {
     const scrollContainer = document.getElementById('dori-scroll');
     if (!scrollContainer) return;
 
-    const imageWidth = 150; // width of each Dori image
+    const imageWidth = 300; // width of each Dori image (2x bigger)
     const totalImages = 20; // number of copies we create
     const totalWidth = totalImages * imageWidth;
     
     // Start from the end for reverse scrolling
     let scrollAmount = totalWidth;
-    const scrollSpeed = 2; // positive speed, but we'll decrement
+    const scrollSpeed = 1; // positive speed, but we'll decrement (slower)
 
     const scroll = () => {
       scrollAmount -= scrollSpeed;
@@ -37,12 +37,12 @@ export default function DoriScroll() {
   const doriImages = Array.from({ length: 40 }, (_, index) => (
     <div
       key={index}
-      className="flex-shrink-0 w-[150px] h-[150px] flex items-center justify-center"
+      className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-128px] mb-[-128px] relative z-[100]"
     >
       <img
         src={doriGif}
         alt="Dori character"
-        className="w-[120px] h-[120px] object-contain"
+        className="w-[240px] h-[240px] object-contain relative z-[100]"
       />
     </div>
   ));
