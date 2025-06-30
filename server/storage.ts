@@ -121,7 +121,7 @@ export class MemStorage implements IStorage {
       { title: "Dori Dancing Classic", url: "/attached_assets/Penguin Dancingpenguin Sticker_1751290780488.gif", category: "dori", tags: ["dancing", "chick", "retro"] },
       { title: "Yaki Shakeit Classic", url: "/attached_assets/Shakeit Sticker_1751290682699.gif", category: "yaki", tags: ["shaking", "dancing", "vintage"] },
       
-      // Download series from older batch - correctly categorized as Dori (penguins)
+      // Download series from older batch - correctly categorized as Dori (chicks)
       { title: "Dori Eating Classic", url: "/attached_assets/download(1)_1751292281717.gif", category: "dori", tags: ["eating", "classic", "cute"] },
       { title: "Dori Happy Classic", url: "/attached_assets/download(2)_1751292281717.gif", category: "dori", tags: ["happy", "vintage", "joy"] },
       { title: "Dori Rocket Classic", url: "/attached_assets/download(3)_1751292281717.gif", category: "dori", tags: ["rocket", "retro", "flying"] },
