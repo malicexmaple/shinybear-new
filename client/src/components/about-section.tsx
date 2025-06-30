@@ -32,13 +32,11 @@ export default function AboutSection() {
               {t('about.mission')}
             </p>
             <div className="flex items-center space-x-4 mt-6">
-              <div className="bg-yellow-400 rounded-full p-3">
-                <img 
-                  src="/attached_assets/giphy_logo_icon_181239_1751307753099.png" 
-                  alt="GIPHY logo" 
-                  className="w-6 h-6"
-                />
-              </div>
+              <img 
+                src="/attached_assets/giphy_logo_icon_181239_1751307753099.png" 
+                alt="GIPHY logo" 
+                className="w-12 h-12"
+              />
               <span className="text-black font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>925.4M+ GIF Views</span>
             </div>
           </div>
