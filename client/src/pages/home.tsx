@@ -4,12 +4,10 @@ import CharacterSection from "@/components/character-section";
 import GallerySection from "@/components/gallery-section";
 import AboutSection from "@/components/about-section";
 import Footer from "@/components/footer";
-import FloatingGifs from "@/components/floating-gifs";
 
 export default function Home() {
   return (
     <div className="min-h-screen cream relative">
-      <FloatingGifs />
       <Navigation />
       <HeroSection />
       <CharacterSection characterName="yaki" />
