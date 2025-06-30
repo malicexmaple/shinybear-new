@@ -64,15 +64,7 @@ export default function HeroSection() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div className="text-center mt-4">
-              <h3 
-                className="text-2xl font-bold text-gray-800 mb-2"
-                style={{ fontFamily: "Comic Neue, cursive" }}
-              >
-                Meet Yaki & Dori
-              </h3>
-              <p className="text-gray-600">Watch our adorable characters in action!</p>
-            </div>
+            
           </div>
         </div>
         
