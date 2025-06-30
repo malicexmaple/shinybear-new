@@ -40,25 +40,25 @@ export default function HeroSection() {
   return (
     <section id="home" className="pt-20 pb-4 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <div className="animate-float mb-8">
+        <div className="animate-float mb-2">
           <h1 
             className="text-6xl md:text-8xl font-bold text-[#000000] mt-[-22px] mb-[-22px] pt-[29px] pb-[29px]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t('hero.title')}
           </h1>
-          <div className="curved-text-container relative z-10">
+          <div className="curved-text-container relative z-10 -mt-4">
             <svg 
               width="100%" 
-              height="200" 
-              viewBox="0 0 1600 200" 
+              height="120" 
+              viewBox="0 0 1600 120" 
               className="curved-text-svg"
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>
                 <path
                   id="textcurve"
-                  d="M 50,160 Q 800,60 1550,160"
+                  d="M 50,100 Q 800,40 1550,100"
                   stroke="none"
                   fill="none"
                 />
@@ -85,8 +85,8 @@ export default function HeroSection() {
           </div>
         </div>
         
-        <div className="flex justify-center items-center mt-8 relative">
-          <div className="character-card rounded-3xl p-8 border border-white/30 max-w-4xl w-full animate-float relative">
+        <div className="flex justify-center items-center mt-2 relative">
+          <div className="character-card rounded-3xl p-4 border border-white/30 max-w-4xl w-full animate-float relative">
             <div className="relative">
               <video 
                 src={heroVideo}
