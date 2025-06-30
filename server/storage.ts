@@ -114,7 +114,7 @@ export class MemStorage implements IStorage {
       { title: "Excited Chick Old", url: "/attached_assets/Excited Chick Sticker_1751292281717.gif", category: "yaki", tags: ["excited", "happy", "classic"] },
       { title: "Excited Jump Old", url: "/attached_assets/Excited Jump Sticker(1)_1751292281717.gif", category: "dori", tags: ["jumping", "excited", "vintage"] },
       { title: "Excited Jump 3", url: "/attached_assets/Excited Jump Sticker(2)_1751292281717.gif", category: "yaki", tags: ["jumping", "bounce", "classic"] },
-      { title: "Excited Jump Classic", url: "/attached_assets/Excited Jump Sticker_1751292281717.gif", category: "dori", tags: ["jumping", "excited", "retro"] },
+      { title: "Excited Jump Classic", url: "/attached_assets/Excited Jump Sticker_1751292281717.gif", category: "yaki", tags: ["jumping", "excited", "retro"] },
       { title: "Sad To Do Old", url: "/attached_assets/Sad To Do Sticker_1751292281717.gif", category: "yaki", tags: ["sad", "busy", "vintage"] },
       { title: "Sing A Song Old", url: "/attached_assets/Sing A Song Singing Sticker_1751292281717.gif", category: "yaki", tags: ["singing", "music", "classic"] },
       { title: "Way Back Home Old", url: "/attached_assets/Way Back Home Chick Sticker_1751292281717.gif", category: "yaki", tags: ["headphones", "music", "vintage"] },
