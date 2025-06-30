@@ -36,7 +36,7 @@ export default function HeroSection() {
   const dori = characters?.find(c => c.name === "Dori");
 
   return (
-    <section id="home" className="pt-20 pb-16 gradient-kawaii">
+    <section id="home" className="pt-20 pb-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="animate-float mb-8">
           <h1 
