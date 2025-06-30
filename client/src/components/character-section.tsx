@@ -46,7 +46,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   const isYaki = characterName === 'yaki';
   const mainGif = isYaki 
     ? gifs?.[0] 
-    : gifs?.find(gif => gif.title === 'Dori Penguin Kawaii') || gifs?.[0];
+    : gifs?.find(gif => gif.title === 'Dori Kawaii') || gifs?.[0];
 
   return (
     <section 
@@ -105,7 +105,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                   {mainGif.title}
                 </h4>
                 <p className="text-black sinchon-font">
-                  {isYaki ? "Yaki loves to share hearts and positive vibes" : "Dori loves creating heart shapes to show affection"}
+                  {isYaki ? "Yaki loves to share hearts and positive vibes" : "Dori loves sharing kisses and spreading love"}
                 </p>
               </div>
             </div>

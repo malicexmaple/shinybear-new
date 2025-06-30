@@ -27,9 +27,9 @@ const translations = {
     'character.yaki.personality': 'Cheerful & Energetic',
     'character.yaki.description': 'Meet Yaki, the adorable yellow chick who loves to dance and spread happiness wherever she goes!',
     'character.dori.name': 'Dori',
-    'character.dori.type': 'Baby Penguin',
+    'character.dori.type': 'Little Chick',
     'character.dori.personality': 'Sweet & Playful',
-    'character.dori.description': 'Say hello to Dori, the cutest blue penguin who brings smiles with every waddle and loves making new friends!',
+    'character.dori.description': 'Say hello to Dori, the cutest blue chick who brings smiles and loves making new friends!',
     
     // Gallery Section
     'gallery.title': 'GIF Gallery',
@@ -65,9 +65,9 @@ const translations = {
     'character.yaki.personality': '밝고 활기찬',
     'character.yaki.description': '춤추기를 좋아하고 어디서든 행복을 전파하는 사랑스러운 노란 병아리 야키를 만나보세요!',
     'character.dori.name': '도리',
-    'character.dori.type': '아기 펭귄',
+    'character.dori.type': '작은 병아리',
     'character.dori.personality': '달콤하고 장난기 많은',
-    'character.dori.description': '뒤뚱거릴 때마다 미소를 선사하고 새로운 친구 사귀기를 좋아하는 가장 귀여운 파란 펭귄 도리에게 인사해보세요!',
+    'character.dori.description': '미소를 선사하고 새로운 친구 사귀기를 좋아하는 가장 귀여운 파란 병아리 도리에게 인사해보세요!',
     
     // Gallery Section
     'gallery.title': 'GIF 갤러리',

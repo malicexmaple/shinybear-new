@@ -52,10 +52,10 @@ export class MemStorage implements IStorage {
     // Create Dori character
     const dori = await this.createCharacter({
       name: "Dori",
-      type: "penguin",
+      type: "chick",
       color: "blue",
-      personality: ["Cool and collected penguin", "Loves giving kisses and hugs", "Great at expressing emotions", "Brings calm and peaceful vibes"],
-      description: "Dori is our lovable blue penguin who brings cool vibes and warm hearts! He's gentle, caring, and always ready to share a kiss or spread some love.",
+      personality: ["Cool and collected chick", "Loves giving kisses and hugs", "Great at expressing emotions", "Brings calm and peaceful vibes"],
+      description: "Dori is our lovable blue chick who brings cool vibes and warm hearts! He's gentle, caring, and always ready to share a kiss or spread some love.",
       avatarUrl: "https://media3.giphy.com/media/p5fbSOd0S4DaG6iZpo/giphy.gif"
     });
 
@@ -70,8 +70,8 @@ export class MemStorage implements IStorage {
       { title: "Yaki Shake It", url: "/attached_assets/Shakeit Sticker_1751292334055.gif", category: "yaki", tags: ["shaking", "dancing", "wiggle"] },
       { title: "Yaki Voted Peace", url: "/attached_assets/Voted Sticker_1751292334055.gif", category: "yaki", tags: ["peace", "vote", "politics"] },
       { title: "Yaki Voted Paper", url: "/attached_assets/Voted Sticker(1)_1751292334055.gif", category: "yaki", tags: ["vote", "paper", "ballot"] },
-      { title: "Dori Penguin Dancing", url: "/attached_assets/Penguin Dancingpenguin Sticker_1751292334055.gif", category: "dori", tags: ["dancing", "penguin", "fun"] },
-      { title: "Dori Penguin Gas", url: "/attached_assets/Penguin Gas Sticker_1751292334055.gif", category: "dori", tags: ["gas", "funny", "cute"] },
+      { title: "Dori Dancing", url: "/attached_assets/Penguin Dancingpenguin Sticker_1751292334055.gif", category: "dori", tags: ["dancing", "chick", "fun"] },
+      { title: "Dori Gas", url: "/attached_assets/Penguin Gas Sticker_1751292334055.gif", category: "dori", tags: ["gas", "funny", "cute"] },
       
       { title: "Yaki Chick Dancing", url: "/attached_assets/Chick Dancing Sticker_1751292354200.gif", category: "yaki", tags: ["dancing", "excited", "fun"] },
       { title: "Yaki Excited Chick", url: "/attached_assets/Excited Chick Sticker_1751292354200.gif", category: "yaki", tags: ["excited", "happy", "lying"] },
@@ -82,12 +82,12 @@ export class MemStorage implements IStorage {
       { title: "Yaki I Love You Heart", url: "/attached_assets/I Love You Heart Sticker_1751292354200.gif", category: "yaki", tags: ["love", "heart", "lying"] },
       { title: "Yaki Love You Heart", url: "/attached_assets/Love You Heart Sticker_1751292354200.gif", category: "yaki", tags: ["love", "paper", "note"] },
       { title: "Yaki Chick Kawaii", url: "/attached_assets/Chick Kawai Sticker_1751292354200.gif", category: "yaki", tags: ["kawaii", "heart", "cute"] },
-      { title: "Dori Penguin Kiss", url: "/attached_assets/Penguin Kiss Sticker_1751292354200.gif", category: "dori", tags: ["kiss", "love", "cuddle"] },
-      { title: "Dori I Love You Heart", url: "/attached_assets/I Love You Heart Sticker(1)_1751292354200.gif", category: "dori", tags: ["love", "heart", "penguin"] },
+      { title: "Dori Kiss", url: "/attached_assets/Penguin Kiss Sticker_1751292354200.gif", category: "dori", tags: ["kiss", "love", "cuddle"] },
+      { title: "Dori I Love You Heart", url: "/attached_assets/I Love You Heart Sticker(1)_1751292354200.gif", category: "dori", tags: ["love", "heart", "chick"] },
       { title: "Dori Excited Jump", url: "/attached_assets/Excited Jump Sticker(1)_1751292354200.gif", category: "dori", tags: ["jumping", "excited", "happy"] },
       { title: "Dori I Love You Kiss", url: "/attached_assets/I Love You Kiss Sticker_1751295478948.gif", category: "dori", tags: ["love", "kiss", "heart"] },
-      { title: "Dori Penguin Kawaii", url: "/attached_assets/Penguin Kawai Sticker_1751292354200.gif", category: "dori", tags: ["kawaii", "penguin", "cute"] },
-      { title: "Dori Penguin Dancing 2", url: "/attached_assets/Penguin Dancingpenguin Sticker(1)_1751292354200.gif", category: "dori", tags: ["dancing", "penguin", "excited"] },
+      { title: "Dori Kawaii", url: "/attached_assets/Penguin Kawai Sticker_1751292354200.gif", category: "dori", tags: ["kawaii", "chick", "cute"] },
+      { title: "Dori Dancing 2", url: "/attached_assets/Penguin Dancingpenguin Sticker(1)_1751292354200.gif", category: "dori", tags: ["dancing", "chick", "excited"] },
       { title: "Yaki Sad Chick", url: "/attached_assets/Sad Chick Sticker_1751292354200.gif", category: "yaki", tags: ["sad", "upset", "down"] },
       { title: "Yaki Shakeit 2", url: "/attached_assets/Shakeit Sticker(1)_1751292354200.gif", category: "yaki", tags: ["shaking", "dancing", "wiggle"] },
       { title: "Yaki Sickyaki", url: "/attached_assets/Sickyaki Sticker_1751292354200.gif", category: "yaki", tags: ["sick", "unwell", "chick"] },
@@ -118,7 +118,7 @@ export class MemStorage implements IStorage {
       { title: "Yaki Sad To Do Old", url: "/attached_assets/Sad To Do Sticker_1751292281717.gif", category: "yaki", tags: ["sad", "busy", "vintage"] },
       { title: "Yaki Sing A Song Old", url: "/attached_assets/Sing A Song Singing Sticker_1751292281717.gif", category: "yaki", tags: ["singing", "music", "classic"] },
       { title: "Yaki Way Back Home Old", url: "/attached_assets/Way Back Home Chick Sticker_1751292281717.gif", category: "yaki", tags: ["headphones", "music", "vintage"] },
-      { title: "Dori Penguin Dancing Classic", url: "/attached_assets/Penguin Dancingpenguin Sticker_1751290780488.gif", category: "dori", tags: ["dancing", "penguin", "retro"] },
+      { title: "Dori Dancing Classic", url: "/attached_assets/Penguin Dancingpenguin Sticker_1751290780488.gif", category: "dori", tags: ["dancing", "chick", "retro"] },
       { title: "Yaki Shakeit Classic", url: "/attached_assets/Shakeit Sticker_1751290682699.gif", category: "yaki", tags: ["shaking", "dancing", "vintage"] },
       
       // Download series from older batch - correctly categorized as Dori (penguins)
