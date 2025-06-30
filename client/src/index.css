@@ -17,17 +17,36 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 
 .curved-text-container svg {
   overflow: visible;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
 }
 
 @media (min-width: 768px) {
   .curved-text-container svg text {
-    font-size: 20px;
+    font-size: 24px;
+  }
+}
+
+/* Curved text overlay for video */
+.curved-text-overlay {
+  pointer-events: none;
+}
+
+.curved-text-overlay svg {
+  overflow: visible;
+  filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.5));
+}
+
+@media (min-width: 768px) {
+  .curved-text-overlay svg text {
+    font-size: 22px;
   }
 }
 

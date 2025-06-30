@@ -47,21 +47,22 @@ export default function HeroSection() {
           >
             {t('hero.title')}
           </h1>
-          <div className="curved-text-container">
-            <svg viewBox="0 0 400 100" className="w-full h-16 md:h-20">
+          <div className="curved-text-container relative z-10">
+            <svg viewBox="0 0 500 120" className="w-full h-20 md:h-24">
               <defs>
                 <path
                   id="curve"
-                  d="M 50 80 Q 200 20 350 80"
+                  d="M 50 90 Q 250 30 450 90"
                   fill="transparent"
                 />
               </defs>
               <text
-                fontSize="16"
-                fill="#000000e6"
+                fontSize="20"
+                fill="#000000"
                 fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive"
-                fontWeight="500"
-                className="md:text-lg"
+                fontWeight="600"
+                stroke="#ffffff"
+                strokeWidth="1"
               >
                 <textPath href="#curve" startOffset="50%" textAnchor="middle">
                   {t('hero.subtitle')}
@@ -71,8 +72,8 @@ export default function HeroSection() {
           </div>
         </div>
         
-        <div className="flex justify-center items-center mt-12">
-          <div className="character-card rounded-3xl p-8 border border-white/30 max-w-4xl w-full animate-float">
+        <div className="flex justify-center items-center mt-8 relative">
+          <div className="character-card rounded-3xl p-8 border border-white/30 max-w-4xl w-full animate-float relative">
             <div className="relative">
               <video 
                 src={heroVideo}
@@ -86,6 +87,31 @@ export default function HeroSection() {
               >
                 Your browser does not support the video tag.
               </video>
+              
+              {/* Curved text overlay */}
+              <div className="absolute top-8 left-0 right-0 curved-text-overlay z-20">
+                <svg viewBox="0 0 500 120" className="w-full h-20 md:h-24">
+                  <defs>
+                    <path
+                      id="curve-overlay"
+                      d="M 50 90 Q 250 30 450 90"
+                      fill="transparent"
+                    />
+                  </defs>
+                  <text
+                    fontSize="18"
+                    fill="#000000"
+                    fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive"
+                    fontWeight="700"
+                    stroke="#ffffff"
+                    strokeWidth="2"
+                  >
+                    <textPath href="#curve-overlay" startOffset="50%" textAnchor="middle">
+                      {t('hero.subtitle')}
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
             </div>
             
           </div>
