@@ -80,31 +80,42 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
 
   return (
     <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
-      {floatingGifs.map((gif) => {
+      {floatingGifs.map((gif, index) => {
+        const isClockwise = index % 2 === 0;
+        const animationName = isClockwise ? 'circleClockwise' : 'circleCounterClockwise';
+        
         return (
           <div
             key={gif.id}
-            className="absolute animate-spin opacity-60 hover:opacity-80 transition-opacity"
+            className="absolute opacity-60 hover:opacity-80 transition-opacity"
             style={{
               left: `${centerPosition.x}%`,
               top: `${centerPosition.y}%`,
-              width: `${gif.size}px`,
-              height: `${gif.size}px`,
+              animationName: animationName,
               animationDuration: `${gif.duration}s`,
               animationDelay: `${gif.delay}s`,
-              transformOrigin: `0 0`,
-              transform: `translate(-50%, -50%) rotate(${gif.angle}deg) translateX(${gif.radius}px) translateY(-${gif.size/2}px)`,
+              animationIterationCount: 'infinite',
+              animationTimingFunction: 'linear',
+              transformOrigin: '0 0',
+              transform: `translate(-50%, -50%) rotate(${gif.angle}deg)`,
             }}
           >
-            <img
-              src={gif.url}
-              alt="Floating character"
-              className="w-full h-full object-contain"
+            <div
               style={{
-                filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
-                transform: `rotate(-${gif.angle}deg)`, // Counter-rotate to keep characters upright
+                width: `${gif.size}px`,
+                height: `${gif.size}px`,
+                transform: `translateX(${gif.radius}px) translateY(-${gif.size/2}px)`,
               }}
-            />
+            >
+              <img
+                src={gif.url}
+                alt="Floating character"
+                className="w-full h-full object-contain"
+                style={{
+                  filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
+                }}
+              />
+            </div>
           </div>
         );
       })}
