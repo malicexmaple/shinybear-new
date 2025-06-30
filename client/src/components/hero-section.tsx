@@ -48,16 +48,16 @@ export default function HeroSection() {
             {t('hero.title')}
           </h1>
           <div className="curved-text-container relative z-10">
-            <svg viewBox="0 0 500 120" className="w-full h-20 md:h-24">
+            <svg viewBox="0 0 800 150" className="w-full h-24 md:h-28">
               <defs>
                 <path
                   id="curve"
-                  d="M 50 90 Q 250 30 450 90"
+                  d="M 80 120 Q 400 40 720 120"
                   fill="transparent"
                 />
               </defs>
               <text
-                fontSize="20"
+                fontSize="24"
                 fill="#000000"
                 fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive"
                 fontWeight="600"
@@ -88,30 +88,7 @@ export default function HeroSection() {
                 Your browser does not support the video tag.
               </video>
               
-              {/* Curved text overlay */}
-              <div className="absolute top-8 left-0 right-0 curved-text-overlay z-20">
-                <svg viewBox="0 0 500 120" className="w-full h-20 md:h-24">
-                  <defs>
-                    <path
-                      id="curve-overlay"
-                      d="M 50 90 Q 250 30 450 90"
-                      fill="transparent"
-                    />
-                  </defs>
-                  <text
-                    fontSize="18"
-                    fill="#000000"
-                    fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive"
-                    fontWeight="700"
-                    stroke="#ffffff"
-                    strokeWidth="2"
-                  >
-                    <textPath href="#curve-overlay" startOffset="50%" textAnchor="middle">
-                      {t('hero.subtitle')}
-                    </textPath>
-                  </text>
-                </svg>
-              </div>
+
             </div>
             
           </div>
