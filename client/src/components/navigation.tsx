@@ -51,14 +51,14 @@ export default function Navigation() {
               className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              Yaki
+              {t('nav.yaki')}
             </button>
             <button 
               onClick={() => scrollToSection("dori")}
               className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              Dori
+              {t('nav.dori')}
             </button>
             <button 
               onClick={() => scrollToSection("gallery")}

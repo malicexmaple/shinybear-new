@@ -12,6 +12,8 @@ const translations = {
   en: {
     // Navigation
     'nav.home': 'Home',
+    'nav.yaki': 'Yaki',
+    'nav.dori': 'Dori',
     'nav.gallery': 'Gallery',
     'nav.about': 'About',
     
@@ -50,6 +52,8 @@ const translations = {
   ko: {
     // Navigation
     'nav.home': '홈',
+    'nav.yaki': '야키',
+    'nav.dori': '도리',
     'nav.gallery': '갤러리',
     'nav.about': '소개',
     
