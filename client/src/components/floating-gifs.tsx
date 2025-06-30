@@ -62,10 +62,10 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
       id: gif.id,
       url: gif.url,
       angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
-      radius: 450, // Same radius for all - creates perfect circle formation
+      radius: 1000, // Large radius to prevent collisions
       size: 200, // Fixed 200px size
-      duration: 30 + (index * 3), // 30s to 42s animation duration
-      delay: index * 5, // More staggered animations
+      duration: 40, // Same duration for all - synchronized movement
+      delay: 0, // No delay - all start together
     }));
 
     setFloatingGifs(newFloatingGifs);
@@ -80,11 +80,7 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
 
   return (
     <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
-      {floatingGifs.map((gif, index) => {
-        const isClockwise = index % 2 === 0;
-        const animationName = isClockwise ? 'circleClockwise' : 'circleCounterClockwise';
-        const counterAnimationName = isClockwise ? 'circleCounterClockwise' : 'circleClockwise';
-        
+      {floatingGifs.map((gif) => {
         return (
           <div
             key={gif.id}
@@ -92,7 +88,7 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
             style={{
               left: `${centerPosition.x}%`,
               top: `${centerPosition.y}%`,
-              animationName: animationName,
+              animationName: 'circleClockwise', // All move clockwise
               animationDuration: `${gif.duration}s`,
               animationDelay: `${gif.delay}s`,
               animationIterationCount: 'infinite',
@@ -106,7 +102,7 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
                 width: `${gif.size}px`,
                 height: `${gif.size}px`,
                 transform: `translateX(${gif.radius}px) translateY(-${gif.size/2}px)`,
-                animationName: counterAnimationName,
+                animationName: 'circleCounterClockwise', // Counter-rotate to keep upright
                 animationDuration: `${gif.duration}s`,
                 animationDelay: `${gif.delay}s`,
                 animationIterationCount: 'infinite',
