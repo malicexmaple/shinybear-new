@@ -35,12 +35,12 @@ export default function InstagramFeed() {
   const yakiImages = Array.from({ length: 40 }, (_, index) => (
     <div
       key={index}
-      className="flex-shrink-0 w-[150px] h-[150px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-64px] mb-[-64px]"
+      className="flex-shrink-0 w-[150px] h-[150px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-64px] mb-[-64px] relative z-50"
     >
       <img
         src={yakiGif}
         alt="Yaki character"
-        className="w-[120px] h-[120px] object-contain"
+        className="w-[120px] h-[120px] object-contain relative z-50"
       />
     </div>
   ));
@@ -58,10 +58,10 @@ export default function InstagramFeed() {
           }
         `}
       </style>
-      <section className="w-full overflow-hidden h-[150px] bg-white">
+      <section className="w-full overflow-hidden h-[150px] bg-white relative z-50">
         <div
           id="yaki-scroll"
-          className="flex gap-0 overflow-x-hidden w-full h-full"
+          className="flex gap-0 overflow-x-hidden w-full h-full relative z-50"
         >
           {yakiImages}
         </div>
