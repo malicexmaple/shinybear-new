@@ -77,7 +77,13 @@ export default function AboutSection() {
                 rel="noopener noreferrer"
                 className="flex-1 bg-gray-100 rounded-2xl p-4 text-center text-black hover:bg-gray-200 transition-all"
               >
-                <div className="text-2xl mb-2">📷</div>
+                <div className="flex justify-center mb-2">
+                  <img 
+                    src="/attached_assets/black-and-white-outline-instagram-app-logo-icon-7017516951369307x990iaok2_1751310153172.png" 
+                    alt="Instagram logo" 
+                    className="w-8 h-8"
+                  />
+                </div>
                 <p className="font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Instagram</p>
               </a>
               <a 
