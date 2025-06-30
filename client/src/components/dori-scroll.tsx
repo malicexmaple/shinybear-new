@@ -37,12 +37,12 @@ export default function DoriScroll() {
   const doriImages = Array.from({ length: 40 }, (_, index) => (
     <div
       key={index}
-      className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-128px] mb-[-128px] relative z-[100]"
+      className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-128px] mb-[-128px] relative z-[9999]"
     >
       <img
         src={doriGif}
         alt="Dori character"
-        className="w-[240px] h-[240px] object-contain relative z-[100]"
+        className="w-[240px] h-[240px] object-contain relative z-[9999]"
       />
     </div>
   ));
@@ -60,10 +60,10 @@ export default function DoriScroll() {
           }
         `}
       </style>
-      <section className="w-full overflow-hidden h-[300px] bg-white relative z-[100]">
+      <section className="w-full overflow-hidden h-[300px] bg-white relative z-[9999]">
         <div
           id="dori-scroll"
-          className="flex gap-0 overflow-x-hidden w-full h-full relative z-[100]"
+          className="flex gap-0 overflow-x-hidden w-full h-full relative z-[9999]"
         >
           {doriImages}
         </div>
