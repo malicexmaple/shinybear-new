@@ -21,17 +21,15 @@ export default function AboutSection() {
           <div className="character-card rounded-3xl p-8 border border-white/30">
             <h3 
               className="text-3xl font-bold text-gray-800 mb-6"
-              style={{ fontFamily: "Comic Neue, cursive" }}
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              The Beginning
+              {t('about.beginning')}
             </h3>
-            <p className="text-gray-700 mb-4">
-              Yaki and Dori started as simple doodles that captured hearts around the world. 
-              These adorable characters represent the pure joy and innocence that we all need in our daily lives.
+            <p className="text-gray-700 mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+              {t('about.beginning_text')}
             </p>
-            <p className="text-gray-700 mb-4">
-              With over 925.4M GIF views on GIPHY, Yaki and Dori have become beloved symbols 
-              of kawaii culture, spreading happiness one animation at a time.
+            <p className="text-gray-700 mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+              {t('about.views_text')}
             </p>
             <div className="flex items-center space-x-4 mt-6">
               <div className="bg-yellow-400 rounded-full p-3">

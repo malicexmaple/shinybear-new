@@ -42,30 +42,35 @@ export default function Navigation() {
             <button 
               onClick={() => scrollToSection("home")}
               className="text-gray-700 hover:text-pink-500 transition-colors font-medium"
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.home')}
             </button>
             <button 
               onClick={() => scrollToSection("yaki")}
               className="text-gray-700 hover:text-yellow-500 transition-colors font-medium"
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Yaki
             </button>
             <button 
               onClick={() => scrollToSection("dori")}
               className="text-gray-700 hover:text-blue-500 transition-colors font-medium"
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               Dori
             </button>
             <button 
               onClick={() => scrollToSection("gallery")}
               className="text-gray-700 hover:text-purple-500 transition-colors font-medium"
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.gallery')}
             </button>
             <button 
               onClick={() => scrollToSection("about")}
               className="text-gray-700 hover:text-green-500 transition-colors font-medium"
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.about')}
             </button>

@@ -69,6 +69,7 @@ export default function GallerySection() {
                     ? "bg-pink-500 text-white"
                     : "text-gray-600 hover:text-gray-800"
                 }`}
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 {button.label}
               </button>

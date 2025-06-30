@@ -15,6 +15,7 @@ export default function LanguageToggle() {
       variant="ghost"
       size="sm"
       className="flex items-center gap-2 text-gray-800 hover:bg-white/20"
+      style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
     >
       <Languages className="w-4 h-4" />
       <span className="font-medium">

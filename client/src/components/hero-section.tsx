@@ -47,7 +47,7 @@ export default function HeroSection() {
           >
             {t('hero.title')}
           </h1>
-          <p className="text-xl md:text-2xl font-medium text-[#000000e6]">{t('hero.subtitle')}</p>
+          <p className="text-xl md:text-2xl font-medium text-[#000000e6]" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{t('hero.subtitle')}</p>
         </div>
         
         <div className="flex justify-center items-center mt-12">
