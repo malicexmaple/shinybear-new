@@ -75,7 +75,7 @@ export default function AboutSection() {
                 href="https://instagram.com/sick_yaki" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex-1 bg-gray-100 rounded-2xl p-4 text-center text-black hover:bg-gray-200 transition-all"
+                className="flex-1 bg-gray-100 rounded-2xl p-4 text-center text-black transition-all"
               >
                 <div className="flex justify-center mb-2">
                   <img 
@@ -90,7 +90,7 @@ export default function AboutSection() {
                 href="https://giphy.com/sickyaki" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex-1 bg-gray-100 rounded-2xl p-4 text-center text-black hover:bg-gray-200 transition-all"
+                className="flex-1 bg-gray-100 rounded-2xl p-4 text-center text-black transition-all"
               >
                 <div className="text-2xl mb-2">🎁</div>
                 <p className="font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>GIPHY</p>
