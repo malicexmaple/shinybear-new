@@ -68,7 +68,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
           </div>
         </div>
         
-        <div className={`grid md:grid-cols-2 gap-6 items-center ${!isYaki ? 'md:grid-flow-col-dense' : ''}`}>
+        <div className="grid md:grid-cols-2 gap-6 items-center pt-[0px] pb-[0px] mt-[-15px] mb-[-15px] ml-[220px] mr-[220px]">
           <div className={`space-y-3 ${!isYaki ? 'md:col-start-2' : ''}`}>
             <h3 
               className="text-3xl font-bold text-black sinchon-font"
