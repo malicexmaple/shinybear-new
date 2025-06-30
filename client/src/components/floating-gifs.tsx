@@ -113,9 +113,6 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
                 src={gif.url}
                 alt="Floating character"
                 className="w-full h-full object-contain"
-                style={{
-                  filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
-                }}
               />
             </div>
           </div>
