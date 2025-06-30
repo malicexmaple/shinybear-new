@@ -7,7 +7,7 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 
-            className="md:text-6xl font-bold text-black mb-4 text-[70px]"
+            className="md:text-6xl font-bold text-black mb-4 text-[70px] animate-wiggle-pulse"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t('about.title')}
