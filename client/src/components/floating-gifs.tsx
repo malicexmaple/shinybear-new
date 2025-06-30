@@ -9,7 +9,8 @@ interface FloatingGif {
   radius: number;
   size: number;
   duration: number;
-  delay: number;
+  x: number;
+  y: number;
 }
 
 interface FloatingGifsProps {
@@ -58,15 +59,30 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
       transparentGifTitles.includes(gif.title)
     ).slice(0, 5); // Limit to 5 floating GIFs
 
-    const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => ({
-      id: gif.id,
-      url: gif.url,
-      angle: (index * (360 / transparentGifs.length)), // Evenly distribute around circle
-      radius: 600, // Moderate radius around video
-      size: 150, // Smaller size so they fit better
-      duration: 40, // Consistent rotation speed
-      delay: 0, // No delay - all show at the same time
-    }));
+    // Calculate video position for positioning GIFs
+    const videoElement = document.querySelector('#home video');
+    if (!videoElement) return;
+    
+    const videoRect = videoElement.getBoundingClientRect();
+    const videoCenterX = videoRect.left + videoRect.width / 2;
+    const videoCenterY = videoRect.top + videoRect.height / 2;
+    
+    const newFloatingGifs: FloatingGif[] = transparentGifs.map((gif, index) => {
+      const angle = (index * (360 / transparentGifs.length));
+      const angleRad = (angle * Math.PI) / 180;
+      const radius = 400; // Distance from video center
+      
+      return {
+        id: gif.id,
+        url: gif.url,
+        angle: angle,
+        radius: radius,
+        size: 120,
+        duration: 30,
+        x: videoCenterX + Math.cos(angleRad) * radius,
+        y: videoCenterY + Math.sin(angleRad) * radius,
+      };
+    });
 
     setFloatingGifs(newFloatingGifs);
 
@@ -79,32 +95,29 @@ export default function FloatingGifs({ targetElement = "#home" }: FloatingGifsPr
   if (!floatingGifs.length) return null;
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none z-50 overflow-hidden">
       {floatingGifs.map((gif) => {
         return (
           <div
             key={gif.id}
-            className="absolute opacity-60 hover:opacity-80 transition-opacity"
+            className="absolute opacity-70 hover:opacity-90 transition-opacity"
             style={{
-              left: `${centerPosition.x}%`,
-              top: `${centerPosition.y}%`,
-              animationName: 'circleClockwise', // All move clockwise
+              left: `${gif.x}px`,
+              top: `${gif.y}px`,
+              width: `${gif.size}px`,
+              height: `${gif.size}px`,
+              transform: 'translate(-50%, -50%)',
+              animationName: 'circleClockwise',
               animationDuration: `${gif.duration}s`,
-              animationDelay: `${gif.delay}s`,
               animationIterationCount: 'infinite',
               animationTimingFunction: 'linear',
-              transformOrigin: '0 0',
-              transform: `translate(-50%, -50%) rotate(${gif.angle}deg)`,
+              transformOrigin: `${gif.radius}px 0px`,
             }}
           >
             <div
               style={{
-                width: `${gif.size}px`,
-                height: `${gif.size}px`,
-                transform: `translateX(${gif.radius}px) translateY(-${gif.size/2}px)`,
-                animationName: 'circleCounterClockwise', // Counter-rotate to keep upright
+                animationName: 'circleCounterClockwise',
                 animationDuration: `${gif.duration}s`,
-                animationDelay: `${gif.delay}s`,
                 animationIterationCount: 'infinite',
                 animationTimingFunction: 'linear',
               }}
