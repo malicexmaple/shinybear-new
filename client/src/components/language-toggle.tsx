@@ -14,7 +14,7 @@ export default function LanguageToggle() {
       onClick={toggleLanguage}
       variant="ghost"
       size="sm"
-      className="flex items-center gap-2 text-black hover:bg-gray-200"
+      className="flex items-center gap-2 text-black hover:bg-white"
       style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
     >
       <Languages className="w-4 h-4" />
