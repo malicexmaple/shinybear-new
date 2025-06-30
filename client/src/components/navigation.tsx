@@ -33,7 +33,7 @@ export default function Navigation() {
             <div className="w-10 h-10 rounded-full gradient-kawaii flex items-center justify-center animate-float">
               <span className="text-xl">🐣</span>
             </div>
-            <h1 className="text-2xl font-bold text-gray-800" style={{ fontFamily: "Comic Neue, cursive" }}>
+            <h1 className="text-2xl font-bold text-gray-800" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               Yaki & Dori
             </h1>
           </div>

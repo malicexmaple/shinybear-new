@@ -1,11 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { Character, Gif } from "@shared/schema";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface CharacterSectionProps {
   characterName: string;
 }
 
 export default function CharacterSection({ characterName }: CharacterSectionProps) {
+  const { t } = useLanguage();
   const { data: characters, isLoading: charactersLoading } = useQuery<Character[]>({
     queryKey: ["/api/characters"],
   });
@@ -54,22 +56,27 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
         <div className="text-center mb-16">
           <h2 
             className="text-5xl md:text-6xl font-bold text-gray-800 mb-4"
-            style={{ fontFamily: "Comic Neue, cursive" }}
+            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
-            Meet {character.name} {isYaki ? '🐣' : '🐧'}
+            {t(`character.${characterName}.name`)} {isYaki ? '🐣' : '🐧'}
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            {character.description}
-          </p>
+          <div className="space-y-2">
+            <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
+              {t(`character.${characterName}.type`)}
+            </p>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              {t(`character.${characterName}.description`)}
+            </p>
+          </div>
         </div>
         
         <div className={`grid md:grid-cols-2 gap-12 items-center mb-16 ${!isYaki ? 'md:grid-flow-col-dense' : ''}`}>
           <div className={`space-y-6 ${!isYaki ? 'md:col-start-2' : ''}`}>
             <h3 
               className="text-3xl font-bold text-gray-800"
-              style={{ fontFamily: "Comic Neue, cursive" }}
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              {character.name}'s Personality
+              {t(`character.${characterName}.personality`)}
             </h3>
             <div className="space-y-4">
               {character.personality.map((trait, index) => (

@@ -2,8 +2,10 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Gif } from "@shared/schema";
 import { ExternalLink } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function GallerySection() {
+  const { t } = useLanguage();
   const [activeFilter, setActiveFilter] = useState("all");
 
   const { data: gifs, isLoading } = useQuery<Gif[]>({
@@ -16,9 +18,9 @@ export default function GallerySection() {
   }) || [];
 
   const filterButtons = [
-    { key: "all", label: "All" },
-    { key: "yaki", label: "Yaki" },
-    { key: "dori", label: "Dori" },
+    { key: "all", label: t('gallery.all') },
+    { key: "yaki", label: t('gallery.yaki') },
+    { key: "dori", label: t('gallery.dori') },
     { key: "together", label: "Together" },
   ];
 
