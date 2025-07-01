@@ -73,7 +73,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
         <div className="text-center mb-2">
           <h2 
             className="text-6xl md:text-[90px] font-bold mb-2 text-[#000000] sinchon-font wiggle-pulse-text animate-wiggle-pulse"
-            style={{ marginLeft: '-300px' }}
+            style={{ marginLeft: !isYaki ? '-300px' : '0' }}
           >
             {t(`character.${characterName}.name`)}
           </h2>
