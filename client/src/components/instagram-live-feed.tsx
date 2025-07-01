@@ -111,6 +111,15 @@ export default function InstagramLiveFeed() {
               data-elfsight-app-lazy
             ></div>
           </div>
+
+          {/* Bottom GIF - Under everything but still visible */}
+          <div className="flex justify-center mt-8 mb-4">
+            <img 
+              src="/attached_assets/longfi_1751346995548.gif" 
+              alt="Yaki and Dori with stretchy connection" 
+              className="w-64 h-16 md:w-96 md:h-24 object-contain opacity-90"
+            />
+          </div>
         </div>
       </section>
     </>
