@@ -95,32 +95,13 @@ export default function InstagramLiveFeed() {
               />
             </div>
             <div className="bg-white border-2 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm relative z-[100]">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center flex-1 mr-3">
-                  <span 
-                    className="text-xs md:text-sm font-bold text-black mr-2"
-                    style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
-                  >
-                    {t('contract.label')}
-                  </span>
-                  <code 
-                    className="text-xs md:text-sm text-gray-800 truncate"
-                    style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
-                  >
-                    {contractAddress}
-                  </code>
-                </div>
-                <button
-                  onClick={copyToClipboard}
-                  className="flex items-center justify-center w-8 h-8 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0"
-                  title={t('contract.copy')}
+              <div className="flex items-center justify-center">
+                <code 
+                  className="text-lg md:text-xl font-bold text-black"
+                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                 >
-                  {copied ? (
-                    <Check className="w-4 h-4" />
-                  ) : (
-                    <Copy className="w-4 h-4" />
-                  )}
-                </button>
+                  {contractAddress}
+                </code>
               </div>
             </div>
           </div>
@@ -147,7 +128,7 @@ export default function InstagramLiveFeed() {
                   className="text-5xl md:text-7xl font-bold text-black mb-4 wiggle-pulse-text"
                   style={{ 
                     fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive",
-                    textShadow: '-2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff'
+                    textShadow: '-3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff'
                   }}
                 >
                   {t('instagram.title')}
