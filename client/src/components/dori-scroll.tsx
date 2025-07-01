@@ -27,8 +27,8 @@ export default function DoriScroll() {
     return () => cancelAnimationFrame(animationId);
   }, []);
 
-  const sickyakiGif = "/attached_assets/I Love You Kiss Sticker_1751295478948.gif";
-  const pingdoriGif = "/attached_assets/Penguin Kawai Sticker_1751342571422.gif";
+  const sickyakiGif = "/attached_assets/Shakeit Sticker_1751360946317.gif";
+  const pingdoriGif = "/attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif";
 
   // Create multiple copies alternating between Sickyaki and Pingdori for seamless infinite scroll
   const characterImages = Array.from({ length: 40 }, (_, index) => {
