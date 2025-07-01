@@ -52,7 +52,16 @@ export default function InstagramLiveFeed() {
           z-index: 99999;
         }
       `}</style>
-      <section className="w-full py-16 bg-gray-50" id="instagram">
+      <section className="w-full py-16 bg-gray-50 relative" id="instagram">
+        {/* Floating GIF Layer - Above everything */}
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
+          <img 
+            src="/attached_assets/download(9)_1751341393068.gif" 
+            alt="Cute character working" 
+            className="w-24 h-24 object-contain opacity-90"
+          />
+        </div>
+        
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8">
