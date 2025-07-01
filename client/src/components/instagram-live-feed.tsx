@@ -100,7 +100,7 @@ export default function InstagramLiveFeed() {
             <div className="relative">
               <img 
                 src="/attached_assets/SnapInsta_1751351039676.gif" 
-                alt="Yaki and Dori with stretchy connection" 
+                alt="Sickyaki and Pingdori with stretchy connection" 
                 className="absolute left-1/2 transform -translate-x-1/2 opacity-90 z-0"
                 style={{ width: 'auto', height: 'auto', top: '-100px' }}
               />
