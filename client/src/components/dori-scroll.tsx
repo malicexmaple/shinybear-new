@@ -1,71 +1,72 @@
-import { useEffect } from "react";
-import doriGif from "@assets/Penguin Dancingpenguin Sticker_1751304751701.gif";
+import { useEffect, useRef } from "react";
 
 export default function DoriScroll() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const scrollContainer = document.getElementById('dori-scroll');
-    if (!scrollContainer) return;
+    const scrollElement = scrollRef.current;
+    if (!scrollElement) return;
 
-    const imageWidth = 300; // width of each Dori image (2x bigger)
-    const totalImages = 20; // number of copies we create
-    const totalWidth = totalImages * imageWidth;
-    
-    // Start from the end for reverse scrolling
-    let scrollAmount = totalWidth;
-    const scrollSpeed = 1; // positive speed, but we'll decrement (slower)
+    let scrollPosition = 0;
+    const scrollSpeed = 1; // pixels per frame
 
-    const scroll = () => {
-      scrollAmount -= scrollSpeed;
+    const animate = () => {
+      scrollPosition += scrollSpeed;
       
-      // Reset scroll when we've gone back to the beginning
-      if (scrollAmount <= 0) {
-        scrollAmount = totalWidth / 2; // Reset to middle to maintain seamless loop
+      // Reset position when we've scrolled one full cycle
+      if (scrollPosition >= 602) { // 2 images × 301px width
+        scrollPosition = 0;
       }
       
-      scrollContainer.scrollLeft = scrollAmount;
-      requestAnimationFrame(scroll);
+      scrollElement.scrollLeft = scrollPosition;
+      requestAnimationFrame(animate);
     };
 
-    const animation = requestAnimationFrame(scroll);
-
-    return () => {
-      cancelAnimationFrame(animation);
-    };
+    const animationId = requestAnimationFrame(animate);
+    
+    return () => cancelAnimationFrame(animationId);
   }, []);
 
-  // Create multiple copies of Dori for seamless infinite scroll
-  const doriImages = Array.from({ length: 40 }, (_, index) => (
-    <div
-      key={index}
-      className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] relative z-[9999] mt-[-85px] mb-[-85px]"
-    >
-      <img
-        src={doriGif}
-        alt="Dori character"
-        className="w-[240px] h-[240px] object-contain relative z-[9999]"
-      />
-    </div>
-  ));
+  const sickyakiGif = "/attached_assets/I Love You Kiss Sticker_1751295478948.gif";
+  const pingdoriGif = "/attached_assets/Penguin Kawai Sticker_1751342571422.gif";
+
+  // Create multiple copies alternating between Sickyaki and Pingdori for seamless infinite scroll
+  const characterImages = Array.from({ length: 40 }, (_, index) => {
+    const isSickyaki = index % 2 === 0;
+    return (
+      <div
+        key={index}
+        className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-100px] mb-[-100px] relative z-[9999]"
+      >
+        <img
+          src={isSickyaki ? sickyakiGif : pingdoriGif}
+          alt={isSickyaki ? "Sickyaki character" : "Pingdori character"}
+          className="w-[240px] h-[240px] object-contain relative z-[9999]"
+        />
+      </div>
+    );
+  });
 
   return (
     <>
       <style>
         {`
-          #dori-scroll::-webkit-scrollbar {
+          #character-scroll::-webkit-scrollbar {
             display: none;
           }
-          #dori-scroll {
+          #character-scroll {
             -ms-overflow-style: none;
             scrollbar-width: none;
           }
         `}
       </style>
-      <section className="w-full overflow-hidden h-[300px] bg-white relative z-[9999]">
+      <section className="w-full overflow-hidden h-[350px] bg-white relative z-[9999] transform -rotate-2">
         <div
-          id="dori-scroll"
-          className="flex gap-0 overflow-x-hidden w-full h-full relative z-[9999] mt-[-2px] mb-[-2px]"
+          ref={scrollRef}
+          id="character-scroll"
+          className="flex gap-0 overflow-x-hidden w-full h-full relative z-[9999]"
         >
-          {doriImages}
+          {characterImages}
         </div>
       </section>
     </>
