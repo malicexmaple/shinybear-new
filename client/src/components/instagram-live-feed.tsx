@@ -56,8 +56,8 @@ export default function InstagramLiveFeed() {
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">
-            {/* Floating GIF Layer - Positioned over CA bar */}
-            <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
+            {/* Floating GIF Layer - Positioned above CA bar */}
+            <div className="absolute -top-80 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
               <img 
                 src="/attached_assets/download(9)_1751341393068.gif" 
                 alt="Cute character working" 
