@@ -53,18 +53,17 @@ export default function InstagramLiveFeed() {
         }
       `}</style>
       <section className="w-full py-16 bg-gray-50 relative" id="instagram">
-        {/* Floating GIF Layer - Above everything */}
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
-          <img 
-            src="/attached_assets/download(9)_1751341393068.gif" 
-            alt="Cute character working" 
-            className="w-72 h-72 object-contain opacity-90"
-          />
-        </div>
-        
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8 relative">
+            {/* Floating GIF Layer - Positioned over CA bar */}
+            <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
+              <img 
+                src="/attached_assets/download(9)_1751341393068.gif" 
+                alt="Cute character working" 
+                className="w-72 h-72 object-contain opacity-90"
+              />
+            </div>
             <div className="bg-white border-2 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm">
               <div className="flex items-center justify-between">
                 <div className="flex items-center flex-1 mr-3">
