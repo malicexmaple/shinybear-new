@@ -46,7 +46,7 @@ export default function InstagramLiveFeed() {
           left: 0;
           right: 0;
           width: 100%;
-          height: 120px;
+          height: 180px;
           background: white;
           pointer-events: auto;
           z-index: 99999;
