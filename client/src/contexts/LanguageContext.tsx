@@ -21,7 +21,7 @@ const translations = {
     
     // Hero Section
     'hero.title': 'Yaki & Dori',
-    'hero.subtitle': 'The cutest kawaii characters bringing joy to your day!',
+    'hero.subtitle': 'Two hearts, one love story - the cutest kawaii couple bringing joy to your day!',
     'hero.videoDescription': 'Watch our adorable characters in action!',
     'hero.exploreButton': 'Explore Our World',
     
@@ -29,11 +29,11 @@ const translations = {
     'character.yaki.name': 'Yaki',
     'character.yaki.type': 'Little Chick',
     'character.yaki.personality': 'Cheerful & Energetic',
-    'character.yaki.description': 'Meet Yaki, the adorable yellow chick who loves to dance and spread happiness wherever she goes!',
+    'character.yaki.description': 'Meet Yaki, the adorable yellow chick who loves to dance and share special moments with her beloved companion Dori!',
     'character.dori.name': 'Dori',
     'character.dori.type': 'Baby Penguin',
-    'character.dori.personality': 'Sweet & Playful',
-    'character.dori.description': 'Say hello to Dori, the cutest white penguin who brings smiles and loves making new friends!',
+    'character.dori.personality': 'Sweet & Loving',
+    'character.dori.description': 'Say hello to Dori, the cutest white penguin who shares an unbreakable bond with Yaki and loves expressing affection!',
     
     // Gallery Section
     'gallery.title': 'Gif Gallery',
@@ -60,8 +60,8 @@ const translations = {
     'contract.copy': 'Copy to clipboard',
     
     // Character GIF descriptions
-    'character.yaki.gifDescription': 'Yaki loves to share hearts and positive vibes',
-    'character.dori.gifDescription': 'Dori loves sharing kisses and spreading love',
+    'character.yaki.gifDescription': 'Yaki loves sharing hearts and sweet moments with her dear Dori',
+    'character.dori.gifDescription': 'Dori loves giving kisses and expressing love to his beloved Yaki',
     
     // Gallery section
     'gallery.showMore': 'Show More',
@@ -84,7 +84,7 @@ const translations = {
     
     // Hero Section
     'hero.title': '야키 & 도리',
-    'hero.subtitle': '당신의 하루에 기쁨을 가져다주는 가장 귀여운 카와이 캐릭터들!',
+    'hero.subtitle': '두 마음, 하나의 사랑 이야기 - 당신의 하루에 기쁨을 가져다주는 가장 귀여운 카와이 커플!',
     'hero.videoDescription': '우리의 사랑스러운 캐릭터들을 만나보세요!',
     'hero.exploreButton': '우리 세상 탐험하기',
     
@@ -92,11 +92,11 @@ const translations = {
     'character.yaki.name': '야키',
     'character.yaki.type': '작은 병아리',
     'character.yaki.personality': '밝고 활기찬',
-    'character.yaki.description': '춤추기를 좋아하고 어디서든 행복을 전파하는 사랑스러운 노란 병아리 야키를 만나보세요!',
+    'character.yaki.description': '춤추기를 좋아하고 사랑하는 동반자 도리와 특별한 순간을 나누는 사랑스러운 노란 병아리 야키를 만나보세요!',
     'character.dori.name': '도리',
     'character.dori.type': '아기 펭귄',
-    'character.dori.personality': '달콤하고 장난기 많은',
-    'character.dori.description': '미소를 선사하고 새로운 친구 사귀기를 좋아하는 가장 귀여운 하얀 펭귄 도리에게 인사해보세요!',
+    'character.dori.personality': '달콤하고 사랑스러운',
+    'character.dori.description': '야키와 끊을 수 없는 유대감을 공유하고 애정 표현을 좋아하는 가장 귀여운 하얀 펭귄 도리에게 인사해보세요!',
     
     // Gallery Section
     'gallery.title': 'Gif 갤러리',
@@ -123,8 +123,8 @@ const translations = {
     'contract.copy': '클립보드에 복사',
     
     // Character GIF descriptions
-    'character.yaki.gifDescription': '야키는 하트와 긍정적인 기운을 나누는 것을 좋아해요',
-    'character.dori.gifDescription': '도리는 키스를 나누고 사랑을 전파하는 것을 좋아해요',
+    'character.yaki.gifDescription': '야키는 사랑하는 도리와 하트와 달콤한 순간을 나누는 것을 좋아해요',
+    'character.dori.gifDescription': '도리는 사랑하는 야키에게 키스하고 사랑을 표현하는 것을 좋아해요',
     
     // Gallery section
     'gallery.showMore': '더 보기',
