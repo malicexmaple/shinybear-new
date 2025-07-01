@@ -46,7 +46,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   const isYaki = characterName === 'yaki';
   const mainGif = isYaki 
     ? gifs?.[0] 
-    : gifs?.find(gif => gif.title === 'Dori Kawaii') || gifs?.[0];
+    : gifs?.find(gif => gif.title === 'Dori I Love You Kiss') || gifs?.[0];
 
   return (
     <section 
