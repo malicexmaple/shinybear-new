@@ -7,7 +7,7 @@ interface CharacterSectionProps {
 }
 
 export default function CharacterSection({ characterName }: CharacterSectionProps) {
-  const { t } = useLanguage();
+  const { t, translateGifTitle, translatePersonality } = useLanguage();
   const { data: characters, isLoading: charactersLoading } = useQuery<Character[]>({
     queryKey: ["/api/characters"],
   });
@@ -101,7 +101,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                     index % 4 === 1 ? 'bg-pink-400' :
                     index % 4 === 2 ? 'bg-green-400' : 'bg-purple-400'
                   }`}></div>
-                  <span className="text-base md:text-lg text-black sinchon-font">{trait}</span>
+                  <span className="text-base md:text-lg text-black sinchon-font">{translatePersonality(trait)}</span>
                 </div>
               ))}
             </div>
@@ -118,7 +118,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                 <h4 
                   className="text-lg md:text-xl font-bold text-black mb-1 sinchon-font animate-wiggle-pulse-alt"
                 >
-                  {mainGif.title}
+                  {translateGifTitle(mainGif.title)}
                 </h4>
                 <p className="text-sm md:text-base text-black sinchon-font">
                   {isYaki ? t('character.yaki.gifDescription') : t('character.dori.gifDescription')}

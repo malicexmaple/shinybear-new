@@ -8,6 +8,7 @@ interface LanguageContextType {
   t: (key: string) => string;
   translateGifTitle: (title: string) => string;
   translateTag: (tag: string) => string;
+  translatePersonality: (trait: string) => string;
 }
 
 const translations = {
