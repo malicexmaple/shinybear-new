@@ -80,7 +80,7 @@ export default function Navigation() {
               className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              Casetify
+              {t('nav.casetify')}
             </a>
           </div>
           
@@ -163,7 +163,7 @@ export default function Navigation() {
                 className="text-left text-black hover:text-gray-600 transition-colors font-medium"
                 style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
-                Casetify
+                {t('nav.casetify')}
               </a>
             </div>
           </div>

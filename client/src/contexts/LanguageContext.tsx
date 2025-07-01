@@ -71,6 +71,23 @@ const translations = {
     'about.beginning': 'The Beginning',
     'about.giphyViews': '925.4M+ GIF Views',
     'about.meetCreator': 'Meet the Creator',
+    
+    // Navigation links
+    'nav.casetify': 'Casetify',
+    
+    // GIF Action translations
+    'gif.yaki': 'Sickyaki',
+    'gif.dori': 'Pingdori',
+    'gif.dancing': 'Dancing',
+    'gif.love': 'Love',
+    'gif.kiss': 'Kiss',
+    'gif.excited': 'Excited',
+    'gif.sad': 'Sad',
+    'gif.heart': 'Heart',
+    'gif.chick': 'Chick',
+    'gif.gas': 'Gas',
+    'gif.shake': 'Shake',
+    'gif.jump': 'Jump',
   },
   ko: {
     // Navigation
@@ -134,6 +151,9 @@ const translations = {
     'about.beginning': '시작',
     'about.giphyViews': '9억 2540만+ GIF 조회수',
     'about.meetCreator': '크리에이터 만나기',
+    
+    // Navigation links
+    'nav.casetify': '케이스티파이',
   }
 };
 
