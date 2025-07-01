@@ -64,7 +64,7 @@ export default function InstagramLiveFeed() {
                 className="w-48 h-48 md:w-72 md:h-72 object-contain opacity-90"
               />
             </div>
-            <div className="bg-white border-2 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm relative z-20">
+            <div className="bg-white border-2 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm relative z-60">
               <div className="flex items-center justify-between">
                 <div className="flex items-center flex-1 mr-3">
                   <span 
