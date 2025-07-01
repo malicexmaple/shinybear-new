@@ -108,7 +108,7 @@ export default function InstagramLiveFeed() {
               <img 
                 src="/attached_assets/longfi_1751346995548.gif" 
                 alt="Yaki and Dori with stretchy connection" 
-                className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-90 z-0 mt-[-86px] mb-[-86px]"
+                className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-90 z-0 mt-[-163px] mb-[-163px]"
                 style={{ width: 'auto', height: 'auto' }}
               />
             </div>
