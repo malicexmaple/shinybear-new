@@ -71,15 +71,13 @@ export default function DoriScroll() {
         </div>
       </section>
       
-      {/* Separator GIF at bottom */}
+      {/* Separator GIF at bottom - full width */}
       <section className="w-full bg-white py-8 relative z-[9999]">
-        <div className="max-w-6xl mx-auto flex justify-center">
-          <img
-            src={separatorGif}
-            alt="Yaki and Dori separator"
-            className="w-full max-w-4xl h-auto object-contain"
-          />
-        </div>
+        <img
+          src={separatorGif}
+          alt="Yaki and Dori separator"
+          className="w-full h-auto object-cover"
+        />
       </section>
     </>
   );
