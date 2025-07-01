@@ -144,7 +144,7 @@ export default function InstagramLiveFeed() {
             <div className="w-full mb-8">
               <div className="text-center mb-8 max-w-6xl mx-auto">
                 <h3 
-                  className="text-5xl md:text-7xl font-bold text-black mb-4"
+                  className="text-5xl md:text-7xl font-bold text-black mb-4 wiggle-pulse-text"
                   style={{ 
                     fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive",
                     textShadow: '-2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff'
