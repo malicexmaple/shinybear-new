@@ -71,7 +71,7 @@ export default function InstagramLiveFeed() {
                     className="text-sm font-bold text-black mr-2"
                     style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                   >
-                    CA:
+                    {t('contract.label')}
                   </span>
                   <code 
                     className="text-sm text-gray-800 truncate"
@@ -83,7 +83,7 @@ export default function InstagramLiveFeed() {
                 <button
                   onClick={copyToClipboard}
                   className="flex items-center justify-center w-8 h-8 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0"
-                  title="Copy to clipboard"
+                  title={t('contract.copy')}
                 >
                   {copied ? (
                     <Check className="w-4 h-4" />

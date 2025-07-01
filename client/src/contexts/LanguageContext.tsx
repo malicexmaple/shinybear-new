@@ -54,6 +54,21 @@ const translations = {
     
     // Footer
     'footer.copyright': '© 2024 Yaki & Dori. Made with love for kawaii fans worldwide.',
+    
+    // Contract Address
+    'contract.label': 'CA:',
+    'contract.copy': 'Copy to clipboard',
+    
+    // Character GIF descriptions
+    'character.yaki.gifDescription': 'Yaki loves to share hearts and positive vibes',
+    'character.dori.gifDescription': 'Dori loves sharing kisses and spreading love',
+    
+    // Gallery section
+    'gallery.showMore': 'Show More',
+    'gallery.showLess': 'Show Less',
+    
+    // About section
+    'about.beginning': 'The Beginning',
   },
   ko: {
     // Navigation
@@ -100,6 +115,14 @@ const translations = {
     
     // Footer
     'footer.copyright': '© 2024 야키 & 도리. 전 세계 카와이 팬들을 위해 사랑으로 제작되었습니다.',
+    
+    // Contract Address
+    'contract.label': 'CA:',
+    'contract.copy': '클립보드에 복사',
+    
+    // Character GIF descriptions
+    'character.yaki.gifDescription': '야키는 하트와 긍정적인 기운을 나누는 것을 좋아해요',
+    'character.dori.gifDescription': '도리는 키스를 나누고 사랑을 전파하는 것을 좋아해요',
   }
 };
 

@@ -105,7 +105,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                   {mainGif.title}
                 </h4>
                 <p className="text-black sinchon-font">
-                  {isYaki ? "Yaki loves to share hearts and positive vibes" : "Dori loves sharing kisses and spreading love"}
+                  {isYaki ? t('character.yaki.gifDescription') : t('character.dori.gifDescription')}
                 </p>
               </div>
             </div>
