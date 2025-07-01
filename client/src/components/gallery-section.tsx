@@ -51,7 +51,7 @@ export default function GallerySection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 
-            className="text-5xl md:text-6xl font-bold text-black mb-4 animate-wiggle-pulse"
+            className="text-5xl md:text-6xl font-bold text-black animate-wiggle-pulse mt-[13px] mb-[13px]"
             style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t('gallery.title')}
