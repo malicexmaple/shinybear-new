@@ -165,6 +165,16 @@ const translations = {
     // About section additional
     'about.characterCreator': '캐릭터 크리에이터',
     
+    // Character personality translations
+    'personality.round_gray_penguin': '식야키를 돌보는 동그란 회색 펭귄',
+    'personality.gentle_nurturing': '부드럽고 돌봄이 많은 동반자',
+    'personality.massaging_comforting': '자주 야키를 마사지해주거나 위로해주는 모습',
+    'personality.unconditional_friendship': '무조건적인 우정과 지지를 상징하는',
+    'personality.small_weak_chick': '구겨지기 쉬운 작고 약한 병아리',
+    'personality.no_energy_problems': '문제를 심각하게 받아들일 에너지가 없는',
+    'personality.desolate_city_adapting': '황량한 도시에서 자신만의 방식으로 적응하며 살아가는',
+    'personality.shy_sleepy_bottom': '수줍음이 많고 졸린 성격에 독특한 복숭아 모양 엉덩이가 특징인',
+
     // GIF Action translations
     'gif.yaki': '식야키',
     'gif.dori': '핑도리',
@@ -249,6 +259,24 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     return translatedTitle;
   };
 
+  const translatePersonality = (trait: string): string => {
+    if (language === 'en') return trait;
+    
+    // Map English personality traits to Korean translations
+    const personalityMap: { [key: string]: string } = {
+      'Round gray penguin who cares for Sickyaki': t('personality.round_gray_penguin'),
+      'Gentle and nurturing companion': t('personality.gentle_nurturing'),
+      'Often shown massaging or comforting Yaki': t('personality.massaging_comforting'),
+      'Embodies unconditional friendship and support': t('personality.unconditional_friendship'),
+      'A small, weak chick that is crinkly': t('personality.small_weak_chick'),
+      'Doesn\'t have energy to take problems seriously': t('personality.no_energy_problems'),
+      'Lives in a desolate city, adapting in her own way': t('personality.desolate_city_adapting'),
+      'Shy and sleepy with a distinctive peach-shaped bottom': t('personality.shy_sleepy_bottom')
+    };
+    
+    return personalityMap[trait] || trait;
+  };
+
   const translateTag = (tag: string): string => {
     if (language === 'en') return tag;
     
@@ -318,7 +346,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, translateGifTitle, translateTag }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, translateGifTitle, translateTag, translatePersonality }}>
       {children}
     </LanguageContext.Provider>
   );
