@@ -38,7 +38,7 @@ const translations = {
     'character.dori.description': 'Say hello to Pingdori, the cutest white penguin who shares an unbreakable bond with Sickyaki and loves expressing affection!',
     
     // Gallery Section
-    'gallery.title': 'Gallery',
+    'gallery.title': 'Gif Gallery',
     'gallery.subtitle': 'Discover our collection of kawaii GIFs',
     'gallery.all': 'All',
     'gallery.yaki': 'Sickyaki',
@@ -122,7 +122,7 @@ const translations = {
     'character.dori.description': '식야키와 끊을 수 없는 유대감을 공유하고 애정 표현을 좋아하는 가장 귀여운 하얀 펭귄 핑도리에게 인사해보세요!',
     
     // Gallery Section
-    'gallery.title': '갤러리',
+    'gallery.title': 'Gif 갤러리',
     'gallery.subtitle': '우리의 카와이 GIF 컬렉션을 둘러보세요',
     'gallery.all': '전체',
     'gallery.yaki': '식야키',
@@ -245,7 +245,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     translatedTitle = translatedTitle.replace(/\bFood\b/gi, '음식');
     translatedTitle = translatedTitle.replace(/\bCutie\b/gi, '귀염둥이');
     translatedTitle = translatedTitle.replace(/\bPatootie\b/gi, '꼬마');
-    translatedTitle = translatedTitle.replace(/\bUnwell\b/gi, '아픈');
     
     return translatedTitle;
   };
@@ -312,8 +311,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'eating': '먹기',
       'food': '음식',
       'cutie': '귀염둥이',
-      'patootie': '꼬마',
-      'unwell': '아픈'
+      'patootie': '꼬마'
     };
     
     return tagTranslations[tag.toLowerCase()] || tag;
