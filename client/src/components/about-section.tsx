@@ -37,7 +37,7 @@ export default function AboutSection() {
                 alt="GIPHY logo" 
                 className="w-12 h-12"
               />
-              <span className="text-black font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>925.4M+ GIF Views</span>
+              <span className="text-black font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{t('about.giphyViews')}</span>
             </div>
           </div>
           
@@ -46,7 +46,7 @@ export default function AboutSection() {
               className="text-3xl font-bold text-black animate-wiggle-pulse-slow"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              Meet the Creator
+              {t('about.meetCreator')}
             </h3>
             <div className="character-card rounded-3xl p-6 border border-white/30">
               <div className="flex items-center space-x-4 mb-4">
@@ -62,7 +62,7 @@ export default function AboutSection() {
                   >
                     @sickyaki
                   </h4>
-                  <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Character Creator</p>
+                  <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{t('about.characterCreator')}</p>
                 </div>
               </div>
               <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>

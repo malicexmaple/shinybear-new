@@ -76,6 +76,9 @@ const translations = {
     // Navigation links
     'nav.casetify': 'Casetify',
     
+    // About section additional
+    'about.characterCreator': 'Character Creator',
+    
     // GIF Action translations
     'gif.yaki': 'Sickyaki',
     'gif.dori': 'Pingdori',
@@ -155,6 +158,9 @@ const translations = {
     
     // Navigation links
     'nav.casetify': '케이스티파이',
+    
+    // About section additional
+    'about.characterCreator': '캐릭터 크리에이터',
     
     // GIF Action translations
     'gif.yaki': '식야키',
