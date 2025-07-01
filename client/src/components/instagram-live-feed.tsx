@@ -98,7 +98,7 @@ export default function InstagramLiveFeed() {
           <div className="mb-12 text-center relative z-10">
             <h2 
               className="text-4xl font-bold text-black mb-4 animate-wiggle-pulse-alt pt-[29px] pb-[24px] relative z-10"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive", marginLeft: '200px', marginTop: '10px' }}
             >
               {t('instagram.title')}
             </h2>
@@ -114,8 +114,8 @@ export default function InstagramLiveFeed() {
             </div>
           </div>
           
-          {/* Elfsight Instagram Feed - Positioned Right and Down */}
-          <div className="w-full instagram-widget-container relative z-20 pb-12" style={{ marginLeft: '200px', marginTop: '10px' }}>
+          {/* Elfsight Instagram Feed - Full Width */}
+          <div className="w-full instagram-widget-container relative z-20 pb-12">
             <div 
               className="elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b w-full" 
               data-elfsight-app-lazy
