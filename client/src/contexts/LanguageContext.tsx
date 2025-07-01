@@ -224,6 +224,25 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     translatedTitle = translatedTitle.replace(/\bMiss\b/gi, '그리워');
     translatedTitle = translatedTitle.replace(/\bYou\b/gi, '너를');
     translatedTitle = translatedTitle.replace(/\bSick\b/gi, '아픈');
+    translatedTitle = translatedTitle.replace(/\bWorkout\b/gi, '운동');
+    translatedTitle = translatedTitle.replace(/\bExercise\b/gi, '운동');
+    translatedTitle = translatedTitle.replace(/\bDown\b/gi, '다운');
+    translatedTitle = translatedTitle.replace(/\bTwerking\b/gi, '트워킹');
+    translatedTitle = translatedTitle.replace(/\bBox\b/gi, '박스');
+    translatedTitle = translatedTitle.replace(/\bHiding\b/gi, '숨기');
+    translatedTitle = translatedTitle.replace(/\bHeadphones\b/gi, '헤드폰');
+    translatedTitle = translatedTitle.replace(/\bMusic\b/gi, '음악');
+    translatedTitle = translatedTitle.replace(/\bRetro\b/gi, '레트로');
+    translatedTitle = translatedTitle.replace(/\bClassic\b/gi, '클래식');
+    translatedTitle = translatedTitle.replace(/\bVintage\b/gi, '빈티지');
+    translatedTitle = translatedTitle.replace(/\bLunch\b/gi, '점심');
+    translatedTitle = translatedTitle.replace(/\bComputer\b/gi, '컴퓨터');
+    translatedTitle = translatedTitle.replace(/\bAmazing\b/gi, '놀라운');
+    translatedTitle = translatedTitle.replace(/\bWow\b/gi, '와우');
+    translatedTitle = translatedTitle.replace(/\bRocket\b/gi, '로켓');
+    translatedTitle = translatedTitle.replace(/\bJoy\b/gi, '기쁨');
+    translatedTitle = translatedTitle.replace(/\bEating\b/gi, '먹기');
+    translatedTitle = translatedTitle.replace(/\bFood\b/gi, '음식');
     
     return translatedTitle;
   };
@@ -269,7 +288,26 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'miss': '그리워',
       'you': '너를',
       'sick': '아픈',
-      'yaki': '야키'
+      'yaki': '야키',
+      'workout': '운동',
+      'exercise': '운동',
+      'down': '다운',
+      'twerking': '트워킹',
+      'box': '박스',
+      'hiding': '숨기',
+      'headphones': '헤드폰',
+      'music': '음악',
+      'retro': '레트로',
+      'classic': '클래식',
+      'vintage': '빈티지',
+      'lunch': '점심',
+      'computer': '컴퓨터',
+      'amazing': '놀라운',
+      'wow': '와우',
+      'rocket': '로켓',
+      'joy': '기쁨',
+      'eating': '먹기',
+      'food': '음식'
     };
     
     return tagTranslations[tag.toLowerCase()] || tag;
