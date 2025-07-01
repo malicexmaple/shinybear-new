@@ -46,13 +46,13 @@ export default function InstagramLiveFeed() {
           left: 0;
           right: 0;
           width: 100%;
-          height: 100px;
+          height: 120px;
           background: white;
           pointer-events: auto;
           z-index: 99999;
         }
       `}</style>
-      <section className="w-full py-16 bg-gray-50 relative" id="instagram">
+      <section className="w-full py-16 bg-gray-50 relative pt-[33px] pb-[33px]" id="instagram">
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">

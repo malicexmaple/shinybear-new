@@ -39,23 +39,23 @@ export class MemStorage implements IStorage {
   }
 
   private async initializeData() {
-    // Create Yaki character
+    // Create Sickyaki character (original Korean name)
     const yaki = await this.createCharacter({
-      name: "Yaki",
+      name: "Sickyaki",
       type: "chick",
       color: "yellow",
-      personality: ["Energetic and always dancing", "Spreads love and positivity", "Loves making new friends", "Expert at expressing emotions"],
-      description: "Yaki is our adorable yellow chick who loves to dance, express love, and bring happiness wherever she goes! She's energetic, loving, and always ready for fun adventures.",
+      personality: ["A small, weak chick that is crinkly", "Doesn't have energy to take problems seriously", "Lives in a desolate city, adapting in her own way", "Shy and sleepy with a distinctive peach-shaped bottom"],
+      description: "Sickyaki is a sickly yellow chick created by Korean artist Wookiema (@sick_yaki, 1M+ followers). She's gentle, vulnerable, and endearing - often shown being cared for by her penguin companion. Her peach-shaped bottom is her signature feature.",
       avatarUrl: "https://media1.giphy.com/media/7iEQNDmKV6xcbtymKd/giphy.gif"
     });
 
-    // Create Dori character
+    // Create Pingdori character (original Korean name)  
     const dori = await this.createCharacter({
-      name: "Dori",
+      name: "Pingdori", 
       type: "penguin",
-      color: "white",
-      personality: ["Cool and collected penguin", "Loves giving kisses and hugs", "Great at expressing emotions", "Brings calm and peaceful vibes"],
-      description: "Dori is our lovable white penguin who brings cool vibes and warm hearts! He's gentle, caring, and always ready to share a kiss or spread some love.",
+      color: "gray",
+      personality: ["Round gray penguin who cares for Sickyaki", "Gentle and nurturing companion", "Often shown massaging or comforting Yaki", "Embodies unconditional friendship and support"],
+      description: "Pingdori is a round gray penguin who serves as Sickyaki's caring companion. Created by Korean artist Wookiema, Pingdori represents unconditional friendship and often takes care of the vulnerable Sickyaki in their daily slice-of-life adventures.",
       avatarUrl: "https://media3.giphy.com/media/p5fbSOd0S4DaG6iZpo/giphy.gif"
     });
 
