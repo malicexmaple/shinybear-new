@@ -49,9 +49,9 @@ export class MemStorage implements IStorage {
       avatarUrl: "https://media1.giphy.com/media/7iEQNDmKV6xcbtymKd/giphy.gif"
     });
 
-    // Create Dori character (display name for sections)  
+    // Create Pingdori character (original Korean name)  
     const dori = await this.createCharacter({
-      name: "Dori", 
+      name: "Pingdori", 
       type: "penguin",
       color: "gray",
       personality: ["Round gray penguin who cares for Sickyaki", "Gentle and nurturing companion", "Often shown massaging or comforting Yaki", "Embodies unconditional friendship and support"],
