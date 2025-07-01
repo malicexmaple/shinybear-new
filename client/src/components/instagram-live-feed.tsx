@@ -56,6 +56,14 @@ export default function InstagramLiveFeed() {
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">
+            {/* Floating GIF Layer - Positioned on top line of CA bar */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 md:translate-x-12 translate-x-0 z-10 pointer-events-none" style={{ top: '-226px' }}>
+              <img 
+                src="/attached_assets/download(9)_1751341393068.gif" 
+                alt="Cute character working" 
+                className="w-48 h-48 md:w-72 md:h-72 object-contain opacity-90"
+              />
+            </div>
             <div className="bg-white border-2 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm relative z-20">
               <div className="flex items-center justify-between">
                 <div className="flex items-center flex-1 mr-3">
@@ -87,7 +95,24 @@ export default function InstagramLiveFeed() {
             </div>
           </div>
           
-          
+          <div className="mb-12 text-center relative z-10">
+            <h2 
+              className="text-4xl font-bold text-black mb-4 animate-wiggle-pulse-alt pt-[29px] pb-[24px] relative z-10"
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive", marginLeft: '200px', marginTop: '10px' }}
+            >
+              {t('instagram.title')}
+            </h2>
+            
+            {/* GIF directly under the Instagram title - positioned absolutely to not affect layout */}
+            <div className="relative">
+              <img 
+                src="/attached_assets/SnapInsta_1751351039676.gif" 
+                alt="Yaki and Dori with stretchy connection" 
+                className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-90 z-0 mt-[-163px] mb-[-163px]"
+                style={{ width: 'auto', height: 'auto' }}
+              />
+            </div>
+          </div>
           
           {/* Elfsight Instagram Feed - Full Width */}
           <div className="w-full instagram-widget-container relative z-20 pb-12" style={{ marginTop: '80px' }}>
