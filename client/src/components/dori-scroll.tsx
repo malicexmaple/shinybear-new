@@ -29,7 +29,7 @@ export default function DoriScroll() {
 
   const sickyakiGif = "/attached_assets/Shakeit Sticker_1751360946317.gif";
   const pingdoriGif = "/attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif";
-  const separatorGif = "/attached_assets/SnapInsta22211_1751366719875.gif";
+  const separatorGif = "/attached_assets/SnapInsta22211_1751377529969.gif";
 
   // Create multiple copies alternating between Sickyaki and Pingdori for seamless infinite scroll
   const characterImages = Array.from({ length: 40 }, (_, index) => {
