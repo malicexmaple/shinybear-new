@@ -108,7 +108,7 @@ export default function Navigation() {
             </a>
             
             <a 
-              href="#" 
+              href="https://e.kakao.com/creator/YBG2CC" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-black hover:text-gray-600 transition-colors"
