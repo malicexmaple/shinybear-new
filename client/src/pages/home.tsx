@@ -2,7 +2,6 @@ import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import InstagramFeed from "@/components/instagram-feed";
 import CharacterSection from "@/components/character-section";
-import DoriScroll from "@/components/dori-scroll";
 import GallerySection from "@/components/gallery-section";
 
 import InstagramLiveFeed from "@/components/instagram-live-feed";
@@ -15,9 +14,7 @@ export default function Home() {
       <HeroSection />
       <InstagramLiveFeed />
       <InstagramFeed />
-      <CharacterSection characterName="yaki" />
-      <DoriScroll />
-      <CharacterSection characterName="dori" />
+      <CharacterSection characterName="sickyaki" />
       <GallerySection />
       <Footer />
     </div>

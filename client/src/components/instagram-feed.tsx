@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-import yakiGif from "@assets/Shakeit Sticker_1751304703123.gif";
+import sickyakiGif from "@assets/Shakeit Sticker_1751304703123.gif";
+import pingdoriGif from "@assets/Penguin Dancingpenguin Sticker_1751304751701.gif";
 
 export default function InstagramFeed() {
   useEffect(() => {
-    const scrollContainer = document.getElementById('yaki-scroll');
+    const scrollContainer = document.getElementById('character-scroll');
     if (!scrollContainer) return;
 
     let scrollAmount = 0;
     const scrollSpeed = 1; // pixels per frame (slower)
-    const imageWidth = 300; // width of each Yaki image (2x bigger)
+    const imageWidth = 300; // width of each character image (2x bigger)
     const totalImages = 20; // number of copies we create
     const totalWidth = totalImages * imageWidth;
 
@@ -31,28 +32,31 @@ export default function InstagramFeed() {
     };
   }, []);
 
-  // Create multiple copies of Yaki for seamless infinite scroll
-  const yakiImages = Array.from({ length: 40 }, (_, index) => (
-    <div
-      key={index}
-      className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-128px] mb-[-128px] relative z-[9999]"
-    >
-      <img
-        src={yakiGif}
-        alt="Yaki character"
-        className="w-[240px] h-[240px] object-contain relative z-[9999]"
-      />
-    </div>
-  ));
+  // Create multiple copies alternating between Sickyaki and Pingdori for seamless infinite scroll
+  const characterImages = Array.from({ length: 40 }, (_, index) => {
+    const isSickyaki = index % 2 === 0;
+    return (
+      <div
+        key={index}
+        className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-128px] mb-[-128px] relative z-[9999]"
+      >
+        <img
+          src={isSickyaki ? sickyakiGif : pingdoriGif}
+          alt={isSickyaki ? "Sickyaki character" : "Pingdori character"}
+          className="w-[240px] h-[240px] object-contain relative z-[9999]"
+        />
+      </div>
+    );
+  });
 
   return (
     <>
       <style>
         {`
-          #yaki-scroll::-webkit-scrollbar {
+          #character-scroll::-webkit-scrollbar {
             display: none;
           }
-          #yaki-scroll {
+          #character-scroll {
             -ms-overflow-style: none;
             scrollbar-width: none;
           }
@@ -60,10 +64,10 @@ export default function InstagramFeed() {
       </style>
       <section className="w-full overflow-hidden h-[300px] bg-white relative z-[9999] transform -rotate-2">
         <div
-          id="yaki-scroll"
+          id="character-scroll"
           className="flex gap-0 overflow-x-hidden w-full h-full relative z-[9999]"
         >
-          {yakiImages}
+          {characterImages}
         </div>
       </section>
     </>

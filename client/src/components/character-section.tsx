@@ -12,7 +12,13 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
     queryKey: ["/api/characters"],
   });
 
-  const character = characters?.find(c => c.name.toLowerCase() === characterName.toLowerCase());
+  const character = characters?.find(c => {
+    const name = c.name.toLowerCase();
+    const searchName = characterName.toLowerCase();
+    return name === searchName || 
+           (searchName === 'yaki' && name === 'sickyaki') ||
+           (searchName === 'dori' && name === 'pingdori');
+  });
 
   const { data: gifs, isLoading: gifsLoading } = useQuery<Gif[]>({
     queryKey: ["/api/gifs", characterName],
