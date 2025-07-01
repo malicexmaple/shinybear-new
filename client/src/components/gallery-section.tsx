@@ -101,7 +101,7 @@ export default function GallerySection() {
                       className="text-xs bg-gray-100 text-black px-2 py-1 rounded-full"
                       style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                     >
-                      {tag}
+                      {translateTag(tag)}
                     </span>
                   ))}
                 </div>
