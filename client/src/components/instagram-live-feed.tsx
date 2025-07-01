@@ -7,7 +7,7 @@ export default function InstagramLiveFeed() {
   const [copied, setCopied] = useState(false);
   
   // Placeholder contract address - will be replaced with real one later
-  const contractAddress = "0x1234567890123456789012345678901234567890";
+  const contractAddress = "COMING SOON";
   
   const copyToClipboard = async () => {
     try {
