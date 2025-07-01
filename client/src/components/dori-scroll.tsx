@@ -29,6 +29,7 @@ export default function DoriScroll() {
 
   const sickyakiGif = "/attached_assets/Shakeit Sticker_1751360946317.gif";
   const pingdoriGif = "/attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif";
+  const separatorGif = "/attached_assets/SnapInsta22211_1751366719875.gif";
 
   // Create multiple copies alternating between Sickyaki and Pingdori for seamless infinite scroll
   const characterImages = Array.from({ length: 40 }, (_, index) => {
@@ -67,6 +68,17 @@ export default function DoriScroll() {
           className="flex gap-0 overflow-x-hidden w-full h-full relative z-[9999]"
         >
           {characterImages}
+        </div>
+      </section>
+      
+      {/* Separator GIF at bottom */}
+      <section className="w-full bg-white py-8 relative z-[9999]">
+        <div className="max-w-6xl mx-auto flex justify-center">
+          <img
+            src={separatorGif}
+            alt="Yaki and Dori separator"
+            className="w-full max-w-4xl h-auto object-contain"
+          />
         </div>
       </section>
     </>
