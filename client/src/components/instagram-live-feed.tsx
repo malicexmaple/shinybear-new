@@ -149,47 +149,67 @@ export default function InstagramLiveFeed() {
                 >
                   {t('instagram.title')}
                 </h3>
-                <p 
-                  className="text-lg text-gray-600 max-w-2xl mx-auto"
-                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
-                >
-                  {t('instagram.subtitle')}
-                </p>
+                
               </div>
               
               {/* Instagram Content Scroll - Full Width */}
               <div className="w-full overflow-hidden mb-8">
                 <div className="flex animate-scroll gap-4">
                   {/* First set of content */}
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1751368166510.jpg"
                       alt="Yaki and Dori comic"
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1_1751368166510.jpg"
                       alt="Yaki and Dori in rain"
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1751368166510.jpg"
                       alt="Yaki working comic"
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1_1751368166510.jpg"
                       alt="Yaki and Dori night scene"
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-07T091208.000Z_1751368166510.mp4"
                       autoPlay
@@ -198,8 +218,13 @@ export default function InstagramLiveFeed() {
                       playsInline
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-07T091208.000Z_1_1751368166510.mp4"
                       autoPlay
@@ -208,8 +233,13 @@ export default function InstagramLiveFeed() {
                       playsInline
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-18T052355.000Z_1751368166511.mp4"
                       autoPlay
@@ -218,8 +248,13 @@ export default function InstagramLiveFeed() {
                       playsInline
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-18T052355.000Z_1_1751368166511.mp4"
                       autoPlay
@@ -228,8 +263,13 @@ export default function InstagramLiveFeed() {
                       playsInline
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-28T073601.000Z_1751368166511.mp4"
                       autoPlay
@@ -238,8 +278,13 @@ export default function InstagramLiveFeed() {
                       playsInline
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-28T073601.000Z_1_1751368166511.mp4"
                       autoPlay
@@ -248,8 +293,13 @@ export default function InstagramLiveFeed() {
                       playsInline
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <video 
                       src="/attached_assets/sick_yaki__2025-06-17T044833.000Z_1751368166511.mp4"
                       autoPlay
@@ -258,8 +308,13 @@ export default function InstagramLiveFeed() {
                       playsInline
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <video 
                       src="/attached_assets/sick_yaki__2025-06-17T044833.000Z_1_1751368166511.mp4"
                       autoPlay
@@ -268,37 +323,57 @@ export default function InstagramLiveFeed() {
                       playsInline
                       className="w-full h-full object-cover"
                     />
-                  </div>
+                  </a>
                   
                   {/* Duplicate set for seamless infinite scroll */}
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1751368166510.jpg"
                       alt="Yaki and Dori comic"
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1_1751368166510.jpg"
                       alt="Yaki and Dori in rain"
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1751368166510.jpg"
                       alt="Yaki working comic"
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                  </a>
+                  <a 
+                    href="https://instagram.com/sick_yaki" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1_1751368166510.jpg"
                       alt="Yaki and Dori night scene"
                       className="w-full h-full object-cover"
                     />
-                  </div>
+                  </a>
                 </div>
               </div>
               
