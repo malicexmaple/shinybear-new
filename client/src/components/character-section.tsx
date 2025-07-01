@@ -56,7 +56,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-4">
           <h2 
-            className="md:text-6xl font-bold mb-2 text-[#000000] text-[90px] sinchon-font wiggle-pulse-text animate-wiggle-pulse"
+            className="text-6xl md:text-[90px] font-bold mb-2 text-[#000000] sinchon-font wiggle-pulse-text animate-wiggle-pulse"
           >
             {t(`character.${characterName}.name`)}
           </h2>
@@ -70,10 +70,10 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
           </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6 items-center pt-[0px] pb-[0px] mt-[-15px] mb-[-15px] ml-[220px] mr-[220px]">
+        <div className="grid md:grid-cols-2 gap-6 items-center pt-[0px] pb-[0px] mt-[-15px] mb-[-15px] mx-auto max-w-4xl">
           <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''}`}>
             <h3 
-              className="text-3xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
+              className="text-2xl md:text-3xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
             >
               {t(`character.${characterName}.personality`)}
             </h3>
@@ -85,7 +85,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
                     index % 4 === 1 ? 'bg-pink-400' :
                     index % 4 === 2 ? 'bg-green-400' : 'bg-purple-400'
                   }`}></div>
-                  <span className="text-lg text-black sinchon-font">{trait}</span>
+                  <span className="text-base md:text-lg text-black sinchon-font">{trait}</span>
                 </div>
               ))}
             </div>
@@ -100,11 +100,11 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
               />
               <div className="text-center">
                 <h4 
-                  className="text-xl font-bold text-black mb-1 sinchon-font animate-wiggle-pulse-alt"
+                  className="text-lg md:text-xl font-bold text-black mb-1 sinchon-font animate-wiggle-pulse-alt"
                 >
                   {mainGif.title}
                 </h4>
-                <p className="text-black sinchon-font">
+                <p className="text-sm md:text-base text-black sinchon-font">
                   {isYaki ? t('character.yaki.gifDescription') : t('character.dori.gifDescription')}
                 </p>
               </div>
