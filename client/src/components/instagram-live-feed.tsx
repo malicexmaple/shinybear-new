@@ -102,6 +102,15 @@ export default function InstagramLiveFeed() {
             >
               {t('instagram.title')}
             </h2>
+            
+            {/* GIF directly under the Instagram title */}
+            <div className="flex justify-center md:justify-start mb-4">
+              <img 
+                src="/attached_assets/longfi_1751346995548.gif" 
+                alt="Yaki and Dori with stretchy connection" 
+                className="w-64 h-16 md:w-96 md:h-24 object-contain opacity-90"
+              />
+            </div>
           </div>
           
           {/* Elfsight Instagram Feed - Full Width */}
@@ -110,15 +119,6 @@ export default function InstagramLiveFeed() {
               className="elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b w-full" 
               data-elfsight-app-lazy
             ></div>
-          </div>
-
-          {/* Bottom GIF - Under everything but still visible */}
-          <div className="flex justify-center mt-8 mb-4">
-            <img 
-              src="/attached_assets/longfi_1751346995548.gif" 
-              alt="Yaki and Dori with stretchy connection" 
-              className="w-64 h-16 md:w-96 md:h-24 object-contain opacity-90"
-            />
           </div>
         </div>
       </section>
