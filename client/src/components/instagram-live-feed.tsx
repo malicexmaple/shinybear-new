@@ -114,8 +114,8 @@ export default function InstagramLiveFeed() {
             </div>
           </div>
           
-          {/* Elfsight Instagram Feed - Full Width */}
-          <div className="w-full instagram-widget-container relative z-20 pb-12">
+          {/* Elfsight Instagram Feed - Positioned Right and Down */}
+          <div className="w-full instagram-widget-container relative z-20 pb-12" style={{ marginLeft: '200px', marginTop: '10px' }}>
             <div 
               className="elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b w-full" 
               data-elfsight-app-lazy
