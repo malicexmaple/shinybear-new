@@ -1,8 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Copy, Check } from 'lucide-react';
 
 export default function InstagramLiveFeed() {
   const { t } = useLanguage();
+  const [copied, setCopied] = useState(false);
+  
+  // Placeholder contract address - will be replaced with real one later
+  const contractAddress = "0x1234567890123456789012345678901234567890";
+  
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(contractAddress);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
 
   useEffect(() => {
     // Load the Elfsight script if not already loaded
@@ -39,6 +54,36 @@ export default function InstagramLiveFeed() {
       `}</style>
       <section className="w-full py-16 bg-gray-50" id="instagram">
         <div className="w-full px-4">
+          {/* Contract Address Copy Box */}
+          <div className="flex justify-center mb-8">
+            <div className="bg-white border-2 border-black rounded-lg p-4 max-w-md w-full shadow-sm">
+              <div className="text-center mb-2">
+                <span 
+                  className="text-sm font-bold text-black"
+                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                >
+                  Contract Address
+                </span>
+              </div>
+              <div className="flex items-center justify-between bg-gray-50 rounded-md p-2">
+                <code className="text-xs text-gray-800 font-mono truncate flex-1 mr-2">
+                  {contractAddress}
+                </code>
+                <button
+                  onClick={copyToClipboard}
+                  className="flex items-center justify-center w-8 h-8 bg-black hover:bg-gray-800 text-white rounded-md transition-colors"
+                  title="Copy to clipboard"
+                >
+                  {copied ? (
+                    <Check className="w-4 h-4" />
+                  ) : (
+                    <Copy className="w-4 h-4" />
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+          
           <div className="text-center mb-12">
             <h2 
               className="text-4xl font-bold text-black mb-4 animate-wiggle-pulse-alt"
