@@ -56,31 +56,31 @@ export default function InstagramLiveFeed() {
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8">
-            <div className="bg-white border-2 border-black rounded-lg p-4 max-w-2xl w-full shadow-sm">
-              <div className="text-center mb-2">
-                <span 
-                  className="text-sm font-bold text-black"
-                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
-                >
-                  Contract Address
-                </span>
-              </div>
-              <div className="flex items-center justify-between bg-gray-50 rounded-md p-3">
-                <code 
-                  className="text-sm text-gray-800 truncate flex-1 mr-3"
-                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
-                >
-                  {contractAddress}
-                </code>
+            <div className="bg-white border-2 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center flex-1 mr-3">
+                  <span 
+                    className="text-sm font-bold text-black mr-2"
+                    style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                  >
+                    CA:
+                  </span>
+                  <code 
+                    className="text-sm text-gray-800 truncate"
+                    style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                  >
+                    {contractAddress}
+                  </code>
+                </div>
                 <button
                   onClick={copyToClipboard}
-                  className="flex items-center justify-center w-10 h-10 bg-black hover:bg-gray-800 text-white rounded-md transition-colors"
+                  className="flex items-center justify-center w-8 h-8 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0"
                   title="Copy to clipboard"
                 >
                   {copied ? (
-                    <Check className="w-5 h-5" />
+                    <Check className="w-4 h-4" />
                   ) : (
-                    <Copy className="w-5 h-5" />
+                    <Copy className="w-4 h-4" />
                   )}
                 </button>
               </div>
