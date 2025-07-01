@@ -39,9 +39,9 @@ export class MemStorage implements IStorage {
   }
 
   private async initializeData() {
-    // Create Sickyaki character (original Korean name)
+    // Create Yaki character (display name for sections)
     const yaki = await this.createCharacter({
-      name: "Sickyaki",
+      name: "Yaki",
       type: "chick",
       color: "yellow",
       personality: ["A small, weak chick that is crinkly", "Doesn't have energy to take problems seriously", "Lives in a desolate city, adapting in her own way", "Shy and sleepy with a distinctive peach-shaped bottom"],
