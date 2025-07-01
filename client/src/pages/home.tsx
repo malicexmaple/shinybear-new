@@ -14,7 +14,7 @@ export default function Home() {
       <HeroSection />
       <InstagramLiveFeed />
       <InstagramFeed />
-      <CharacterSection characterName="sickyaki" />
+      <CharacterSection characterName="yaki" />
       <GallerySection />
       <Footer />
     </div>

@@ -17,7 +17,9 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
     const searchName = characterName.toLowerCase();
     return name === searchName || 
            (searchName === 'yaki' && name === 'sickyaki') ||
-           (searchName === 'dori' && name === 'pingdori');
+           (searchName === 'dori' && name === 'pingdori') ||
+           (searchName === 'sickyaki' && name === 'sickyaki') ||
+           (searchName === 'pingdori' && name === 'pingdori');
   });
 
   const { data: gifs, isLoading: gifsLoading } = useQuery<Gif[]>({
@@ -49,7 +51,15 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
     );
   }
 
-  const isYaki = characterName === 'yaki';
+  // Map character names to translation keys
+  const getTranslationKey = (name: string) => {
+    if (name === 'sickyaki' || name === 'yaki') return 'yaki';
+    if (name === 'pingdori' || name === 'dori') return 'dori';
+    return name;
+  };
+  
+  const translationKey = getTranslationKey(characterName);
+  const isYaki = translationKey === 'yaki';
   const mainGif = isYaki 
     ? gifs?.[0] 
     : gifs?.find(gif => gif.title === 'Dori Kawaii') || gifs?.[0];

@@ -123,8 +123,8 @@ const translations = {
     'contract.copy': '클립보드에 복사',
     
     // Character GIF descriptions
-    'character.yaki.gifDescription': '야키는 사랑하는 도리와 하트와 달콤한 순간을 나누는 것을 좋아해요',
-    'character.dori.gifDescription': '도리는 사랑하는 야키에게 키스하고 사랑을 표현하는 것을 좋아해요',
+    'character.yaki.gifDescription': '식야키는 사랑하는 핑도리와 하트와 달콤한 순간을 나누는 것을 좋아해요',
+    'character.dori.gifDescription': '핑도리는 사랑하는 식야키에게 키스하고 사랑을 표현하는 것을 좋아해요',
     
     // Gallery section
     'gallery.showMore': '더 보기',
@@ -132,6 +132,8 @@ const translations = {
     
     // About section
     'about.beginning': '시작',
+    'about.giphyViews': '9억 2540만+ GIF 조회수',
+    'about.meetCreator': '크리에이터 만나기',
   }
 };
 
