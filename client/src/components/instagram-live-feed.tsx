@@ -54,7 +54,7 @@ export default function InstagramLiveFeed() {
       `}</style>
       <section className="w-full py-16 bg-gray-50 relative" id="instagram">
         {/* Floating GIF Layer - Above everything */}
-        <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
+        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
           <img 
             src="/attached_assets/download(9)_1751341393068.gif" 
             alt="Cute character working" 
