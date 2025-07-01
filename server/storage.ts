@@ -131,7 +131,7 @@ export class MemStorage implements IStorage {
       { title: "Yaki Sad Classic", url: "/attached_assets/download(7)_1751292281717.gif", category: "yaki", tags: ["sad", "classic", "down"] },
       { title: "Yaki Workout Classic", url: "/attached_assets/download(8)_1751292281717.gif", category: "yaki", tags: ["workout", "vintage", "exercise"] },
       { title: "Dori Cutie Patootie Classic", url: "/attached_assets/download_1751292281717.gif", category: "dori", tags: ["kawaii", "retro", "cute"] },
-      { title: "Dori Kawai", url: "/attached_assets/Penguin Kawai Sticker_1751363680529.gif", category: "dori", tags: ["kawaii", "cute", "penguin"] }
+      { title: "Dori Kawai", url: "/attached_assets/Penguin Kawai Sticker_1751363933208.gif", category: "dori", tags: ["kawaii", "cute", "penguin"] }
     ];
 
     // Deduplicate and categorize
