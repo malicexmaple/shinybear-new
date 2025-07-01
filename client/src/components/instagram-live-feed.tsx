@@ -64,7 +64,7 @@ export default function InstagramLiveFeed() {
           position: relative;
         }
       `}</style>
-      <section className="w-full py-16 bg-gray-50 relative pt-[33px] pb-[33px]" id="instagram">
+      <section className="w-full py-8 bg-gray-50 relative pt-[20px] pb-[20px]" id="instagram">
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">
@@ -120,7 +120,7 @@ export default function InstagramLiveFeed() {
           </div>
           
           {/* Instagram Feed Section */}
-          <div className="w-full relative z-20 mt-[44px] mb-[44px] pt-[117px] pb-[117px]" style={{ marginTop: '100px' }}>
+          <div className="w-full relative z-20 mt-[44px] mb-[20px] pt-[60px] pb-[20px]" style={{ marginTop: '100px' }}>
             
             {/* Fallback Content While Widget Loads */}
             <div className="max-w-6xl mx-auto mb-8">
@@ -140,7 +140,7 @@ export default function InstagramLiveFeed() {
               </div>
               
               {/* Manual Instagram Grid as fallback */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
                 <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
                   <div className="aspect-square bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-500 flex items-center justify-center">
                     <span className="text-white font-bold text-lg">@sick_yaki</span>
@@ -159,6 +159,16 @@ export default function InstagramLiveFeed() {
                 <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
                   <div className="aspect-square bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center">
                     <span className="text-white font-bold text-lg">Kawaii</span>
+                  </div>
+                </div>
+                <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
+                  <div className="aspect-square bg-gradient-to-br from-pink-400 via-orange-500 to-yellow-400 flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">GIPHY</span>
+                  </div>
+                </div>
+                <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
+                  <div className="aspect-square bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-400 flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">Viral</span>
                   </div>
                 </div>
               </div>
