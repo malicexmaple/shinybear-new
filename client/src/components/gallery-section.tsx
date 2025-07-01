@@ -56,9 +56,6 @@ export default function GallerySection() {
           >
             {t('gallery.title')}
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto">
-            {t('gallery.subtitle')}
-          </p>
         </div>
         
         {/* Filter Tabs */}
