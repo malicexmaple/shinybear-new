@@ -103,12 +103,13 @@ export default function InstagramLiveFeed() {
               {t('instagram.title')}
             </h2>
             
-            {/* GIF directly under the Instagram title */}
-            <div className="flex justify-center md:justify-start mb-4">
+            {/* GIF directly under the Instagram title - positioned absolutely to not affect layout */}
+            <div className="relative">
               <img 
                 src="/attached_assets/longfi_1751346995548.gif" 
                 alt="Yaki and Dori with stretchy connection" 
-                className="w-64 h-16 md:w-96 md:h-24 object-contain opacity-90"
+                className="absolute top-0 left-1/2 md:left-0 transform -translate-x-1/2 md:translate-x-0 opacity-90 z-0"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
           </div>
