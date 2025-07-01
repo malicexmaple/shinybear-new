@@ -103,23 +103,25 @@ export default function InstagramLiveFeed() {
               {t('instagram.title')}
             </h2>
             
-            {/* GIF directly under the Instagram title - positioned absolutely to not affect layout */}
-            <div className="relative">
-              <img 
-                src="/attached_assets/longfi_1751346995548.gif" 
-                alt="Yaki and Dori with stretchy connection" 
-                className="absolute -top-8 left-1/2 md:left-0 transform -translate-x-1/2 md:translate-x-0 opacity-90 z-0 mt-[-86px] mb-[-86px]"
-                style={{ width: 'auto', height: 'auto' }}
-              />
-            </div>
+
           </div>
           
           {/* Elfsight Instagram Feed - Full Width */}
-          <div className="w-full instagram-widget-container">
+          <div className="w-full instagram-widget-container relative">
             <div 
               className="elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b w-full" 
               data-elfsight-app-lazy
             ></div>
+            
+            {/* GIF positioned under the actual Instagram feed content */}
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-0" style={{ bottom: '-50px' }}>
+              <img 
+                src="/attached_assets/longfi_1751346995548.gif" 
+                alt="Yaki and Dori with stretchy connection" 
+                className="opacity-90"
+                style={{ width: 'auto', height: 'auto' }}
+              />
+            </div>
           </div>
         </div>
       </section>
