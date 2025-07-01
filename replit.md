@@ -79,10 +79,11 @@ This is a kawaii-themed website showcasing the Yaki & Dori characters - adorable
 - **Database**: Development database connection via environment variables
 
 ### Production Build
-- **Frontend**: Vite build to static assets in `dist/public`
+- **Frontend**: Vite build to static assets in `dist/public`, then reorganized to `dist/`
 - **Backend**: ESBuild bundle to `dist/index.js`
 - **Database**: Drizzle migrations applied via `db:push` command
 - **Environment**: Production configuration via environment variables
+- **Deployment**: Use `./build-for-deployment.sh` for correct static deployment structure
 
 ### Architecture Decisions
 
@@ -111,6 +112,7 @@ Changelog:
 - June 30, 2025. Added cute wiggle-pulse animation to hero title with 3-second cycle combining gentle rotation and scaling effects
 - June 30, 2025. Renamed all GIF titles to include character prefixes (Yaki/Dori) for better organization and clarity in gallery display
 - June 30, 2025. Corrected character information: Yaki is a yellow chick and Dori is a white penguin
+- July 1, 2025. Fixed deployment build structure by creating build-for-deployment.sh script to reorganize files from dist/public/ to dist/ for static deployment compatibility
 ```
 
 ## User Preferences
