@@ -65,13 +65,6 @@ export default function Navigation() {
               {t('nav.gallery')}
             </button>
             <button 
-              onClick={() => scrollToSection("about")}
-              className="text-black hover:text-black transition-colors font-medium"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
-            >
-              {t('nav.about')}
-            </button>
-            <button 
               onClick={() => scrollToSection("instagram")}
               className="text-black hover:text-black transition-colors font-medium"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}

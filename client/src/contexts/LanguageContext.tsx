@@ -69,6 +69,8 @@ const translations = {
     
     // About section
     'about.beginning': 'The Beginning',
+    'about.giphyViews': '925.4M+ GIF Views',
+    'about.meetCreator': 'Meet the Creator',
   },
   ko: {
     // Navigation
@@ -123,6 +125,13 @@ const translations = {
     // Character GIF descriptions
     'character.yaki.gifDescription': '야키는 하트와 긍정적인 기운을 나누는 것을 좋아해요',
     'character.dori.gifDescription': '도리는 키스를 나누고 사랑을 전파하는 것을 좋아해요',
+    
+    // Gallery section
+    'gallery.showMore': '더 보기',
+    'gallery.showLess': '접기',
+    
+    // About section
+    'about.beginning': '시작',
   }
 };
 

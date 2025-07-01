@@ -23,7 +23,7 @@ export default function AboutSection() {
               className="text-3xl font-bold text-black mb-6 animate-wiggle-pulse-fast"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              The Beginning
+              {t('about.beginning')}
             </h3>
             <p className="text-black mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               {t('about.story')}
