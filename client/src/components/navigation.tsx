@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Instagram, Gift } from "lucide-react";
+import { Instagram, Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/language-toggle";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function Navigation() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+    setIsMobileMenuOpen(false); // Close mobile menu after navigation
   };
 
   return (
@@ -104,8 +106,68 @@ export default function Navigation() {
                 className="w-5 h-5"
               />
             </a>
+            
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-black hover:text-gray-600 transition-colors"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
           </div>
         </div>
+        
+        {/* Mobile menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
+            <div className="flex flex-col space-y-4 pt-4">
+              <button 
+                onClick={() => scrollToSection("home")}
+                className="text-left text-black hover:text-gray-600 transition-colors font-medium"
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              >
+                {t('nav.home')}
+              </button>
+              <button 
+                onClick={() => scrollToSection("yaki")}
+                className="text-left text-black hover:text-gray-600 transition-colors font-medium"
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              >
+                {t('nav.yaki')}
+              </button>
+              <button 
+                onClick={() => scrollToSection("dori")}
+                className="text-left text-black hover:text-gray-600 transition-colors font-medium"
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              >
+                {t('nav.dori')}
+              </button>
+              <button 
+                onClick={() => scrollToSection("gallery")}
+                className="text-left text-black hover:text-gray-600 transition-colors font-medium"
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              >
+                {t('nav.gallery')}
+              </button>
+              <button 
+                onClick={() => scrollToSection("instagram")}
+                className="text-left text-black hover:text-gray-600 transition-colors font-medium"
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              >
+                {t('nav.instagram')}
+              </button>
+              <a 
+                href="https://www.casetify.com/artist/sickyaki" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-left text-black hover:text-gray-600 transition-colors font-medium"
+                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              >
+                Casetify
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
