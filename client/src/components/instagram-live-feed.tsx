@@ -94,14 +94,27 @@ export default function InstagramLiveFeed() {
                 className="w-48 h-48 md:w-72 md:h-72 object-contain opacity-90"
               />
             </div>
-            <div className="bg-white border-2 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm relative z-[100]">
-              <div className="flex items-center justify-center">
-                <code 
-                  className="text-lg md:text-xl font-bold text-black"
-                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+            <div className="bg-white border-4 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm relative z-[100]">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center flex-1 mr-3 justify-center">
+                  <code 
+                    className="text-lg md:text-xl font-bold text-black"
+                    style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                  >
+                    {contractAddress}
+                  </code>
+                </div>
+                <button
+                  onClick={copyToClipboard}
+                  className="flex items-center justify-center w-8 h-8 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0 border-2 border-black"
+                  title={t('contract.copy')}
                 >
-                  {contractAddress}
-                </code>
+                  {copied ? (
+                    <Check className="w-4 h-4" />
+                  ) : (
+                    <Copy className="w-4 h-4" />
+                  )}
+                </button>
               </div>
             </div>
           </div>
