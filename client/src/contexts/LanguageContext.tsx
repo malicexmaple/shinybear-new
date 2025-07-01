@@ -209,7 +209,21 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     translatedTitle = translatedTitle.replace(/\bChick\b/gi, t('gif.chick'));
     translatedTitle = translatedTitle.replace(/\bGas\b/gi, t('gif.gas'));
     translatedTitle = translatedTitle.replace(/\bShake\b/gi, t('gif.shake'));
+    translatedTitle = translatedTitle.replace(/\bShaking\b/gi, '흔들기');
     translatedTitle = translatedTitle.replace(/\bJump\b/gi, t('gif.jump'));
+    translatedTitle = translatedTitle.replace(/\bVote\b/gi, '투표');
+    translatedTitle = translatedTitle.replace(/\bPeace\b/gi, '평화');
+    translatedTitle = translatedTitle.replace(/\bSpank\b/gi, '때리기');
+    translatedTitle = translatedTitle.replace(/\bPlayful\b/gi, '장난스러운');
+    translatedTitle = translatedTitle.replace(/\bKawaii\b/gi, '카와이');
+    translatedTitle = translatedTitle.replace(/\bSing\b/gi, '노래');
+    translatedTitle = translatedTitle.replace(/\bSinging\b/gi, '노래');
+    translatedTitle = translatedTitle.replace(/\bWay\b/gi, '길');
+    translatedTitle = translatedTitle.replace(/\bBack\b/gi, '돌아가기');
+    translatedTitle = translatedTitle.replace(/\bHome\b/gi, '집');
+    translatedTitle = translatedTitle.replace(/\bMiss\b/gi, '그리워');
+    translatedTitle = translatedTitle.replace(/\bYou\b/gi, '너를');
+    translatedTitle = translatedTitle.replace(/\bSick\b/gi, '아픈');
     
     return translatedTitle;
   };
@@ -228,6 +242,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'chick': '병아리',
       'gas': '가스',
       'shake': '흔들기',
+      'shaking': '흔들기',
       'jump': '점프',
       'jumping': '점프',
       'happy': '행복',
@@ -240,7 +255,21 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'busy': '바쁨',
       'paper': '종이',
       'note': '노트',
-      'fun': '재미'
+      'fun': '재미',
+      'vote': '투표',
+      'peace': '평화',
+      'spank': '때리기',
+      'playful': '장난스러운',
+      'kawaii': '카와이',
+      'sing': '노래',
+      'singing': '노래',
+      'way': '길',
+      'back': '돌아가기',
+      'home': '집',
+      'miss': '그리워',
+      'you': '너를',
+      'sick': '아픈',
+      'yaki': '야키'
     };
     
     return tagTranslations[tag.toLowerCase()] || tag;
