@@ -37,12 +37,12 @@ export default function DoriScroll() {
     return (
       <div
         key={index}
-        className="flex-shrink-0 w-[300px] h-[300px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-100px] mb-[-100px] relative z-[9999]"
+        className="flex-shrink-0 w-[200px] h-[200px] flex items-center justify-center ml-[1px] mr-[1px] mt-[-50px] mb-[-50px] relative z-[9999]"
       >
         <img
           src={isSickyaki ? sickyakiGif : pingdoriGif}
           alt={isSickyaki ? "Sickyaki character" : "Pingdori character"}
-          className="w-[240px] h-[240px] object-contain relative z-[9999]"
+          className="w-[160px] h-[160px] object-contain relative z-[9999]"
         />
       </div>
     );
@@ -61,7 +61,7 @@ export default function DoriScroll() {
           }
         `}
       </style>
-      <section className="w-full overflow-hidden h-[350px] bg-white relative z-[9999] transform -rotate-2">
+      <section className="w-full overflow-hidden h-[200px] bg-white relative z-[9999] transform -rotate-2">
         <div
           ref={scrollRef}
           id="character-scroll"
