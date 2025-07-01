@@ -96,13 +96,13 @@ export default function InstagramLiveFeed() {
           </div>
           
           <div className="mb-12 text-center relative z-10">
-            {/* GIF directly under the Instagram title - positioned absolutely to not affect layout */}
+            {/* GIF positioned to not interfere with other elements */}
             <div className="relative">
               <img 
                 src="/attached_assets/SnapInsta_1751351039676.gif" 
                 alt="Yaki and Dori with stretchy connection" 
-                className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-90 z-0 mt-[-163px] mb-[-163px]"
-                style={{ width: 'auto', height: 'auto' }}
+                className="absolute left-1/2 transform -translate-x-1/2 opacity-90 z-0"
+                style={{ width: 'auto', height: 'auto', top: '-100px' }}
               />
             </div>
           </div>
