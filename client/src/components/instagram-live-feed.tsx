@@ -52,7 +52,7 @@ export default function InstagramLiveFeed() {
           z-index: 99999;
         }
       `}</style>
-      <section className="w-full py-8 bg-gray-50 relative" id="instagram">
+      <section className="w-full py-16 bg-gray-50 relative pt-[33px] pb-[33px]" id="instagram">
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">
@@ -108,7 +108,7 @@ export default function InstagramLiveFeed() {
           </div>
           
           {/* Elfsight Instagram Feed - Full Width */}
-          <div className="w-full instagram-widget-container relative z-20" style={{ marginTop: '40px', marginBottom: '20px' }}>
+          <div className="w-full instagram-widget-container relative z-20 mt-[44px] mb-[44px] pt-[117px] pb-[117px]" style={{ marginTop: '100px' }}>
             <div 
               className="elfsight-app-b59afb0f-1f09-47b9-b516-e0e9800f365b w-full" 
               data-elfsight-app-lazy
