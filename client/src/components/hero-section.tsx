@@ -64,12 +64,13 @@ export default function HeroSection() {
               </defs>
               
               <text 
-                fontSize="28"
+                fontSize="20"
                 fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive, sans-serif"
                 fontWeight="600"
                 fill="black"
                 stroke="white"
                 strokeWidth="1"
+                className="md:text-[28px] text-[20px]"
               >
                 <textPath 
                   href="#textcurve"

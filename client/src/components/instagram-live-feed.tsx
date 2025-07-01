@@ -57,24 +57,24 @@ export default function InstagramLiveFeed() {
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">
             {/* Floating GIF Layer - Positioned on top line of CA bar */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 translate-x-12 z-10 pointer-events-none" style={{ top: '-226px' }}>
+            <div className="absolute left-1/2 transform -translate-x-1/2 md:translate-x-12 translate-x-0 z-10 pointer-events-none" style={{ top: '-226px' }}>
               <img 
                 src="/attached_assets/download(9)_1751341393068.gif" 
                 alt="Cute character working" 
-                className="w-72 h-72 object-contain opacity-90"
+                className="w-48 h-48 md:w-72 md:h-72 object-contain opacity-90"
               />
             </div>
             <div className="bg-white border-2 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm relative z-20">
               <div className="flex items-center justify-between">
                 <div className="flex items-center flex-1 mr-3">
                   <span 
-                    className="text-sm font-bold text-black mr-2"
+                    className="text-xs md:text-sm font-bold text-black mr-2"
                     style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                   >
                     {t('contract.label')}
                   </span>
                   <code 
-                    className="text-sm text-gray-800 truncate"
+                    className="text-xs md:text-sm text-gray-800 truncate"
                     style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                   >
                     {contractAddress}
