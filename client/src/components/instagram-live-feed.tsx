@@ -123,8 +123,8 @@ export default function InstagramLiveFeed() {
           <div className="w-full relative z-20 mt-[44px] mb-[20px] pt-[60px] pb-[20px]" style={{ marginTop: '100px' }}>
             
             {/* Fallback Content While Widget Loads */}
-            <div className="max-w-6xl mx-auto mb-8">
-              <div className="text-center mb-8">
+            <div className="w-full mb-8">
+              <div className="text-center mb-8 max-w-6xl mx-auto">
                 <h3 
                   className="text-4xl md:text-5xl font-bold text-black mb-4"
                   style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
@@ -139,42 +139,44 @@ export default function InstagramLiveFeed() {
                 </p>
               </div>
               
-              {/* Manual Instagram Grid as fallback */}
-              <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
-                <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                  <div className="aspect-square bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-500 flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">@sick_yaki</span>
+              {/* Manual Instagram Grid as fallback - Full Width */}
+              <div className="w-full px-2">
+                <div className="grid grid-cols-2 md:grid-cols-6 gap-2 mb-8">
+                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
+                    <div className="aspect-square bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-500 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">@sick_yaki</span>
+                    </div>
                   </div>
-                </div>
-                <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                  <div className="aspect-square bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">925M+ Views</span>
+                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
+                    <div className="aspect-square bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">925M+ Views</span>
+                    </div>
                   </div>
-                </div>
-                <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                  <div className="aspect-square bg-gradient-to-br from-green-400 via-blue-500 to-purple-500 flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">Korean Artist</span>
+                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
+                    <div className="aspect-square bg-gradient-to-br from-green-400 via-blue-500 to-purple-500 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">Korean Artist</span>
+                    </div>
                   </div>
-                </div>
-                <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                  <div className="aspect-square bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">Kawaii</span>
+                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
+                    <div className="aspect-square bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">Kawaii</span>
+                    </div>
                   </div>
-                </div>
-                <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                  <div className="aspect-square bg-gradient-to-br from-pink-400 via-orange-500 to-yellow-400 flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">GIPHY</span>
+                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
+                    <div className="aspect-square bg-gradient-to-br from-pink-400 via-orange-500 to-yellow-400 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">GIPHY</span>
+                    </div>
                   </div>
-                </div>
-                <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                  <div className="aspect-square bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-400 flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">Viral</span>
+                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
+                    <div className="aspect-square bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-400 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">Viral</span>
+                    </div>
                   </div>
                 </div>
               </div>
               
               {/* Instagram Link Button */}
-              <div className="text-center">
+              <div className="text-center max-w-6xl mx-auto">
                 <a 
                   href="https://instagram.com/sick_yaki" 
                   target="_blank" 
