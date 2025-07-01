@@ -6,6 +6,7 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  translateGifTitle: (title: string) => string;
 }
 
 const translations = {
@@ -154,6 +155,20 @@ const translations = {
     
     // Navigation links
     'nav.casetify': '케이스티파이',
+    
+    // GIF Action translations
+    'gif.yaki': '식야키',
+    'gif.dori': '핑도리',
+    'gif.dancing': '댄싱',
+    'gif.love': '러브',
+    'gif.kiss': '키스',
+    'gif.excited': '신나는',
+    'gif.sad': '슬픈',
+    'gif.heart': '하트',
+    'gif.chick': '병아리',
+    'gif.gas': '가스',
+    'gif.shake': '흔들기',
+    'gif.jump': '점프',
   }
 };
 
@@ -166,8 +181,32 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     return translations[language][key as keyof typeof translations['en']] || key;
   };
 
+  const translateGifTitle = (title: string): string => {
+    if (language === 'en') return title;
+    
+    let translatedTitle = title;
+    
+    // Replace character names
+    translatedTitle = translatedTitle.replace(/\bYaki\b/g, t('gif.yaki'));
+    translatedTitle = translatedTitle.replace(/\bDori\b/g, t('gif.dori'));
+    
+    // Replace common action words
+    translatedTitle = translatedTitle.replace(/\bDancing\b/gi, t('gif.dancing'));
+    translatedTitle = translatedTitle.replace(/\bLove\b/gi, t('gif.love'));
+    translatedTitle = translatedTitle.replace(/\bKiss\b/gi, t('gif.kiss'));
+    translatedTitle = translatedTitle.replace(/\bExcited\b/gi, t('gif.excited'));
+    translatedTitle = translatedTitle.replace(/\bSad\b/gi, t('gif.sad'));
+    translatedTitle = translatedTitle.replace(/\bHeart\b/gi, t('gif.heart'));
+    translatedTitle = translatedTitle.replace(/\bChick\b/gi, t('gif.chick'));
+    translatedTitle = translatedTitle.replace(/\bGas\b/gi, t('gif.gas'));
+    translatedTitle = translatedTitle.replace(/\bShake\b/gi, t('gif.shake'));
+    translatedTitle = translatedTitle.replace(/\bJump\b/gi, t('gif.jump'));
+    
+    return translatedTitle;
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, translateGifTitle }}>
       {children}
     </LanguageContext.Provider>
   );

@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function GallerySection() {
-  const { t } = useLanguage();
+  const { t, translateGifTitle } = useLanguage();
   const [activeFilter, setActiveFilter] = useState("all");
   const [showAll, setShowAll] = useState(false);
   const [visibleCount, setVisibleCount] = useState(8);
@@ -92,7 +92,7 @@ export default function GallerySection() {
               />
               <div className="p-3 bg-white border-t border-gray-100">
                 <p className="text-sm font-medium text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
-                  {gif.title}
+                  {translateGifTitle(gif.title)}
                 </p>
                 <div className="flex flex-wrap gap-1 mt-2">
                   {gif.tags.slice(0, 2).map((tag, index) => (
