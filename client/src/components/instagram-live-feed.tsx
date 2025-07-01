@@ -63,6 +63,24 @@ export default function InstagramLiveFeed() {
         .instagram-widget-container {
           position: relative;
         }
+        
+        /* Smooth horizontal scroll animation */
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .animate-scroll {
+          animation: scroll 40s linear infinite;
+        }
+        
+        .animate-scroll:hover {
+          animation-play-state: paused;
+        }
       `}</style>
       <section className="w-full py-8 bg-gray-50 relative pt-[20px] pb-[20px]" id="instagram">
         <div className="w-full px-4">
@@ -139,38 +157,147 @@ export default function InstagramLiveFeed() {
                 </p>
               </div>
               
-              {/* Manual Instagram Grid as fallback - Full Width */}
-              <div className="w-full px-2">
-                <div className="grid grid-cols-2 md:grid-cols-6 gap-2 mb-8">
-                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-500 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">@sick_yaki</span>
-                    </div>
+              {/* Instagram Content Scroll - Full Width */}
+              <div className="w-full overflow-hidden mb-8">
+                <div className="flex animate-scroll gap-4">
+                  {/* First set of content */}
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1751368166510.jpg"
+                      alt="Yaki and Dori comic"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">925M+ Views</span>
-                    </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1_1751368166510.jpg"
+                      alt="Yaki and Dori in rain"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gradient-to-br from-green-400 via-blue-500 to-purple-500 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">Korean Artist</span>
-                    </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1751368166510.jpg"
+                      alt="Yaki working comic"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">Kawaii</span>
-                    </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1_1751368166510.jpg"
+                      alt="Yaki and Dori night scene"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gradient-to-br from-pink-400 via-orange-500 to-yellow-400 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">GIPHY</span>
-                    </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <video 
+                      src="/attached_assets/sick_yaki__2025-05-07T091208.000Z_1751368166510.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="bg-gray-100 rounded-lg overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-400 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">Viral</span>
-                    </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <video 
+                      src="/attached_assets/sick_yaki__2025-05-07T091208.000Z_1_1751368166510.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <video 
+                      src="/attached_assets/sick_yaki__2025-05-18T052355.000Z_1751368166511.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <video 
+                      src="/attached_assets/sick_yaki__2025-05-18T052355.000Z_1_1751368166511.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <video 
+                      src="/attached_assets/sick_yaki__2025-05-28T073601.000Z_1751368166511.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <video 
+                      src="/attached_assets/sick_yaki__2025-05-28T073601.000Z_1_1751368166511.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <video 
+                      src="/attached_assets/sick_yaki__2025-06-17T044833.000Z_1751368166511.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <video 
+                      src="/attached_assets/sick_yaki__2025-06-17T044833.000Z_1_1751368166511.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  {/* Duplicate set for seamless infinite scroll */}
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1751368166510.jpg"
+                      alt="Yaki and Dori comic"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1_1751368166510.jpg"
+                      alt="Yaki and Dori in rain"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1751368166510.jpg"
+                      alt="Yaki working comic"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1_1751368166510.jpg"
+                      alt="Yaki and Dori night scene"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
