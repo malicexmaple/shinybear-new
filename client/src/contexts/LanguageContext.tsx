@@ -243,6 +243,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     translatedTitle = translatedTitle.replace(/\bJoy\b/gi, '기쁨');
     translatedTitle = translatedTitle.replace(/\bEating\b/gi, '먹기');
     translatedTitle = translatedTitle.replace(/\bFood\b/gi, '음식');
+    translatedTitle = translatedTitle.replace(/\bCutie\b/gi, '귀염둥이');
+    translatedTitle = translatedTitle.replace(/\bPatootie\b/gi, '꼬마');
     
     return translatedTitle;
   };
@@ -307,7 +309,9 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'rocket': '로켓',
       'joy': '기쁨',
       'eating': '먹기',
-      'food': '음식'
+      'food': '음식',
+      'cutie': '귀염둥이',
+      'patootie': '꼬마'
     };
     
     return tagTranslations[tag.toLowerCase()] || tag;
