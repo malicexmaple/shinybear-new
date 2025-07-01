@@ -106,7 +106,7 @@ export default function InstagramLiveFeed() {
             {/* GIF directly under the Instagram title - positioned absolutely to not affect layout */}
             <div className="relative">
               <img 
-                src="/attached_assets/SnapInsta_1751349792435.gif" 
+                src="/attached_assets/SnapInsta_1751351039676.gif" 
                 alt="Yaki and Dori with stretchy connection" 
                 className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-90 z-0 mt-[-163px] mb-[-163px]"
                 style={{ width: 'auto', height: 'auto' }}
