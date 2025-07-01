@@ -181,7 +181,7 @@ export default function InstagramLiveFeed() {
                   href="https://instagram.com/sick_yaki" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-full hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105"
+                  className="inline-flex items-center px-8 py-4 bg-black text-white font-bold rounded-full hover:bg-gray-800 transition-all transform hover:scale-105"
                   style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                 >
                   Follow @sick_yaki on Instagram
