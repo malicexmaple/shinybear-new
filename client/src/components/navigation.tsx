@@ -96,7 +96,11 @@ export default function Navigation() {
               rel="noopener noreferrer"
               className="text-black hover:text-gray-600 transition-colors"
             >
-              <Gift className="w-5 h-5" />
+              <img 
+                src="/attached_assets/giphy_logo_icon_181239_1751338296091.png" 
+                alt="GIPHY logo" 
+                className="w-5 h-5"
+              />
             </a>
           </div>
         </div>
