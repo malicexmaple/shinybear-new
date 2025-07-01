@@ -78,6 +78,15 @@ export default function Navigation() {
             >
               {t('nav.instagram')}
             </button>
+            <a 
+              href="https://www.casetify.com/artist/sickyaki" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-black hover:text-black transition-colors font-medium"
+              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+            >
+              Casetify
+            </a>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -101,15 +110,6 @@ export default function Navigation() {
                 alt="GIPHY logo" 
                 className="w-5 h-5"
               />
-            </a>
-            <a 
-              href="https://www.casetify.com/artist/sickyaki" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-black hover:text-gray-600 transition-colors font-medium px-2 py-1 border border-black rounded-md hover:bg-black hover:text-white"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
-            >
-              Casetify
             </a>
           </div>
         </div>
