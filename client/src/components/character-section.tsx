@@ -67,10 +67,10 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   return (
     <section 
       id={characterName} 
-      className="py-12 bg-white pt-[27px] pb-[27px] mt-[0px] mb-[0px]"
+      className="py-6 bg-white pt-[15px] pb-[15px] mt-[0px] mb-[0px]"
     >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-4">
+        <div className="text-center mb-2">
           <h2 
             className="text-6xl md:text-[90px] font-bold mb-2 text-[#000000] sinchon-font wiggle-pulse-text animate-wiggle-pulse"
           >
@@ -86,7 +86,7 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
           </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6 items-center pt-[0px] pb-[0px] mt-[-15px] mb-[-15px] mx-auto max-w-4xl">
+        <div className="grid md:grid-cols-2 gap-4 items-center pt-[0px] pb-[0px] mt-[-5px] mb-[-5px] mx-auto max-w-4xl">
           <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''}`}>
             <h3 
               className="text-2xl md:text-3xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
