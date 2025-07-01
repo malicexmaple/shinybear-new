@@ -215,7 +215,14 @@ export class MemStorage implements IStorage {
 
   async createGif(insertGif: InsertGif): Promise<Gif> {
     const id = this.currentGifId++;
-    const gif: Gif = { ...insertGif, id };
+    const gif: Gif = { 
+      id,
+      title: insertGif.title,
+      url: insertGif.url,
+      characterId: insertGif.characterId ?? null,
+      category: insertGif.category,
+      tags: insertGif.tags
+    };
     this.gifs.set(id, gif);
     return gif;
   }
