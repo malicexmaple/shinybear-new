@@ -49,7 +49,7 @@ const translations = {
     'about.creator': 'Created with love for the kawaii community',
     
     // Instagram Section
-    'instagram.title': 'Follow Our Journey',
+    'instagram.title': 'Instagram Feed',
     'instagram.subtitle': 'Stay updated with the latest Yaki & Dori adventures on Instagram',
     
     // Footer
@@ -95,7 +95,7 @@ const translations = {
     'about.creator': '카와이 커뮤니티를 위해 사랑으로 제작되었습니다',
     
     // Instagram Section
-    'instagram.title': '우리의 여정을 따라오세요',
+    'instagram.title': '인스타그램 피드',
     'instagram.subtitle': '인스타그램에서 야키 & 도리의 최신 모험을 만나보세요',
     
     // Footer
