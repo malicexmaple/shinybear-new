@@ -95,9 +95,9 @@ export default function InstagramLiveFeed() {
             </div>
           </div>
           
-          <div className="mb-12 ml-0 md:ml-[300px] text-center md:text-left">
+          <div className="mb-12 ml-0 md:ml-[300px] text-center md:text-left relative z-10">
             <h2 
-              className="text-4xl font-bold text-black mb-4 animate-wiggle-pulse-alt pt-[24px] pb-[24px]"
+              className="text-4xl font-bold text-black mb-4 animate-wiggle-pulse-alt pt-[24px] pb-[24px] relative z-10"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('instagram.title')}
@@ -108,7 +108,7 @@ export default function InstagramLiveFeed() {
               <img 
                 src="/attached_assets/longfi_1751346995548.gif" 
                 alt="Yaki and Dori with stretchy connection" 
-                className="absolute top-0 left-1/2 md:left-0 transform -translate-x-1/2 md:translate-x-0 opacity-90 z-0"
+                className="absolute -top-8 left-1/2 md:left-0 transform -translate-x-1/2 md:translate-x-0 opacity-90 z-0 mt-[-86px] mb-[-86px]"
                 style={{ width: 'auto', height: 'auto' }}
               />
             </div>
