@@ -15,6 +15,7 @@ export default function Home() {
       <InstagramLiveFeed />
       <InstagramFeed />
       <CharacterSection characterName="yaki" />
+      <CharacterSection characterName="dori" />
       <GallerySection />
       <Footer />
     </div>
