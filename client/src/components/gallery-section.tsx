@@ -117,7 +117,7 @@ export default function GallerySection() {
               className="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-semibold hover:opacity-80 transition-all transform hover:scale-105"
               style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
-              <span>{showAll ? t('gallery.showLess') : `${t('gallery.showMore')} (${filteredGifs.length - visibleCount} more)`}</span>
+              <span>{showAll ? t('gallery.showLess') : `${t('gallery.showMore')} (${filteredGifs.length - visibleCount} ${t('gallery.moreCount')})`}</span>
               {showAll ? (
                 <ChevronUp className="ml-2 w-5 h-5" />
               ) : (

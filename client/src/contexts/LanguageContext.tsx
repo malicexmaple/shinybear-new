@@ -67,6 +67,7 @@ const translations = {
     // Gallery section
     'gallery.showMore': 'Show More',
     'gallery.showLess': 'Show Less',
+    'gallery.moreCount': 'more',
     
     // About section
     'about.beginning': 'The Beginning',
@@ -150,6 +151,7 @@ const translations = {
     // Gallery section
     'gallery.showMore': '더 보기',
     'gallery.showLess': '접기',
+    'gallery.moreCount': '개 더',
     
     // About section
     'about.beginning': '시작',
@@ -211,8 +213,40 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     return translatedTitle;
   };
 
+  const translateTag = (tag: string): string => {
+    if (language === 'en') return tag;
+    
+    // Translate common GIF tags to Korean
+    const tagTranslations: { [key: string]: string } = {
+      'dancing': '댄싱',
+      'love': '러브',
+      'kiss': '키스',
+      'excited': '신남',
+      'sad': '슬픔',
+      'heart': '하트',
+      'chick': '병아리',
+      'gas': '가스',
+      'shake': '흔들기',
+      'jump': '점프',
+      'jumping': '점프',
+      'happy': '행복',
+      'cute': '귀여움',
+      'funny': '재미',
+      'bounce': '튀기',
+      'lying': '누움',
+      'floating': '둥둥',
+      'work': '일',
+      'busy': '바쁨',
+      'paper': '종이',
+      'note': '노트',
+      'fun': '재미'
+    };
+    
+    return tagTranslations[tag.toLowerCase()] || tag;
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, translateGifTitle }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, translateGifTitle, translateTag }}>
       {children}
     </LanguageContext.Provider>
   );
