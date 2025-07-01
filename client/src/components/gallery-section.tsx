@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function GallerySection() {
-  const { t, translateGifTitle } = useLanguage();
+  const { t, translateGifTitle, translateTag } = useLanguage();
   const [activeFilter, setActiveFilter] = useState("all");
   const [showAll, setShowAll] = useState(false);
   const [visibleCount, setVisibleCount] = useState(8);
