@@ -59,7 +59,7 @@ const translations = {
     'footer.copyright': '© 2024 Yaki & Dori. Made with love for kawaii fans worldwide.',
     
     // Contract Address
-    'contract.label': 'CA:',
+    'contract.label': 'COMING SOON',
     'contract.copy': 'Copy to clipboard',
     
     // Character GIF descriptions
@@ -143,7 +143,7 @@ const translations = {
     'footer.copyright': '© 2024 식야키 & 핑도리. 전 세계 카와이 팬들을 위해 사랑으로 제작되었습니다.',
     
     // Contract Address
-    'contract.label': 'CA:',
+    'contract.label': 'COMING SOON',
     'contract.copy': '클립보드에 복사',
     
     // Character GIF descriptions
