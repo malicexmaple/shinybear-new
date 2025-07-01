@@ -44,7 +44,7 @@ export class MemStorage implements IStorage {
       name: "Sickyaki",
       type: "chick",
       color: "yellow",
-      personality: ["A small, cute chick that is squishy", "Feels overwhelmed by life but still waddles through it", "Loves napping, hiding under blankets, and leaning on Dori", "Has a peach-shaped butt (yes, it's her trademark!)"],
+      personality: ["A small, weak chick that is crinkly", "Doesn't have energy to take problems seriously", "Lives in a desolate city, adapting in her own way", "Shy and sleepy with a distinctive peach-shaped bottom"],
       description: "Sickyaki is a sickly yellow chick created by Korean artist Wookiema (@sick_yaki, 1M+ followers). She's gentle, vulnerable, and endearing - often shown being cared for by her penguin companion. Her peach-shaped bottom is her signature feature.",
       avatarUrl: "https://media1.giphy.com/media/7iEQNDmKV6xcbtymKd/giphy.gif"
     });

@@ -246,14 +246,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     translatedTitle = translatedTitle.replace(/\bCutie\b/gi, '귀염둥이');
     translatedTitle = translatedTitle.replace(/\bPatootie\b/gi, '꼬마');
     translatedTitle = translatedTitle.replace(/\bUnwell\b/gi, '아픈');
-    translatedTitle = translatedTitle.replace(/\bSquishy\b/gi, '말랑말랑한');
-    translatedTitle = translatedTitle.replace(/\bOverwhelmed\b/gi, '압도된');
-    translatedTitle = translatedTitle.replace(/\bWaddles\b/gi, '뒤뚱뒤뚱 걷는');
-    translatedTitle = translatedTitle.replace(/\bNapping\b/gi, '낮잠');
-    translatedTitle = translatedTitle.replace(/\bBlankets\b/gi, '담요');
-    translatedTitle = translatedTitle.replace(/\bLeaning\b/gi, '기대는');
-    translatedTitle = translatedTitle.replace(/\bButt\b/gi, '엉덩이');
-    translatedTitle = translatedTitle.replace(/\bTrademark\b/gi, '트레이드마크');
     
     return translatedTitle;
   };
@@ -321,15 +313,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'food': '음식',
       'cutie': '귀염둥이',
       'patootie': '꼬마',
-      'unwell': '아픈',
-      'squishy': '말랑말랑한',
-      'overwhelmed': '압도된',
-      'waddles': '뒤뚱뒤뚱 걷는',
-      'napping': '낮잠',
-      'blankets': '담요',
-      'leaning': '기대는',
-      'butt': '엉덩이',
-      'trademark': '트레이드마크'
+      'unwell': '아픈'
     };
     
     return tagTranslations[tag.toLowerCase()] || tag;
