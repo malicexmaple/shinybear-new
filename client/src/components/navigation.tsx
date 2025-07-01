@@ -107,6 +107,19 @@ export default function Navigation() {
               />
             </a>
             
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-black hover:text-gray-600 transition-colors"
+            >
+              <img 
+                src="/attached_assets/kakao-talk-3vhu8cdsn1gfqeaiz55k9m_1751357984978.webp" 
+                alt="KakaoTalk logo" 
+                className="w-5 h-5"
+              />
+            </a>
+            
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
