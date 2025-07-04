@@ -234,19 +234,116 @@
         }
         
         .character-section h2 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             color: #000;
             margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 3px 3px 0px #ffffff, -3px -3px 0px #ffffff, 3px -3px 0px #ffffff, -3px 3px 0px #ffffff;
             animation: wiggle-pulse 3s ease-in-out infinite;
         }
         
-        .character-description {
-            font-size: 1.3rem;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto 40px;
-            line-height: 1.8;
+        .character-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
+        
+        .character-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .character-description {
+            font-size: 1.2rem;
+            color: #000;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+        
+        .character-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            border: 3px solid #000;
+        }
+        
+        .character-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        
+        .character-card h3 {
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .character-card p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .character-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .character-traits {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            border: 3px solid #000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .character-traits h3 {
+            font-size: 1.8rem;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .character-traits ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .character-traits li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .character-traits li::before {
+            content: "●";
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .character-traits li:nth-child(1)::before { color: #4A90E2; }
+        .character-traits li:nth-child(2)::before { color: #F5A623; }
+        .character-traits li:nth-child(3)::before { color: #7ED321; }
+        .character-traits li:nth-child(4)::before { color: #9013FE; }
         
         .character-gifs {
             display: grid;
@@ -270,6 +367,17 @@
             width: 100%;
             height: auto;
             display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .character-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .character-section h2 {
+                font-size: 2.5rem;
+            }
         }
         
         /* Gallery Section */
@@ -703,24 +811,49 @@
                 <span class="lang-en">Sickyaki</span>
                 <span class="lang-zh">生病小鸡</span>
             </h2>
-            <div class="character-description">
-                <p>
-                    <span class="lang-en">Meet Sickyaki, the adorable yellow chick who loves to dance and share special moments with her beloved companion Pingdori! She's a small, weak chick that is crinkly, doesn't have energy to take problems seriously, and lives in a desolate city, adapting in her own way.</span>
-                    <span class="lang-zh">认识生病小鸡，这只可爱的黄色小鸡喜欢跳舞，并与她心爱的伙伴企鹅朋友分享特殊时刻！她是一只小小的、虚弱的小鸡，皱巴巴的，没有精力认真对待问题，住在一个荒凉的城市里，以自己的方式适应着。</span>
-                </p>
-            </div>
-            <div class="character-gifs">
-                <div class="character-gif">
-                    <img src="./attached_assets/I Love You Chick Sticker_1751292334055.gif" alt="Yaki I Love You">
+            <div class="character-content">
+                <div class="character-left">
+                    <div class="character-description">
+                        <span class="lang-en">Meet Sickyaki, the adorable yellow chick who loves to dance and share special moments with her beloved companion Pingdori!</span>
+                        <span class="lang-zh">认识生病小鸡，这只可爱的黄色小鸡喜欢跳舞，并与她心爱的伙伴企鹅朋友分享特殊时刻！</span>
+                    </div>
+                    <div class="character-card">
+                        <img src="./attached_assets/I Love You Chick Sticker_1751292334055.gif" alt="Sickyaki">
+                        <h3>
+                            <span class="lang-en">Yaki Kawai</span>
+                            <span class="lang-zh">可爱小鸡</span>
+                        </h3>
+                        <p>
+                            <span class="lang-en">Sickyaki loves dancing and expressing love to beloved Pingdori!</span>
+                            <span class="lang-zh">生病小鸡喜欢跳舞，向心爱的企鹅朋友表达爱意！</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/Chick Dancing Sticker_1751292354200.gif" alt="Yaki Dancing">
-                </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/Excited Chick Sticker_1751292354200.gif" alt="Yaki Excited">
-                </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/Chick Love Sticker_1751292354200.gif" alt="Yaki Love">
+                <div class="character-right">
+                    <div class="character-traits">
+                        <h3>
+                            <span class="lang-en">Sweet & Loving</span>
+                            <span class="lang-zh">甜蜜与爱</span>
+                        </h3>
+                        <ul>
+                            <li>
+                                <span class="lang-en">Adorable yellow chick with gentle personality</span>
+                                <span class="lang-zh">温柔可爱的黄色小鸡</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Loves dancing and expressing emotions</span>
+                                <span class="lang-zh">喜欢跳舞和表达情感</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Always shows affection to Pingdori</span>
+                                <span class="lang-zh">总是对企鹅朋友表达爱意</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Embodies vulnerability and resilience</span>
+                                <span class="lang-zh">体现脆弱和坚韧</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -733,24 +866,49 @@
                 <span class="lang-en">Pingdori</span>
                 <span class="lang-zh">企鹅朋友</span>
             </h2>
-            <div class="character-description">
-                <p>
-                    <span class="lang-en">Say hello to Pingdori, the cutest gray penguin who shares an unbreakable bond with Sickyaki and loves expressing affection! He's a round gray penguin who cares for Sickyaki, gentle and nurturing companion, often shown massaging or comforting Yaki.</span>
-                    <span class="lang-zh">向企鹅朋友问好，这只最可爱的灰色企鹅与生病小鸡有着不可分割的纽带，喜欢表达爱意！他是一只圆圆的灰色企鹅，照顾着生病小鸡，是温柔且有nurturing的伙伴，经常被描绘为给小鸡按摩或安慰。</span>
-                </p>
-            </div>
-            <div class="character-gifs">
-                <div class="character-gif">
-                    <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751292334055.gif" alt="Dori Dancing">
+            <div class="character-content">
+                <div class="character-left">
+                    <div class="character-description">
+                        <span class="lang-en">Say hello to Pingdori, the cutest white penguin who shares an unbreakable bond with Sickyaki and loves expressing affection!</span>
+                        <span class="lang-zh">向企鹅朋友问好，这只最可爱的白色企鹅与生病小鸡有着不可分割的纽带，喜欢表达爱意！</span>
+                    </div>
+                    <div class="character-card">
+                        <img src="./attached_assets/Penguin Kawai Sticker_1751342571422.gif" alt="Pingdori">
+                        <h3>
+                            <span class="lang-en">Dori Kawai</span>
+                            <span class="lang-zh">可爱企鹅</span>
+                        </h3>
+                        <p>
+                            <span class="lang-en">Pingdori loves giving kisses and expressing love to his beloved Sickyaki!</span>
+                            <span class="lang-zh">企鹅朋友喜欢给心爱的生病小鸡亲吻和表达爱意！</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/Penguin Kiss Sticker_1751292354200.gif" alt="Dori Kiss">
-                </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/I Love You Kiss Sticker_1751295478948.gif" alt="Dori I Love You Kiss">
-                </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/Penguin Kawai Sticker_1751342571422.gif" alt="Dori Kawaii">
+                <div class="character-right">
+                    <div class="character-traits">
+                        <h3>
+                            <span class="lang-en">Sweet & Loving</span>
+                            <span class="lang-zh">甜蜜与爱</span>
+                        </h3>
+                        <ul>
+                            <li>
+                                <span class="lang-en">Round gray penguin who cares for Sickyaki</span>
+                                <span class="lang-zh">照顾生病小鸡的圆圆灰企鹅</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Gentle and nurturing companion</span>
+                                <span class="lang-zh">温柔且有爱心的伙伴</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Often shown massaging or comforting Yaki</span>
+                                <span class="lang-zh">经常给小鸡按摩或安慰</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Embodies unconditional friendship and support</span>
+                                <span class="lang-zh">体现无条件的友谊和支持</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -763,24 +921,49 @@
                 <span class="lang-en">Together Forever</span>
                 <span class="lang-zh">永远在一起</span>
             </h2>
-            <div class="character-description">
-                <p>
-                    <span class="lang-en">Sickyaki and Pingdori represent the beautiful bond of friendship and care. Created by Korean artist Wookiema (@sick_yaki, 1M+ followers), these characters have touched hearts worldwide with their gentle, vulnerable, and endearing personalities.</span>
-                    <span class="lang-zh">生病小鸡和企鹅朋友代表着友谊和关怀的美好纽带。由韩国艺术家Wookiema创作（@sick_yaki，100万+粉丝），这些角色以其温柔、脆弱和可爱的个性触动了全世界的心。</span>
-                </p>
-            </div>
-            <div class="character-gifs">
-                <div class="character-gif">
-                    <img src="./attached_assets/Excited Jump Sticker_1751292354200.gif" alt="Yaki Excited Jump">
+            <div class="character-content">
+                <div class="character-left">
+                    <div class="character-description">
+                        <span class="lang-en">Sickyaki and Pingdori represent the beautiful bond of friendship and care created by Korean artist Wookiema.</span>
+                        <span class="lang-zh">生病小鸡和企鹅朋友代表着友谊和关怀的美好纽带，由韩国艺术家Wookiema创作。</span>
+                    </div>
+                    <div class="character-card">
+                        <img src="./attached_assets/Excited Jump Sticker_1751292354200.gif" alt="Together">
+                        <h3>
+                            <span class="lang-en">Best Friends</span>
+                            <span class="lang-zh">最好的朋友</span>
+                        </h3>
+                        <p>
+                            <span class="lang-en">These characters have touched hearts worldwide with their endearing personalities!</span>
+                            <span class="lang-zh">这些角色以其可爱的个性触动了全世界的心！</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/Sing A Song Singing Sticker_1751292354200.gif" alt="Yaki Singing">
-                </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/Penguin Dancingpenguin Sticker(1)_1751292354200.gif" alt="Dori Dancing 2">
-                </div>
-                <div class="character-gif">
-                    <img src="./attached_assets/Shakeit Sticker(1)_1751292354200.gif" alt="Yaki Shake It">
+                <div class="character-right">
+                    <div class="character-traits">
+                        <h3>
+                            <span class="lang-en">Sweet & Loving</span>
+                            <span class="lang-zh">甜蜜与爱</span>
+                        </h3>
+                        <ul>
+                            <li>
+                                <span class="lang-en">Created by Korean artist Wookiema (@sick_yaki)</span>
+                                <span class="lang-zh">由韩国艺术家Wookiema创作（@sick_yaki）</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Over 1M+ followers worldwide</span>
+                                <span class="lang-zh">全球超过100万粉丝</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Gentle, vulnerable, and endearing personalities</span>
+                                <span class="lang-zh">温柔、脆弱且可爱的个性</span>
+                            </li>
+                            <li>
+                                <span class="lang-en">Represents beautiful friendship and care</span>
+                                <span class="lang-zh">代表美好的友谊和关怀</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
