@@ -442,10 +442,10 @@
         .contract-address {
             font-size: 1.5rem;
             font-weight: bold;
-            color: white;
-            text-shadow: 2px 2px 0px #000000, -2px -2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000;
+            color: black;
             flex: 1;
             text-align: center;
+            animation: gentle-bounce 2s ease-in-out infinite;
         }
         
         .copy-button {
@@ -504,6 +504,15 @@
         @keyframes scroll-horizontal {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
+        }
+
+        @keyframes gentle-bounce {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
         }
         
         .instagram-title {
