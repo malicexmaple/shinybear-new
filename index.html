@@ -497,12 +497,15 @@
             font-size: 4.5rem;
             font-weight: bold;
             text-align: center;
-            margin-bottom: 30px;
-            margin-top: -30px;
             text-shadow: 4px 4px 0px #000000, -4px -4px 0px #000000, 4px -4px 0px #000000, -4px 4px 0px #000000;
             animation: wiggle-pulse 3s ease-in-out infinite;
-            position: relative;
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 999;
+            width: 100%;
+            pointer-events: none;
         }
         
         /* Character Scroll Section */
@@ -544,6 +547,12 @@
     </style>
 </head>
 <body>
+    <!-- Floating Instagram Feed Title -->
+    <div class="instagram-title">
+        <span class="lang-en">Instagram Feed</span>
+        <span class="lang-zh">Instagram 动态</span>
+    </div>
+    
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -590,12 +599,6 @@
     <!-- Instagram Feed Section -->
     <section id="instagram" class="instagram-feed">
         <div class="container">
-            <!-- Instagram Title -->
-            <h2 class="instagram-title">
-                <span class="lang-en">Instagram Feed</span>
-                <span class="lang-zh">Instagram 动态</span>
-            </h2>
-            
             <!-- Instagram Scrolling Content -->
             <div class="instagram-scroll-container">
                 <div class="instagram-scroll">
