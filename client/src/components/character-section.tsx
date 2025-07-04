@@ -74,26 +74,27 @@ export default function CharacterSection({ characterName, useYellowBackground = 
   let hasBackground = false;
   
   if (useYellowBackground) {
-    backgroundImage = characterBackground;
+    backgroundImage = "/attached_assets/5c89c3_a238bc5784294ab4a208adf22de1ca03~mv2_d_3508_2480_s_4_2_1751637207667.png";
     hasBackground = true;
   } else if (useBlueBackground) {
-    backgroundImage = characterBackgroundBlue;
+    backgroundImage = "/attached_assets/5c89c3_bb89df4410964acd9c27b6df5e796547~mv2_d_3508_2480_s_4_2_1751637395119.png";
     hasBackground = true;
   } else if (usePinkBackground) {
-    backgroundImage = characterBackgroundPink;
+    backgroundImage = "/attached_assets/Untitled-7_1751637493174.png";
     hasBackground = true;
   }
 
   return (
     <section 
       id={characterName} 
-      className={`py-0 mt-[-60px] mb-[-60px] pt-[60px] pb-[60px] min-h-[400px] ${hasBackground ? 'bg-cover bg-center bg-no-repeat' : 'bg-white'}`}
-      style={hasBackground ? { 
-        backgroundImage: `url(${backgroundImage})`, 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-        backgroundRepeat: 'no-repeat' 
-      } : {}}
+      className="py-0 mt-[-60px] mb-[-60px] pt-[60px] pb-[60px] min-h-[400px]"
+      style={{
+        backgroundImage: hasBackground ? `url(${backgroundImage})` : 'none',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: hasBackground ? 'transparent' : 'white'
+      }}
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-2">
