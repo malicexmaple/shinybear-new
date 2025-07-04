@@ -47,43 +47,7 @@ export default function HeroSection() {
           >
             {t('hero.title')}
           </h1>
-          <div className="curved-text-container relative z-10 -mt-4">
-            <svg 
-              width="100%" 
-              height="120" 
-              viewBox="0 0 1600 120" 
-              className="curved-text-svg"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <path
-                  id="textcurve"
-                  d="M 50,100 Q 800,40 1550,100"
-                  stroke="none"
-                  fill="none"
-                />
-              </defs>
-              
-              <text 
-                fontSize="20"
-                fontFamily="'Sinchon Rhapsody', 'Comic Neue', cursive, sans-serif"
-                fontWeight="600"
-                fill="black"
-                stroke="white"
-                strokeWidth="1"
-                className="md:text-[28px] text-[20px]"
-              >
-                <textPath 
-                  href="#textcurve"
-                  startOffset="50%"
-                  textAnchor="middle"
-                  dominantBaseline="middle"
-                >
-                  {t('hero.subtitle')}
-                </textPath>
-              </text>
-            </svg>
-          </div>
+
         </div>
         
         <div className="flex justify-center items-center mt-2 relative">
