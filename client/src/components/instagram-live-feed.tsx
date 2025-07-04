@@ -83,7 +83,7 @@ export default function InstagramLiveFeed() {
           animation-play-state: paused;
         }
       `}</style>
-      <section className="w-full py-8 bg-cover bg-center bg-no-repeat relative mt-[-22px] mb-[-22px] pt-[20px] pb-[20px] min-h-[400px]" id="instagram" style={{ backgroundImage: `url(${instagramBackground})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      <section className="w-full py-8 bg-black relative mt-[-22px] mb-[-22px] pt-[20px] pb-[20px] min-h-[400px]" id="instagram">
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">
@@ -122,10 +122,9 @@ export default function InstagramLiveFeed() {
             <div className="w-full mb-8">
               <div className="text-center mb-8 max-w-6xl mx-auto">
                 <h3 
-                  className="text-5xl md:text-7xl font-bold text-black mb-4 wiggle-pulse-text"
+                  className="text-5xl md:text-7xl font-bold text-white mb-4 wiggle-pulse-text"
                   style={{ 
-                    fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive",
-                    textShadow: '-3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff'
+                    fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive"
                   }}
                 >
                   {t('instagram.title')}
