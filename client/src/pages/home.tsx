@@ -10,16 +10,14 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white relative">
+    <div className="min-h-screen bg-white relative" style={{ margin: 0, padding: 0 }}>
       <Navigation />
       <HeroSection />
       <InstagramLiveFeed />
       <InstagramFeed />
-      <div className="w-full" style={{ margin: 0, padding: 0 }}>
-        <CharacterSection characterName="yaki" usePinkBackground={true} />
-        <CharacterSection characterName="dori" useBlueBackground={true} />
-        <CharacterSection characterName="yaki" useYellowBackground={true} />
-      </div>
+      <CharacterSection characterName="yaki" usePinkBackground={true} />
+      <CharacterSection characterName="dori" useBlueBackground={true} />
+      <CharacterSection characterName="yaki" useYellowBackground={true} />
       <DoriScroll />
       <GallerySection />
       <Footer />

@@ -87,10 +87,10 @@ export default function CharacterSection({ characterName, useYellowBackground = 
   return (
     <section 
       id={characterName}
-      className="w-full relative"
+      className="w-full relative block"
       style={{
         backgroundImage: hasBackground ? `url(${backgroundImage})` : 'none',
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundColor: hasBackground ? 'transparent' : 'white',
@@ -100,7 +100,10 @@ export default function CharacterSection({ characterName, useYellowBackground = 
         alignItems: 'center',
         justifyContent: 'center',
         margin: '0',
-        padding: '0'
+        padding: '0',
+        border: 'none',
+        outline: 'none',
+        boxSizing: 'border-box'
       }}
     >
       <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center h-full">
