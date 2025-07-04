@@ -151,7 +151,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
               <img 
                 src={isYaki && usePinkBackground ? "/attached_assets/face panda Sticker by Shiny bear_1751641007580.gif" : mainGif.url} 
                 alt={mainGif.title} 
-                className="w-auto h-auto max-w-full rounded-2xl mt-[-18px] mb-[-18px] mx-auto transform scale-[0.4]" 
+                className="w-auto h-auto max-w-full rounded-2xl mt-[-18px] mb-[-18px] mx-auto transform scale-[0.7]" 
               />
               <div className="text-center">
                 <h4 
