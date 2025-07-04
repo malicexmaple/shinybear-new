@@ -83,7 +83,7 @@ export default function InstagramLiveFeed() {
           animation-play-state: paused;
         }
       `}</style>
-      <section className="w-full py-8 bg-cover bg-center bg-no-repeat relative mt-[-22px] mb-[-22px] pt-[20px] pb-[20px]" id="instagram" style={{ backgroundImage: `url(${instagramBackground})` }}>
+      <section className="w-full py-8 bg-cover bg-center bg-no-repeat relative mt-[-22px] mb-[-22px] pt-[20px] pb-[20px] min-h-[400px]" id="instagram" style={{ backgroundImage: `url(${instagramBackground})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">
