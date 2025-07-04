@@ -119,7 +119,7 @@ export default function InstagramLiveFeed() {
           
           
           {/* Instagram Feed Section */}
-          <div className="w-full relative z-20 flex flex-col items-center justify-center">
+          <div className="w-full relative z-20 flex flex-col items-center" style={{ transform: 'translateY(-50px)' }}>
             
             {/* Fallback Content While Widget Loads */}
             <div className="w-full">
