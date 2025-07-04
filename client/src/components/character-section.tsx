@@ -5,7 +5,7 @@ import { Copy, Check } from 'lucide-react';
 import { useState } from 'react';
 import characterBackground from "@assets/5c89c3_a238bc5784294ab4a208adf22de1ca03~mv2_d_3508_2480_s_4_2_1751637207667.png";
 import characterBackgroundBlue from "@assets/5c89c3_bb89df4410964acd9c27b6df5e796547~mv2_d_3508_2480_s_4_2_1751637395119.png";
-import characterBackgroundPink from "@assets/image_1751661116685.png";
+import characterBackgroundPink from "@assets/Untitled-7_1751637493174.png";
 
 interface CharacterSectionProps {
   characterName: string;
@@ -90,13 +90,13 @@ export default function CharacterSection({ characterName, useYellowBackground = 
   let hasBackground = false;
   
   if (useYellowBackground) {
-    backgroundImage = characterBackground;
+    backgroundImage = "/attached_assets/5c89c3_a238bc5784294ab4a208adf22de1ca03~mv2_d_3508_2480_s_4_2_1751637207667.png";
     hasBackground = true;
   } else if (useBlueBackground) {
-    backgroundImage = characterBackgroundBlue;
+    backgroundImage = "/attached_assets/5c89c3_bb89df4410964acd9c27b6df5e796547~mv2_d_3508_2480_s_4_2_1751637395119.png";
     hasBackground = true;
   } else if (usePinkBackground) {
-    backgroundImage = characterBackgroundPink;
+    backgroundImage = "/attached_assets/Untitled-7_1751637493174.png";
     hasBackground = true;
   }
 
