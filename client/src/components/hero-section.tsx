@@ -55,14 +55,7 @@ export default function HeroSection() {
           >
             {t('character.yaki.type')}
           </h2>
-          <p 
-            className="text-xl md:text-2xl text-black max-w-4xl mx-auto sinchon-font"
-            style={{ 
-              textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
-            }}
-          >
-            {t('character.yaki.description')}
-          </p>
+          
         </div>
       </div>
     </section>

@@ -62,7 +62,7 @@ export class MemStorage implements IStorage {
     // All authentic GIFs from complete uploaded collection - comprehensive list with no duplicates
     const addedUrls = new Set<string>();
     const allAuthenticGifs = [
-      // Current batch of Yaki GIFs
+      // Current batch of Yaki GIFs - using verified file paths
       { title: "Yaki I Love You Chick", url: "/attached_assets/I Love You Chick Sticker_1751292334055.gif", category: "yaki", tags: ["love", "hearts", "phone"] },
       { title: "Yaki Gas Love", url: "/attached_assets/Gas Love Sticker_1751292334055.gif", category: "yaki", tags: ["gas", "love", "funny"] },
       { title: "Yaki Miss You Kiss", url: "/attached_assets/Miss You Kiss Sticker_1751292334055.gif", category: "yaki", tags: ["miss", "kiss", "love"] },
