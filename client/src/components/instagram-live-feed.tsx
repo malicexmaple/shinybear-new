@@ -83,10 +83,10 @@ export default function InstagramLiveFeed() {
           animation-play-state: paused;
         }
       `}</style>
-      <section className="w-full bg-black relative" style={{ height: 'auto', minHeight: '200px', margin: '0', padding: '20px 0', width: '100vw' }} id="instagram">
+      <section className="w-full bg-black relative flex items-center justify-center" style={{ height: 'auto', minHeight: '400px', margin: '0', padding: '20px 0', width: '100vw' }} id="instagram">
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
-          <div className="flex justify-center mb-4 relative">
+          <div className="flex justify-center mb-4 relative" style={{ transform: 'translateY(-300px)' }}>
             
             <div className="bg-white border-4 border-black rounded-lg p-5 max-w-4xl w-full shadow-sm relative z-[100]">
               <div className="flex items-center justify-between">
@@ -116,7 +116,7 @@ export default function InstagramLiveFeed() {
           
           
           {/* Instagram Feed Section */}
-          <div className="w-full relative z-20">
+          <div className="w-full relative z-20 flex flex-col items-center justify-center">
             
             {/* Fallback Content While Widget Loads */}
             <div className="w-full">
