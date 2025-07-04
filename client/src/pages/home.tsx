@@ -10,7 +10,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white relative" style={{ margin: 0, padding: 0 }}>
+    <div className="min-h-screen bg-white relative" style={{ margin: 0, padding: 0, width: '100vw', overflow: 'hidden' }}>
       <Navigation />
       <HeroSection />
       <InstagramLiveFeed />

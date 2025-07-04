@@ -90,12 +90,14 @@ export default function CharacterSection({ characterName, useYellowBackground = 
       className="w-full relative block"
       style={{
         backgroundImage: hasBackground ? `url(${backgroundImage})` : 'none',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'scroll',
         backgroundColor: hasBackground ? 'transparent' : 'white',
         height: '50vh',
         minHeight: '300px',
+        width: '100vw',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
