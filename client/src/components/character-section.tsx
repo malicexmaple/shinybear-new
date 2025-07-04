@@ -102,7 +102,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
         alignItems: 'center',
         justifyContent: 'center',
         margin: '0',
-        padding: '20px 0',
+        padding: usePinkBackground ? '60px 0 20px 0' : '20px 0',
         border: 'none',
         outline: 'none',
         boxSizing: 'border-box'
