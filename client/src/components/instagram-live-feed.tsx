@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Copy, Check } from 'lucide-react';
+import instagramBackground from "@assets/Untitled-7_1751636439392.png";
 
 // Declare global ElfSight for TypeScript
 declare global {
@@ -82,7 +83,7 @@ export default function InstagramLiveFeed() {
           animation-play-state: paused;
         }
       `}</style>
-      <section className="w-full py-8 bg-gray-50 relative pt-[20px] pb-[20px]" id="instagram">
+      <section className="w-full py-8 bg-cover bg-center bg-no-repeat relative pt-[20px] pb-[20px]" id="instagram" style={{ backgroundImage: `url(${instagramBackground})` }}>
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-8 relative">
@@ -112,7 +113,17 @@ export default function InstagramLiveFeed() {
             </div>
           </div>
           
-          
+          <div className="mb-12 text-center relative z-10">
+            {/* GIF positioned to not interfere with other elements */}
+            <div className="relative">
+              <img 
+                src="/attached_assets/SnapInsta_1751351039676.gif" 
+                alt="Sickyaki and Pingdori with stretchy connection" 
+                className="absolute left-1/2 transform -translate-x-1/2 opacity-90 z-0"
+                style={{ width: 'auto', height: 'auto', top: '-100px' }}
+              />
+            </div>
+          </div>
           
           {/* Instagram Feed Section */}
           <div className="w-full relative z-20 mt-[44px] mb-[20px] pt-[60px] pb-[20px]" style={{ marginTop: '100px' }}>
