@@ -39,7 +39,7 @@ export default function HeroSection() {
   const dori = characters?.find(c => c.name === "Dori");
 
   return (
-    <section id="home" className="pt-20 pb-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBackground})` }}>
+    <section id="home" className="bg-cover bg-center bg-no-repeat pt-[81px] pb-[81px]" style={{ backgroundImage: `url(${heroBackground})` }}>
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="animate-float mb-2">
           <h1 
