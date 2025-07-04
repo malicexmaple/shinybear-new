@@ -86,7 +86,7 @@ export default function InstagramLiveFeed() {
       <section className="w-full bg-black relative flex items-center justify-center gentle-wobble" style={{ height: 'auto', minHeight: '400px', margin: '0', padding: '20px 0', width: '100vw', overflow: 'visible' }} id="instagram">
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
-          <div className="flex justify-center mb-6 relative" style={{ transform: 'translateY(-300px)' }}>
+          <div className="flex justify-center mb-6 relative" style={{ transform: 'translateY(-200px)' }}>
             <div className="bg-white border-4 border-black rounded-lg p-5 max-w-4xl w-full shadow-sm relative z-[100] animate-wiggle-pulse" style={{ boxShadow: '4px 4px 0px #000000, -4px -4px 0px #000000, 4px -4px 0px #000000, -4px 4px 0px #000000, 6px 6px 0px #000000, 8px 8px 0px #000000' }}>
               <div className="flex items-center justify-between">
                 <div className="flex items-center flex-1 mr-3 justify-center">
