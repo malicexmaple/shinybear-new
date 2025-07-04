@@ -86,13 +86,13 @@ export default function InstagramLiveFeed() {
       <section className="w-full bg-black relative" style={{ height: 'auto', minHeight: '200px', margin: '0', padding: '20px 0', width: '100vw' }} id="instagram">
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
-          <div className="flex justify-center mb-2 relative">
+          <div className="flex justify-center mb-4 relative">
             
-            <div className="bg-white border-4 border-black rounded-lg p-3 max-w-4xl w-full shadow-sm relative z-[100]">
+            <div className="bg-white border-4 border-black rounded-lg p-5 max-w-4xl w-full shadow-sm relative z-[100]">
               <div className="flex items-center justify-between">
                 <div className="flex items-center flex-1 mr-3 justify-center">
                   <code 
-                    className="text-lg md:text-xl font-bold text-black"
+                    className="text-xl md:text-2xl font-bold text-black"
                     style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                   >
                     {contractAddress}
@@ -100,13 +100,13 @@ export default function InstagramLiveFeed() {
                 </div>
                 <button
                   onClick={copyToClipboard}
-                  className="flex items-center justify-center w-8 h-8 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0 border-2 border-black"
+                  className="flex items-center justify-center w-10 h-10 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0 border-2 border-black"
                   title={t('contract.copy')}
                 >
                   {copied ? (
-                    <Check className="w-4 h-4" />
+                    <Check className="w-5 h-5" />
                   ) : (
-                    <Copy className="w-4 h-4" />
+                    <Copy className="w-5 h-5" />
                   )}
                 </button>
               </div>
@@ -120,9 +120,9 @@ export default function InstagramLiveFeed() {
             
             {/* Fallback Content While Widget Loads */}
             <div className="w-full">
-              <div className="text-center mb-3 max-w-6xl mx-auto">
+              <div className="text-center mb-4 max-w-6xl mx-auto">
                 <h3 
-                  className="text-2xl md:text-4xl font-bold text-white mb-3 wiggle-pulse-text"
+                  className="text-5xl md:text-7xl font-bold text-white mb-4 wiggle-pulse-text"
                   style={{ 
                     fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive"
                   }}
@@ -133,14 +133,14 @@ export default function InstagramLiveFeed() {
               </div>
               
               {/* Instagram Content Scroll - Full Width */}
-              <div className="w-full overflow-hidden mb-3">
+              <div className="w-full overflow-hidden mb-8">
                 <div className="flex animate-scroll gap-4">
                   {/* First set of content */}
                   <a 
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1751368166510.jpg"
@@ -152,7 +152,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1_1751368166510.jpg"
@@ -164,7 +164,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1751368166510.jpg"
@@ -176,7 +176,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1_1751368166510.jpg"
@@ -188,7 +188,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-07T091208.000Z_1751368166510.mp4"
@@ -203,7 +203,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-07T091208.000Z_1_1751368166510.mp4"
@@ -218,7 +218,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-18T052355.000Z_1751368166511.mp4"
@@ -233,7 +233,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-18T052355.000Z_1_1751368166511.mp4"
@@ -248,7 +248,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-28T073601.000Z_1751368166511.mp4"
@@ -263,7 +263,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <video 
                       src="/attached_assets/sick_yaki__2025-05-28T073601.000Z_1_1751368166511.mp4"
@@ -278,7 +278,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <video 
                       src="/attached_assets/sick_yaki__2025-06-17T044833.000Z_1751368166511.mp4"
@@ -293,7 +293,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <video 
                       src="/attached_assets/sick_yaki__2025-06-17T044833.000Z_1_1751368166511.mp4"
@@ -310,7 +310,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1751368166510.jpg"
@@ -322,7 +322,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-10T093914.000Z_1_1751368166510.jpg"
@@ -334,7 +334,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1751368166510.jpg"
@@ -346,7 +346,7 @@ export default function InstagramLiveFeed() {
                     href="https://instagram.com/sick_yaki" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="flex-shrink-0 w-64 h-64 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <img 
                       src="/attached_assets/sick_yaki__2025-04-22T113635.000Z_1_1751368166510.jpg"
@@ -363,7 +363,7 @@ export default function InstagramLiveFeed() {
                   href="https://instagram.com/sick_yaki" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-2 bg-black text-white font-bold rounded-full hover:bg-gray-800 transition-all transform hover:scale-105"
+                  className="inline-flex items-center px-8 py-4 bg-black text-white font-bold rounded-full hover:bg-gray-800 transition-all transform hover:scale-105"
                   style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                 >
                   Follow @sick_yaki on Instagram
