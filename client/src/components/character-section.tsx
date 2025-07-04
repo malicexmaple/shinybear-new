@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Character, Gif } from "@shared/schema";
 import { useLanguage } from "@/contexts/LanguageContext";
+import characterBackground from "@assets/5c89c3_a238bc5784294ab4a208adf22de1ca03~mv2_d_3508_2480_s_4_2_1751637207667.png";
 
 interface CharacterSectionProps {
   characterName: string;
@@ -67,7 +68,8 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   return (
     <section 
       id={characterName} 
-      className="py-6 bg-white pt-[15px] pb-[15px] mt-[0px] mb-[0px]"
+      className="py-6 bg-cover bg-center bg-no-repeat pt-[15px] pb-[15px] mt-[0px] mb-[0px] min-h-[400px]"
+      style={{ backgroundImage: `url(${characterBackground})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-2">
