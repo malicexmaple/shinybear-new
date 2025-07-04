@@ -87,24 +87,19 @@ export default function HeroSection() {
         </div>
         
         <div className="flex justify-center items-center mt-2 relative">
-          <div className="character-card rounded-3xl p-4 border border-white/30 max-w-4xl w-full animate-float relative">
-            <div className="relative">
-              <video 
-                src={heroVideo}
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                controls={false}
-                className="w-full h-auto rounded-2xl mt-[-41px] mb-[-41px]"
-                style={{ maxHeight: "575px", objectFit: "contain" }}
-              >
-                Your browser does not support the video tag.
-              </video>
-              
-
-            </div>
-            
+          <div className="relative">
+            <video 
+              src={heroVideo}
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              controls={false}
+              className="w-full h-auto rounded-2xl mt-[-41px] mb-[-41px]"
+              style={{ maxHeight: "575px", objectFit: "contain" }}
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
         
