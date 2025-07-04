@@ -151,7 +151,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
               <img 
                 src={mainGif.url} 
                 alt={mainGif.title} 
-                className="w-full h-40 object-contain rounded-2xl mt-[-18px] mb-[-18px]" 
+                className="w-auto h-auto max-w-full rounded-2xl mt-[-18px] mb-[-18px] mx-auto" 
               />
               <div className="text-center">
                 <h4 
