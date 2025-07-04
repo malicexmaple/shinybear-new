@@ -96,7 +96,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
     backgroundImage = "/attached_assets/5c89c3_bb89df4410964acd9c27b6df5e796547~mv2_d_3508_2480_s_4_2_1751637395119.png";
     hasBackground = true;
   } else if (usePinkBackground) {
-    backgroundImage = "/attached_assets/Untitled-7_1751637493174.png";
+    backgroundImage = "/attached_assets/Untitled-7_1751660931627.png";
     hasBackground = true;
   }
 
