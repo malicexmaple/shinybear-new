@@ -34,9 +34,36 @@ export default function HeroSection() {
   const dori = characters?.find(c => c.name === "Dori");
 
   return (
-    <section id="home" className="bg-cover bg-center bg-no-repeat pt-[20px] pb-[20px]" style={{ backgroundImage: `url(${heroBackground})`, height: '100vh', minHeight: '600px', margin: '0', padding: '0', backgroundSize: 'cover', backgroundPosition: 'center center', width: '100vw' }}>
-      <div className="max-w-6xl mx-auto px-4 text-center h-full flex items-center justify-center">
-        
+    <section id="home" className="bg-cover bg-center bg-no-repeat pt-[20px] pb-[120px]" style={{ backgroundImage: `url(${heroBackground})`, height: '100vh', minHeight: '600px', margin: '0', padding: '0', backgroundSize: 'cover', backgroundPosition: 'center center', width: '100vw' }}>
+      <div className="max-w-6xl mx-auto px-4 text-center h-full flex items-end justify-center">
+        <div className="mb-8">
+          <h1 
+            className="text-6xl md:text-8xl font-bold text-black mb-4 sinchon-font animate-wiggle-pulse"
+            style={{ 
+              textShadow: '2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff',
+              transform: 'perspective(300px) rotateX(25deg)',
+              transformOrigin: 'center bottom'
+            }}
+          >
+            {t('character.yaki.name')}
+          </h1>
+          <h2 
+            className="text-2xl md:text-3xl font-bold text-black mb-6 sinchon-font uppercase tracking-wide"
+            style={{ 
+              textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+            }}
+          >
+            {t('character.yaki.type')}
+          </h2>
+          <p 
+            className="text-xl md:text-2xl text-black max-w-4xl mx-auto sinchon-font"
+            style={{ 
+              textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+            }}
+          >
+            {t('character.yaki.description')}
+          </p>
+        </div>
       </div>
     </section>
   );
