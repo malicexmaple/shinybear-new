@@ -129,7 +129,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           <h2 
             className="text-5xl md:text-[78px] font-bold mb-1 text-[#000000] sinchon-font animate-wiggle-pulse"
             style={{ 
-              textShadow: '2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff',
+              textShadow: '4px 4px 0px #ffffff, -4px -4px 0px #ffffff, 4px -4px 0px #ffffff, -4px 4px 0px #ffffff, 3px 3px 0px #ffffff, -3px -3px 0px #ffffff, 3px -3px 0px #ffffff, -3px 3px 0px #ffffff, 2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff',
               marginTop: '60px'
             }}
           >
