@@ -83,16 +83,16 @@ export default function InstagramLiveFeed() {
           animation-play-state: paused;
         }
       `}</style>
-      <section className="w-full py-8 bg-black relative mt-[-22px] mb-[-22px] pt-[20px] pb-[20px] min-h-[400px]" id="instagram">
+      <section className="w-full py-4 bg-black relative mt-[-22px] mb-[-22px] pt-[10px] pb-[10px] min-h-[300px]" id="instagram">
         <div className="w-full px-4">
           {/* Contract Address Copy Box */}
-          <div className="flex justify-center mb-8 relative">
+          <div className="flex justify-center mb-4 relative">
             
-            <div className="bg-white border-4 border-black rounded-lg p-3 max-w-2xl w-full shadow-sm relative z-[100]">
+            <div className="bg-white border-4 border-black rounded-lg p-5 max-w-4xl w-full shadow-sm relative z-[100]">
               <div className="flex items-center justify-between">
                 <div className="flex items-center flex-1 mr-3 justify-center">
                   <code 
-                    className="text-lg md:text-xl font-bold text-black"
+                    className="text-xl md:text-2xl font-bold text-black"
                     style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                   >
                     {contractAddress}
@@ -100,13 +100,13 @@ export default function InstagramLiveFeed() {
                 </div>
                 <button
                   onClick={copyToClipboard}
-                  className="flex items-center justify-center w-8 h-8 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0 border-2 border-black"
+                  className="flex items-center justify-center w-10 h-10 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0 border-2 border-black"
                   title={t('contract.copy')}
                 >
                   {copied ? (
-                    <Check className="w-4 h-4" />
+                    <Check className="w-5 h-5" />
                   ) : (
-                    <Copy className="w-4 h-4" />
+                    <Copy className="w-5 h-5" />
                   )}
                 </button>
               </div>
@@ -116,11 +116,11 @@ export default function InstagramLiveFeed() {
           
           
           {/* Instagram Feed Section */}
-          <div className="w-full relative z-20 mt-[20px] mb-[20px] pt-[20px] pb-[20px]" style={{ marginTop: '40px' }}>
+          <div className="w-full relative z-20 mt-[10px] mb-[10px] pt-[10px] pb-[10px]" style={{ marginTop: '20px' }}>
             
             {/* Fallback Content While Widget Loads */}
-            <div className="w-full mb-8">
-              <div className="text-center mb-8 max-w-6xl mx-auto">
+            <div className="w-full mb-4">
+              <div className="text-center mb-4 max-w-6xl mx-auto">
                 <h3 
                   className="text-5xl md:text-7xl font-bold text-white mb-4 wiggle-pulse-text"
                   style={{ 
