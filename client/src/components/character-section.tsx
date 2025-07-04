@@ -129,7 +129,8 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           <h2 
             className="text-4xl md:text-[60px] font-bold mb-1 text-[#000000] sinchon-font animate-wiggle-pulse"
             style={{ 
-              textShadow: '2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+              textShadow: '2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff',
+              marginTop: '30px'
             }}
           >
             {t(`character.${characterName}.name`)}
