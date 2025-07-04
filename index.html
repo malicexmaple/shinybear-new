@@ -393,6 +393,147 @@
         
         body.lang-zh .lang-en { display: none; }
         body.lang-zh .lang-zh { display: block; }
+        
+        /* Instagram Feed Styles */
+        .instagram-feed {
+            background: #000;
+            padding: 20px 0;
+            overflow: hidden;
+            position: relative;
+            min-height: 400px;
+        }
+        
+        .contract-box {
+            background: white;
+            border: 4px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 auto 30px;
+            max-width: 800px;
+            box-shadow: 4px 4px 0px #000000, -4px -4px 0px #000000, 4px -4px 0px #000000, -4px 4px 0px #000000, 6px 6px 0px #000000, 8px 8px 0px #000000;
+            animation: wiggle-pulse 3s ease-in-out infinite;
+            transform: translateY(-200px);
+            position: relative;
+            z-index: 100;
+        }
+        
+        .contract-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .contract-address {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 0px #000000, -2px -2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .copy-button {
+            background: #000;
+            color: white;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .copy-button:hover {
+            background: #333;
+        }
+        
+        .instagram-scroll-container {
+            overflow: hidden;
+            margin-bottom: 30px;
+            transform: translateY(-50px);
+        }
+        
+        .instagram-scroll {
+            display: flex;
+            gap: 20px;
+            animation: scroll-horizontal 40s linear infinite;
+        }
+        
+        .instagram-scroll:hover {
+            animation-play-state: paused;
+        }
+        
+        .instagram-item {
+            flex-shrink: 0;
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        
+        .instagram-item:hover {
+            opacity: 0.9;
+        }
+        
+        .instagram-item img,
+        .instagram-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        @keyframes scroll-horizontal {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .instagram-title {
+            color: white;
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 4px 4px 0px #000000, -4px -4px 0px #000000, 4px -4px 0px #000000, -4px 4px 0px #000000;
+            animation: wiggle-pulse 3s ease-in-out infinite;
+        }
+        
+        /* Character Scroll Section */
+        .character-scroll {
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            background: transparent;
+            margin: 20px 0;
+        }
+        
+        .character-scroll-track {
+            display: flex;
+            animation: scroll-characters 30s linear infinite;
+            height: 100%;
+            align-items: center;
+        }
+        
+        .character-scroll-item {
+            flex-shrink: 0;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1px;
+        }
+        
+        .character-scroll-item img {
+            width: 160px;
+            height: 160px;
+            object-fit: contain;
+        }
+        
+        @keyframes scroll-characters {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
     </style>
 </head>
 <body>
@@ -432,21 +573,100 @@
         </div>
     </section>
 
-    <!-- Instagram Section -->
-    <section id="instagram" class="instagram-section">
+    <!-- Instagram Feed Section with Contract Box -->
+    <section id="instagram" class="instagram-feed">
         <div class="container">
-            <h2>
+            <!-- Contract Address Box -->
+            <div class="contract-box">
+                <div class="contract-content">
+                    <div class="contract-address">
+                        <span class="lang-en">COMING SOON</span>
+                        <span class="lang-zh">即将推出</span>
+                    </div>
+                    <button class="copy-button" onclick="copyContract()">
+                        <span id="copy-icon">📋</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Instagram Title -->
+            <h2 class="instagram-title">
                 <span class="lang-en">Instagram Feed</span>
                 <span class="lang-zh">Instagram 动态</span>
             </h2>
-            <p style="font-size: 1.3rem; color: #000; margin-bottom: 20px;">
-                <span class="lang-en">Stay updated with the latest Sickyaki & Pingdori adventures on Instagram</span>
-                <span class="lang-zh">在Instagram上关注生病小鸡和企鹅朋友的最新冒险</span>
-            </p>
-            <a href="https://www.instagram.com/sick_yaki/" target="_blank" class="instagram-link">
-                <span class="lang-en">Follow @sick_yaki</span>
-                <span class="lang-zh">关注 @sick_yaki</span>
-            </a>
+            
+            <!-- Instagram Scrolling Content -->
+            <div class="instagram-scroll-container">
+                <div class="instagram-scroll">
+                    <!-- First set of content -->
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <img src="./attached_assets/sick_yaki__2025-04-10T093914.000Z_1751368166510.jpg" alt="Yaki and Dori comic">
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <img src="./attached_assets/sick_yaki__2025-04-10T093914.000Z_1_1751368166510.jpg" alt="Yaki and Dori in rain">
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <img src="./attached_assets/sick_yaki__2025-04-22T113635.000Z_1751368166510.jpg" alt="Yaki working comic">
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <img src="./attached_assets/sick_yaki__2025-04-22T113635.000Z_1_1751368166510.jpg" alt="Yaki and Dori night scene">
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="./attached_assets/sick_yaki__2025-05-07T091208.000Z_1751368166510.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="./attached_assets/sick_yaki__2025-05-18T052355.000Z_1751368166511.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="./attached_assets/sick_yaki__2025-05-28T073601.000Z_1751368166511.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="./attached_assets/sick_yaki__2025-06-17T044833.000Z_1751368166511.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    
+                    <!-- Duplicate set for seamless infinite scroll -->
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <img src="./attached_assets/sick_yaki__2025-04-10T093914.000Z_1751368166510.jpg" alt="Yaki and Dori comic">
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <img src="./attached_assets/sick_yaki__2025-04-10T093914.000Z_1_1751368166510.jpg" alt="Yaki and Dori in rain">
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <img src="./attached_assets/sick_yaki__2025-04-22T113635.000Z_1751368166510.jpg" alt="Yaki working comic">
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <img src="./attached_assets/sick_yaki__2025-04-22T113635.000Z_1_1751368166510.jpg" alt="Yaki and Dori night scene">
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="./attached_assets/sick_yaki__2025-05-07T091208.000Z_1751368166510.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="./attached_assets/sick_yaki__2025-05-18T052355.000Z_1751368166511.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="./attached_assets/sick_yaki__2025-05-28T073601.000Z_1751368166511.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <a href="https://instagram.com/sick_yaki" target="_blank" class="instagram-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="./attached_assets/sick_yaki__2025-06-17T044833.000Z_1751368166511.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -506,6 +726,110 @@
                 <div class="character-gif">
                     <img src="./attached_assets/Penguin Kawai Sticker_1751342571422.gif" alt="Dori Kawaii">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Scroll Section -->
+    <section class="character-scroll">
+        <div class="character-scroll-track">
+            <!-- Create alternating pattern of characters -->
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <!-- Duplicate set for seamless loop -->
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Shakeit Sticker_1751360946317.gif" alt="Sickyaki character">
+            </div>
+            <div class="character-scroll-item">
+                <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751360928420.gif" alt="Pingdori character">
             </div>
         </div>
     </section>
@@ -801,6 +1125,25 @@
                 } else {
                     item.style.display = 'none';
                 }
+            });
+        }
+
+        // Copy contract address function
+        function copyContract() {
+            const contractAddress = "COMING SOON";
+            const copyIcon = document.getElementById('copy-icon');
+            
+            navigator.clipboard.writeText(contractAddress).then(() => {
+                copyIcon.textContent = '✅';
+                setTimeout(() => {
+                    copyIcon.textContent = '📋';
+                }, 2000);
+            }).catch(() => {
+                // Fallback for older browsers
+                copyIcon.textContent = '❌';
+                setTimeout(() => {
+                    copyIcon.textContent = '📋';
+                }, 2000);
             });
         }
 
