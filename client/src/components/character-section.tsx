@@ -78,7 +78,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
   return (
     <section 
       id={characterName} 
-      className="py-6 mt-[-30px] mb-[-30px] bg-cover bg-center bg-no-repeat min-h-[400px] pt-[121px] pb-[121px]"
+      className={`py-0 mt-[-60px] mb-[-60px] pt-[60px] pb-[60px] ${hasBackground ? 'bg-cover bg-center bg-no-repeat min-h-[400px]' : 'bg-white min-h-[400px]'}`}
       style={hasBackground ? { backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' } : {}}
     >
       <div className="max-w-6xl mx-auto px-4">
