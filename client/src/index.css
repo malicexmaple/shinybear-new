@@ -39,6 +39,20 @@ section + section {
   border-top: none !important;
 }
 
+/* Ensure main container has no gaps */
+.min-h-screen {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  line-height: 1;
+}
+
+/* Remove any gaps from all components */
+div, section, main, header, nav, footer {
+  border: none !important;
+  outline: none !important;
+}
+
 /* SVG Curved text container */
 .curved-text-container {
   display: flex;

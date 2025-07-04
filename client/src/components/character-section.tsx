@@ -94,8 +94,8 @@ export default function CharacterSection({ characterName, useYellowBackground = 
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundColor: hasBackground ? 'transparent' : 'white',
-        height: '100vh',
-        minHeight: '600px',
+        height: '50vh',
+        minHeight: '300px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -109,7 +109,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
       <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center h-full">
         <div className="text-center mb-2 flex flex-col items-center">
           <h2 
-            className="text-6xl md:text-[90px] font-bold mb-2 text-[#000000] sinchon-font wiggle-pulse-text animate-wiggle-pulse"
+            className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font wiggle-pulse-text animate-wiggle-pulse"
           >
             {t(`character.${characterName}.name`)}
           </h2>
@@ -126,7 +126,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
         <div className="grid md:grid-cols-2 gap-4 items-center pt-[0px] pb-[0px] mt-[-5px] mb-[-5px] mx-auto max-w-4xl">
           <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''}`}>
             <h3 
-              className="text-2xl md:text-3xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
+              className="text-xl md:text-2xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
             >
               {t(`character.${characterName}.personality`)}
             </h3>
@@ -149,7 +149,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
               <img 
                 src={mainGif.url} 
                 alt={mainGif.title} 
-                className="w-full h-80 object-contain rounded-2xl mt-[-18px] mb-[-18px]" 
+                className="w-full h-40 object-contain rounded-2xl mt-[-18px] mb-[-18px]" 
               />
               <div className="text-center">
                 <h4 
