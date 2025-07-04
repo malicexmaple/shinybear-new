@@ -117,15 +117,15 @@ export default function CharacterSection({ characterName, useYellowBackground = 
         alignItems: 'center',
         justifyContent: 'center',
         margin: '0',
-        padding: usePinkBackground ? '80px 20px 40px 20px' : '40px 20px',
+        padding: usePinkBackground ? '60px 20px 60px 20px' : '60px 20px',
         border: 'none',
         outline: 'none',
         boxSizing: 'border-box'
       }}
     >
-      <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center h-full">
+      <div className="w-full max-w-6xl mx-auto px-6 flex flex-col items-center justify-center h-full">
 
-        <div className="text-center mb-6 flex flex-col items-center">
+        <div className="text-center mb-8 flex flex-col items-center">
           <h2 
             className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font animate-wiggle-pulse"
           >
@@ -141,7 +141,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6 items-center justify-items-center pt-[0px] pb-[0px] mt-[-5px] mb-[-5px] mx-auto max-w-5xl">
+        <div className="grid md:grid-cols-2 gap-8 items-center justify-items-center pt-4 pb-4 mt-0 mb-0 mx-auto max-w-5xl">
           <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''} flex flex-col justify-center`}>
             <h3 
               className="text-xl md:text-2xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
