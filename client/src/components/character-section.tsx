@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import { Character, Gif } from "@shared/schema";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Copy, Check } from 'lucide-react';
+import { useState } from 'react';
 import characterBackground from "@assets/5c89c3_a238bc5784294ab4a208adf22de1ca03~mv2_d_3508_2480_s_4_2_1751637207667.png";
 import characterBackgroundBlue from "@assets/5c89c3_bb89df4410964acd9c27b6df5e796547~mv2_d_3508_2480_s_4_2_1751637395119.png";
 import characterBackgroundPink from "@assets/Untitled-7_1751637493174.png";
@@ -14,6 +16,20 @@ interface CharacterSectionProps {
 
 export default function CharacterSection({ characterName, useYellowBackground = false, useBlueBackground = false, usePinkBackground = false }: CharacterSectionProps) {
   const { t, translateGifTitle, translatePersonality } = useLanguage();
+  const [copied, setCopied] = useState(false);
+  
+  // Placeholder contract address - will be replaced with real one later
+  const contractAddress = "COMING SOON";
+  
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(contractAddress);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
   const { data: characters, isLoading: charactersLoading } = useQuery<Character[]>({
     queryKey: ["/api/characters"],
   });
@@ -108,6 +124,38 @@ export default function CharacterSection({ characterName, useYellowBackground = 
       }}
     >
       <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center h-full">
+        {/* Contract Address Bar - Only show on first section (pink background) */}
+        {usePinkBackground && (
+          <div className="flex justify-center mb-6 relative w-full" style={{ transform: 'translateY(-60px)' }}>
+            <div className="bg-white border-4 border-black rounded-lg p-5 max-w-4xl w-full shadow-sm relative z-[100] animate-wiggle-pulse" style={{ boxShadow: '4px 4px 0px #000000, -4px -4px 0px #000000, 4px -4px 0px #000000, -4px 4px 0px #000000, 6px 6px 0px #000000, 8px 8px 0px #000000' }}>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center flex-1 mr-3 justify-center">
+                  <code 
+                    className="text-xl md:text-2xl font-bold text-white"
+                    style={{ 
+                      fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive",
+                      textShadow: '2px 2px 0px #000000, -2px -2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000, 1px 1px 0px #000000, -1px -1px 0px #000000, 1px -1px 0px #000000, -1px 1px 0px #000000'
+                    }}
+                  >
+                    {contractAddress}
+                  </code>
+                </div>
+                <button
+                  onClick={copyToClipboard}
+                  className="flex items-center justify-center w-10 h-10 bg-black hover:bg-gray-800 text-white rounded-md transition-colors flex-shrink-0 border-2 border-black"
+                  title={t('contract.copy')}
+                >
+                  {copied ? (
+                    <Check className="w-5 h-5" />
+                  ) : (
+                    <Copy className="w-5 h-5" />
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+        
         <div className="text-center mb-6 flex flex-col items-center">
           <h2 
             className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font animate-wiggle-pulse"
