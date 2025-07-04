@@ -3,8 +3,20 @@ import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+// Increase payload size limits for handling large files
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: false, limit: '50mb' }));
+
+// Add memory monitoring
+const logMemoryUsage = () => {
+  const usage = process.memoryUsage();
+  if (usage.heapUsed > 300 * 1024 * 1024) { // 300MB threshold
+    log(`Memory usage high: ${Math.round(usage.heapUsed / 1024 / 1024)}MB`);
+  }
+};
+
+// Monitor memory every 30 seconds
+setInterval(logMemoryUsage, 30000);
 
 app.use((req, res, next) => {
   const start = Date.now();
@@ -42,9 +54,14 @@ app.use((req, res, next) => {
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
+    
+    // Log the error with more context
+    log(`Error ${status}: ${message}`);
+    if (err.stack) {
+      console.error(err.stack);
+    }
 
     res.status(status).json({ message });
-    throw err;
   });
 
   // importantly only setup vite in development and after
