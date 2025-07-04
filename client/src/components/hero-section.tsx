@@ -41,7 +41,7 @@ export default function HeroSection() {
   return (
     <section id="home" className="bg-contain bg-center bg-no-repeat pt-[81px] pb-[81px] min-h-screen" style={{ backgroundImage: `url(${heroBackground})` }}>
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <div className="animate-float mb-2">
+        <div className="animate-float mb-2" style={{ marginTop: '200px' }}>
           <h1 
             className="text-6xl md:text-8xl font-bold text-[#000000] mt-[-22px] mb-[-22px] pt-[29px] pb-[29px] sinchon-font wiggle-pulse-text"
           >
