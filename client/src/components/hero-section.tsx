@@ -3,7 +3,7 @@ import { Character } from "@shared/schema";
 import { Heart } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import heroVideo from "@assets/e21e-910b-46ef-833c-72f1024cb81e_1751285187310.mp4";
-import heroBackground from "@assets/5c89c3_63d7527fc15547e5afd6317102edd986~mv2_d_3508_2480_s_4_2_1751636222448.png";
+import heroBackground from "@assets/5c89c3_63d7527fc15547e5afd6317102edd986~mv2_d_3508_2480_s_4_2_1751651740801.png";
 
 export default function HeroSection() {
   const { t } = useLanguage();
