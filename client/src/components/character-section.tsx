@@ -176,7 +176,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           {mainGif && (
             <div className={`character-card rounded-3xl p-6 ${!isYaki ? 'md:order-1' : ''} transform scale-[0.7] origin-center`}>
               <img 
-                src={isYaki && usePinkBackground ? "/attached_assets/face panda Sticker by Shiny bear_1751641007580.gif" : mainGif.url} 
+                src={isYaki && usePinkBackground ? "/attached_assets/Happy_Polar_Bear_Sticker_by_Shiny_bear_1751643503475.gif" : mainGif.url} 
                 alt={mainGif.title} 
                 className="w-auto h-auto max-w-full rounded-2xl mt-[-18px] mb-[-18px] mx-auto transform scale-[0.7]" 
               />
