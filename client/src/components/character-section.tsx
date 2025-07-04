@@ -111,7 +111,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
       <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center h-full py-8">
         <div className="text-center mb-6 flex flex-col items-center">
           <h2 
-            className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font wiggle-pulse-text animate-wiggle-pulse"
+            className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font animate-wiggle-pulse"
           >
             {t(`character.${characterName}.name`)}
           </h2>
