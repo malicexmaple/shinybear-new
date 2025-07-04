@@ -127,7 +127,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
 
         <div className="text-center mb-2 flex flex-col items-center">
           <h2 
-            className="text-4xl md:text-[60px] font-bold mb-1 text-[#000000] sinchon-font animate-wiggle-pulse"
+            className="text-5xl md:text-[78px] font-bold mb-1 text-[#000000] sinchon-font animate-wiggle-pulse"
             style={{ 
               textShadow: '2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff',
               marginTop: '60px'
