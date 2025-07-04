@@ -61,7 +61,7 @@ export default function DoriScroll() {
           }
         `}
       </style>
-      <section className="w-full overflow-hidden h-[200px] bg-white relative z-[9999] transform -rotate-2">
+      <section className="w-full overflow-hidden h-[200px] bg-white relative z-[9999]">
         <div
           ref={scrollRef}
           id="character-scroll"
