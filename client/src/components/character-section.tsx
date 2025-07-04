@@ -136,12 +136,6 @@ export default function CharacterSection({ characterName, useYellowBackground = 
             {t(`character.${characterName}.name`)}
           </h2>
           <div className="space-y-0">
-            <p className="text-sm font-semibold text-black uppercase tracking-wide sinchon-font"
-               style={{ 
-                 textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
-               }}>
-              {t(`character.${characterName}.type`)}
-            </p>
             <p className="text-lg text-black max-w-3xl mx-auto sinchon-font"
                style={{ 
                  textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff',
