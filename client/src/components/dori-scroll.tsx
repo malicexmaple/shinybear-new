@@ -8,7 +8,7 @@ export default function DoriScroll() {
     if (!scrollElement) return;
 
     let scrollPosition = 0;
-    const scrollSpeed = 1; // pixels per frame
+    const scrollSpeed = 1.5; // pixels per frame
 
     const animate = () => {
       scrollPosition += scrollSpeed;
