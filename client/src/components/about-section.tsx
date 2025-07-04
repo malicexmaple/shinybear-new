@@ -8,11 +8,11 @@ export default function AboutSection() {
         <div className="text-center mb-8">
           <h2 
             className="md:text-6xl font-bold text-black mb-4 text-[70px] animate-wiggle-pulse"
-            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+            style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t('about.title')}
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+          <p className="text-xl text-black max-w-3xl mx-auto" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
             {t('about.story')}
           </p>
         </div>
@@ -21,14 +21,14 @@ export default function AboutSection() {
           <div className="character-card rounded-3xl p-8 border border-white/30">
             <h3 
               className="text-3xl font-bold text-black mb-6 animate-wiggle-pulse-fast"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('about.beginning')}
             </h3>
-            <p className="text-black mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <p className="text-black mb-4" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               {t('about.story')}
             </p>
-            <p className="text-black mb-4" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <p className="text-black mb-4" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               {t('about.mission')}
             </p>
             <div className="flex items-center space-x-4 mt-6">
@@ -37,14 +37,14 @@ export default function AboutSection() {
                 alt="GIPHY logo" 
                 className="w-12 h-12"
               />
-              <span className="text-black font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{t('about.giphyViews')}</span>
+              <span className="text-black font-medium" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{t('about.giphyViews')}</span>
             </div>
           </div>
           
           <div className="space-y-6">
             <h3 
               className="text-3xl font-bold text-black animate-wiggle-pulse-slow"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('about.meetCreator')}
             </h3>
@@ -58,14 +58,14 @@ export default function AboutSection() {
                 <div>
                   <h4 
                     className="text-xl font-bold text-black"
-                    style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                    style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                   >
                     @sickyaki
                   </h4>
-                  <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{t('about.characterCreator')}</p>
+                  <p className="text-black" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>{t('about.characterCreator')}</p>
                 </div>
               </div>
-              <p className="text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+              <p className="text-black" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
                 {t('about.creator')}
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function AboutSection() {
                     className="w-8 h-8"
                   />
                 </div>
-                <p className="font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Instagram</p>
+                <p className="font-medium" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>Instagram</p>
               </a>
               <a 
                 href="https://giphy.com/sickyaki" 
@@ -93,7 +93,7 @@ export default function AboutSection() {
                 className="flex-1 bg-gray-100 rounded-2xl p-4 text-center text-black transition-all"
               >
                 <div className="text-2xl mb-2">🎁</div>
-                <p className="font-medium" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>GIPHY</p>
+                <p className="font-medium" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>GIPHY</p>
               </a>
             </div>
           </div>

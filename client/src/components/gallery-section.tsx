@@ -52,7 +52,7 @@ export default function GallerySection() {
         <div className="text-center mb-8">
           <h2 
             className="text-5xl md:text-6xl font-bold text-black animate-wiggle-pulse mt-[13px] mb-[13px]"
-            style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+            style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
           >
             {t('gallery.title')}
           </h2>
@@ -71,7 +71,7 @@ export default function GallerySection() {
                     ? "bg-black text-white"
                     : "text-black hover:bg-black hover:text-white"
                 }`}
-                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 {button.label}
               </button>
@@ -89,7 +89,7 @@ export default function GallerySection() {
                 className="w-full h-56 object-contain" 
               />
               <div className="p-3 bg-white border-t border-gray-100">
-                <p className="text-sm font-medium text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+                <p className="text-sm font-medium text-black" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
                   {translateGifTitle(gif.title)}
                 </p>
                 <div className="flex flex-wrap gap-1 mt-2">
@@ -97,7 +97,7 @@ export default function GallerySection() {
                     <span 
                       key={index} 
                       className="text-xs bg-gray-100 text-black px-2 py-1 rounded-full"
-                      style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                      style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                     >
                       {translateTag(tag)}
                     </span>
@@ -113,7 +113,7 @@ export default function GallerySection() {
             <button 
               onClick={() => setShowAll(!showAll)}
               className="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-semibold hover:opacity-80 transition-all transform hover:scale-105"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               <span>{showAll ? t('gallery.showLess') : `${t('gallery.showMore')} (${filteredGifs.length - visibleCount} ${t('gallery.moreCount')})`}</span>
               {showAll ? (

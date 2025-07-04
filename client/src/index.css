@@ -12,6 +12,7 @@ body, html {
   outline: none !important;
   width: 100vw !important;
   overflow-x: hidden !important;
+  font-family: 'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive !important;
 }
 
 @font-face {
@@ -22,9 +23,27 @@ body, html {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'QianTuXiaoTuTi';
+  src: url('/fonts/QianTuXiaoTuTi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Global font class */
 .sinchon-font {
-  font-family: 'Sinchon Rhapsody', 'Comic Neue', cursive !important;
+  font-family: 'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive !important;
+}
+
+/* Apply Chinese font to all text elements */
+*, *::before, *::after {
+  font-family: 'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive !important;
+}
+
+/* Ensure all text elements use the Chinese font */
+h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, label {
+  font-family: 'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive !important;
 }
 
 /* Remove gaps between character sections */

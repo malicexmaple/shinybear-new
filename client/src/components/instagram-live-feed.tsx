@@ -93,7 +93,7 @@ export default function InstagramLiveFeed() {
                   <code 
                     className="text-xl md:text-2xl font-bold text-white"
                     style={{ 
-                      fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive",
+                      fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive",
                       textShadow: '2px 2px 0px #000000, -2px -2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000, 1px 1px 0px #000000, -1px -1px 0px #000000, 1px -1px 0px #000000, -1px 1px 0px #000000'
                     }}
                   >
@@ -124,7 +124,7 @@ export default function InstagramLiveFeed() {
                 <h3 
                   className="text-5xl md:text-7xl font-bold text-white mb-4 wiggle-pulse-text"
                   style={{ 
-                    fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive",
+                    fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive",
                     textShadow: '4px 4px 0px #000000, -4px -4px 0px #000000, 4px -4px 0px #000000, -4px 4px 0px #000000, 3px 3px 0px #000000, -3px -3px 0px #000000, 3px -3px 0px #000000, -3px 3px 0px #000000, 2px 2px 0px #000000, -2px -2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000'
                   }}
                 >
@@ -365,7 +365,7 @@ export default function InstagramLiveFeed() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-8 py-4 bg-black text-white font-bold rounded-full hover:bg-gray-800 transition-all transform hover:scale-105"
-                  style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                  style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
                 >
                   Follow @sick_yaki on Instagram
                 </a>

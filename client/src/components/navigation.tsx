@@ -32,7 +32,7 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold text-black" style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
+            <h1 className="text-2xl font-bold text-black" style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}>
               SHINY BEAR
             </h1>
           </div>
@@ -41,35 +41,35 @@ export default function Navigation() {
             <button 
               onClick={() => scrollToSection("home")}
               className="text-black hover:text-black transition-colors font-medium"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.home')}
             </button>
             <button 
               onClick={() => scrollToSection("yaki")}
               className="text-black hover:text-black transition-colors font-medium"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.yaki')}
             </button>
             <button 
               onClick={() => scrollToSection("dori")}
               className="text-black hover:text-black transition-colors font-medium"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.dori')}
             </button>
             <button 
               onClick={() => scrollToSection("gallery")}
               className="text-black hover:text-black transition-colors font-medium"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.gallery')}
             </button>
             <button 
               onClick={() => scrollToSection("instagram")}
               className="text-black hover:text-black transition-colors font-medium"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.instagram')}
             </button>
@@ -78,7 +78,7 @@ export default function Navigation() {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-black hover:text-black transition-colors font-medium"
-              style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+              style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
             >
               {t('nav.casetify')}
             </a>
@@ -137,35 +137,35 @@ export default function Navigation() {
               <button 
                 onClick={() => scrollToSection("home")}
                 className="text-left text-black hover:text-gray-600 transition-colors font-medium"
-                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 {t('nav.home')}
               </button>
               <button 
                 onClick={() => scrollToSection("yaki")}
                 className="text-left text-black hover:text-gray-600 transition-colors font-medium"
-                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 {t('nav.yaki')}
               </button>
               <button 
                 onClick={() => scrollToSection("dori")}
                 className="text-left text-black hover:text-gray-600 transition-colors font-medium"
-                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 {t('nav.dori')}
               </button>
               <button 
                 onClick={() => scrollToSection("gallery")}
                 className="text-left text-black hover:text-gray-600 transition-colors font-medium"
-                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 {t('nav.gallery')}
               </button>
               <button 
                 onClick={() => scrollToSection("instagram")}
                 className="text-left text-black hover:text-gray-600 transition-colors font-medium"
-                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 {t('nav.instagram')}
               </button>
@@ -174,7 +174,7 @@ export default function Navigation() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-left text-black hover:text-gray-600 transition-colors font-medium"
-                style={{ fontFamily: "'Sinchon Rhapsody', 'Comic Neue', cursive" }}
+                style={{ fontFamily: "'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive" }}
               >
                 {t('nav.casetify')}
               </a>
