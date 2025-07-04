@@ -125,7 +125,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
     >
       <div className="w-full max-w-6xl mx-auto px-6 flex flex-col items-center justify-center h-full">
 
-        <div className="text-center mb-8 flex flex-col items-center">
+        <div className="text-center mb-4 flex flex-col items-center">
           <h2 
             className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font animate-wiggle-pulse"
           >
