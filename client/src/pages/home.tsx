@@ -17,6 +17,7 @@ export default function Home() {
       <InstagramFeed />
       <CharacterSection characterName="yaki" />
       <CharacterSection characterName="dori" />
+      <CharacterSection characterName="yaki" />
       <DoriScroll />
       <GallerySection />
       <Footer />
