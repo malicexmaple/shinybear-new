@@ -102,6 +102,7 @@ Changelog:
 - June 30, 2025. Updated hero section to replace character cards with user-provided video
 - June 30, 2025. Applied custom Sinchon Rhapsody ExtraBold font to ALL text elements throughout entire website
 - June 30, 2025. Implemented comprehensive English/Korean translation system with instant language switching
+- July 4, 2025. Replaced Korean language support with Chinese Simplified, updated all translations throughout the website
 - June 30, 2025. Optimized layout: tighter spacing, larger GIFs, removed drop shadows, added subtle bounce animations
 - June 30, 2025. Integrated authentic GIF collection from sick_yaki GIPHY profile with comprehensive duplicate prevention system
 - June 30, 2025. Fixed GIF categorization to ensure proper character separation in gallery sections

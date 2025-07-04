@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 
-type Language = 'en' | 'ko';
+type Language = 'en' | 'zh';
 
 interface LanguageContextType {
   language: Language;
@@ -96,99 +96,99 @@ const translations = {
     'gif.shake': 'Shake',
     'gif.jump': 'Jump',
   },
-  ko: {
+  zh: {
     // Navigation
-    'nav.title': '식야키 & 핑도리',
-    'nav.home': '홈',
-    'nav.yaki': '식야키',
-    'nav.dori': '핑도리',
-    'nav.gallery': '갤러리',
-    'nav.about': '소개',
-    'nav.instagram': '인스타그램',
+    'nav.title': '病鸡 & 胖企鹅',
+    'nav.home': '首页',
+    'nav.yaki': '病鸡',
+    'nav.dori': '胖企鹅',
+    'nav.gallery': '图库',
+    'nav.about': '关于',
+    'nav.instagram': 'Instagram',
     
     // Hero Section
-    'hero.title': '식야키 & 핑도리',
+    'hero.title': '病鸡 & 胖企鹅',
     'hero.subtitle': '',
-    'hero.videoDescription': '우리의 사랑스러운 캐릭터들을 만나보세요!',
-    'hero.exploreButton': '우리 세상 탐험하기',
+    'hero.videoDescription': '快来认识我们可爱的角色们！',
+    'hero.exploreButton': '探索我们的世界',
     
     // Character Sections
-    'character.yaki.name': '식야키',
-    'character.yaki.type': '작은 병아리',
-    'character.yaki.personality': '밝고 활기찬',
-    'character.yaki.description': '춤추기를 좋아하고 사랑하는 동반자 핑도리와 특별한 순간을 나누는 사랑스러운 노란 병아리 식야키를 만나보세요!',
-    'character.dori.name': '핑도리',
-    'character.dori.type': '아기 펭귄',
-    'character.dori.personality': '달콤하고 사랑스러운',
-    'character.dori.description': '식야키와 끊을 수 없는 유대감을 공유하고 애정 표현을 좋아하는 가장 귀여운 하얀 펭귄 핑도리에게 인사해보세요!',
+    'character.yaki.name': '病鸡',
+    'character.yaki.type': '小鸡',
+    'character.yaki.personality': '开朗活泼',
+    'character.yaki.description': '认识病鸡，这只可爱的黄色小鸡喜欢跳舞，也喜欢与心爱的同伴胖企鹅分享特殊时刻！',
+    'character.dori.name': '胖企鹅',
+    'character.dori.type': '小企鹅',
+    'character.dori.personality': '甜蜜可爱',
+    'character.dori.description': '跟胖企鹅打个招呼吧！这只最可爱的白色企鹅与病鸡有着不可分割的纽带，喜欢表达爱意！',
     
     // Gallery Section
-    'gallery.title': 'Gif 갤러리',
-    'gallery.subtitle': '우리의 카와이 GIF 컬렉션을 둘러보세요',
-    'gallery.all': '전체',
-    'gallery.yaki': '식야키',
-    'gallery.dori': '핑도리',
+    'gallery.title': 'GIF 图库',
+    'gallery.subtitle': '探索我们的可爱 GIF 收藏',
+    'gallery.all': '全部',
+    'gallery.yaki': '病鸡',
+    'gallery.dori': '胖企鹅',
     
     // About Section
-    'about.title': '식야키 & 핑도리 소개',
-    'about.story': '카와이 문화와 사랑스러운 캐릭터에 대한 사랑에서 태어난 식야키 & 핑도리는 매력적인 애니메이션과 장난기 많은 성격으로 전 세계 사람들의 마음을 사로잡았습니다.',
-    'about.mission': '우리의 사명은 이 사랑스러운 캐릭터들을 통해 기쁨과 귀여움을 전파하여 모든 연령대의 사람들에게 미소를 선사하는 것입니다.',
-    'about.creator': '카와이 커뮤니티를 위해 사랑으로 제작되었습니다',
+    'about.title': '关于病鸡 & 胖企鹅',
+    'about.story': '病鸡和胖企鹅诞生于对卡哇伊文化和可爱角色的热爱，凭借迷人的动画和顽皮的性格俘获了全世界人们的心。',
+    'about.mission': '我们的使命是通过这些可爱的角色传播快乐和可爱，为各个年龄段的人们带来微笑。',
+    'about.creator': '为卡哇伊社区用爱制作',
     
     // Instagram Section
-    'instagram.title': '인스타그램 피드',
-    'instagram.subtitle': '인스타그램에서 식야키 & 핑도리의 최신 모험을 만나보세요',
+    'instagram.title': 'Instagram 动态',
+    'instagram.subtitle': '在 Instagram 上关注病鸡和胖企鹅的最新冒险',
     
     // Footer
-    'footer.copyright': '© 2024 식야키 & 핑도리. 전 세계 카와이 팬들을 위해 사랑으로 제작되었습니다.',
+    'footer.copyright': '© 2024 病鸡 & 胖企鹅. 为全世界的卡哇伊粉丝用爱制作。',
     
     // Contract Address
-    'contract.label': 'COMING SOON',
-    'contract.copy': '클립보드에 복사',
+    'contract.label': '即将推出',
+    'contract.copy': '复制到剪贴板',
     
     // Character GIF descriptions
-    'character.yaki.gifDescription': '식야키는 사랑하는 핑도리와 하트와 달콤한 순간을 나누는 것을 좋아해요',
-    'character.dori.gifDescription': '핑도리는 사랑하는 식야키에게 키스하고 사랑을 표현하는 것을 좋아해요',
+    'character.yaki.gifDescription': '病鸡喜欢与心爱的胖企鹅分享心形和甜蜜时刻',
+    'character.dori.gifDescription': '胖企鹅喜欢给心爱的病鸡亲吻和表达爱意',
     
     // Gallery section
-    'gallery.showMore': '더 보기',
-    'gallery.showLess': '접기',
-    'gallery.moreCount': '개 더',
+    'gallery.showMore': '显示更多',
+    'gallery.showLess': '收起',
+    'gallery.moreCount': '个更多',
     
     // About section
-    'about.beginning': '시작',
-    'about.giphyViews': '9억 2540만+ GIF 조회수',
-    'about.meetCreator': '크리에이터 만나기',
+    'about.beginning': '开始',
+    'about.giphyViews': '9.254亿+ GIF 浏览量',
+    'about.meetCreator': '认识创作者',
     
     // Navigation links
-    'nav.casetify': '케이스티파이',
+    'nav.casetify': 'Casetify',
     
     // About section additional
-    'about.characterCreator': '캐릭터 크리에이터',
+    'about.characterCreator': '角色创造者',
     
     // Character personality translations
-    'personality.round_gray_penguin': '식야키를 돌보는 동그란 회색 펭귄',
-    'personality.gentle_nurturing': '부드럽고 돌봄이 많은 동반자',
-    'personality.massaging_comforting': '자주 야키를 마사지해주거나 위로해주는 모습',
-    'personality.unconditional_friendship': '무조건적인 우정과 지지를 상징하는',
-    'personality.small_weak_chick': '구겨지기 쉬운 작고 약한 병아리',
-    'personality.no_energy_problems': '문제를 심각하게 받아들일 에너지가 없는',
-    'personality.desolate_city_adapting': '황량한 도시에서 자신만의 방식으로 적응하며 살아가는',
-    'personality.shy_sleepy_bottom': '수줍음이 많고 졸린 성격에 독특한 복숭아 모양 엉덩이가 특징인',
+    'personality.round_gray_penguin': '照顾病鸡的圆圆的灰色企鹅',
+    'personality.gentle_nurturing': '温和善良的伙伴',
+    'personality.massaging_comforting': '经常给病鸡按摩或安慰的样子',
+    'personality.unconditional_friendship': '象征无条件友谊和支持',
+    'personality.small_weak_chick': '容易受伤的小小弱鸡',
+    'personality.no_energy_problems': '没有精力认真对待问题',
+    'personality.desolate_city_adapting': '在荒凉的城市里以自己的方式适应生活',
+    'personality.shy_sleepy_bottom': '害羞嗜睡，有着独特桃子形状屁股的特征',
 
     // GIF Action translations
-    'gif.yaki': '식야키',
-    'gif.dori': '핑도리',
-    'gif.dancing': '댄싱',
-    'gif.love': '러브',
-    'gif.kiss': '키스',
-    'gif.excited': '신나는',
-    'gif.sad': '슬픈',
-    'gif.heart': '하트',
-    'gif.chick': '병아리',
-    'gif.gas': '가스',
-    'gif.shake': '흔들기',
-    'gif.jump': '점프',
+    'gif.yaki': '病鸡',
+    'gif.dori': '胖企鹅',
+    'gif.dancing': '跳舞',
+    'gif.love': '爱',
+    'gif.kiss': '亲吻',
+    'gif.excited': '兴奋',
+    'gif.sad': '伤心',
+    'gif.heart': '心形',
+    'gif.chick': '小鸡',
+    'gif.gas': '气体',
+    'gif.shake': '摇摆',
+    'gif.jump': '跳跃',
   }
 };
 
@@ -220,42 +220,42 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     translatedTitle = translatedTitle.replace(/\bChick\b/gi, t('gif.chick'));
     translatedTitle = translatedTitle.replace(/\bGas\b/gi, t('gif.gas'));
     translatedTitle = translatedTitle.replace(/\bShake\b/gi, t('gif.shake'));
-    translatedTitle = translatedTitle.replace(/\bShaking\b/gi, '흔들기');
+    translatedTitle = translatedTitle.replace(/\bShaking\b/gi, '摇摆');
     translatedTitle = translatedTitle.replace(/\bJump\b/gi, t('gif.jump'));
-    translatedTitle = translatedTitle.replace(/\bVote\b/gi, '투표');
-    translatedTitle = translatedTitle.replace(/\bPeace\b/gi, '평화');
-    translatedTitle = translatedTitle.replace(/\bSpank\b/gi, '때리기');
-    translatedTitle = translatedTitle.replace(/\bPlayful\b/gi, '장난스러운');
-    translatedTitle = translatedTitle.replace(/\bKawaii\b/gi, '카와이');
-    translatedTitle = translatedTitle.replace(/\bSing\b/gi, '노래');
-    translatedTitle = translatedTitle.replace(/\bSinging\b/gi, '노래');
-    translatedTitle = translatedTitle.replace(/\bWay\b/gi, '길');
-    translatedTitle = translatedTitle.replace(/\bBack\b/gi, '돌아가기');
-    translatedTitle = translatedTitle.replace(/\bHome\b/gi, '집');
-    translatedTitle = translatedTitle.replace(/\bMiss\b/gi, '그리워');
-    translatedTitle = translatedTitle.replace(/\bYou\b/gi, '너를');
-    translatedTitle = translatedTitle.replace(/\bSick\b/gi, '아픈');
-    translatedTitle = translatedTitle.replace(/\bWorkout\b/gi, '운동');
-    translatedTitle = translatedTitle.replace(/\bExercise\b/gi, '운동');
-    translatedTitle = translatedTitle.replace(/\bDown\b/gi, '다운');
-    translatedTitle = translatedTitle.replace(/\bTwerking\b/gi, '트워킹');
-    translatedTitle = translatedTitle.replace(/\bBox\b/gi, '박스');
-    translatedTitle = translatedTitle.replace(/\bHiding\b/gi, '숨기');
-    translatedTitle = translatedTitle.replace(/\bHeadphones\b/gi, '헤드폰');
-    translatedTitle = translatedTitle.replace(/\bMusic\b/gi, '음악');
-    translatedTitle = translatedTitle.replace(/\bRetro\b/gi, '레트로');
-    translatedTitle = translatedTitle.replace(/\bClassic\b/gi, '클래식');
-    translatedTitle = translatedTitle.replace(/\bVintage\b/gi, '빈티지');
-    translatedTitle = translatedTitle.replace(/\bLunch\b/gi, '점심');
-    translatedTitle = translatedTitle.replace(/\bComputer\b/gi, '컴퓨터');
-    translatedTitle = translatedTitle.replace(/\bAmazing\b/gi, '놀라운');
-    translatedTitle = translatedTitle.replace(/\bWow\b/gi, '와우');
-    translatedTitle = translatedTitle.replace(/\bRocket\b/gi, '로켓');
-    translatedTitle = translatedTitle.replace(/\bJoy\b/gi, '기쁨');
-    translatedTitle = translatedTitle.replace(/\bEating\b/gi, '먹기');
-    translatedTitle = translatedTitle.replace(/\bFood\b/gi, '음식');
-    translatedTitle = translatedTitle.replace(/\bCutie\b/gi, '귀염둥이');
-    translatedTitle = translatedTitle.replace(/\bPatootie\b/gi, '꼬마');
+    translatedTitle = translatedTitle.replace(/\bVote\b/gi, '投票');
+    translatedTitle = translatedTitle.replace(/\bPeace\b/gi, '和平');
+    translatedTitle = translatedTitle.replace(/\bSpank\b/gi, '打击');
+    translatedTitle = translatedTitle.replace(/\bPlayful\b/gi, '顽皮');
+    translatedTitle = translatedTitle.replace(/\bKawaii\b/gi, '可爱');
+    translatedTitle = translatedTitle.replace(/\bSing\b/gi, '唱歌');
+    translatedTitle = translatedTitle.replace(/\bSinging\b/gi, '唱歌');
+    translatedTitle = translatedTitle.replace(/\bWay\b/gi, '道路');
+    translatedTitle = translatedTitle.replace(/\bBack\b/gi, '回来');
+    translatedTitle = translatedTitle.replace(/\bHome\b/gi, '家');
+    translatedTitle = translatedTitle.replace(/\bMiss\b/gi, '想念');
+    translatedTitle = translatedTitle.replace(/\bYou\b/gi, '你');
+    translatedTitle = translatedTitle.replace(/\bSick\b/gi, '生病');
+    translatedTitle = translatedTitle.replace(/\bWorkout\b/gi, '锻炼');
+    translatedTitle = translatedTitle.replace(/\bExercise\b/gi, '运动');
+    translatedTitle = translatedTitle.replace(/\bDown\b/gi, '下来');
+    translatedTitle = translatedTitle.replace(/\bTwerking\b/gi, '扭动');
+    translatedTitle = translatedTitle.replace(/\bBox\b/gi, '盒子');
+    translatedTitle = translatedTitle.replace(/\bHiding\b/gi, '隐藏');
+    translatedTitle = translatedTitle.replace(/\bHeadphones\b/gi, '耳机');
+    translatedTitle = translatedTitle.replace(/\bMusic\b/gi, '音乐');
+    translatedTitle = translatedTitle.replace(/\bRetro\b/gi, '复古');
+    translatedTitle = translatedTitle.replace(/\bClassic\b/gi, '经典');
+    translatedTitle = translatedTitle.replace(/\bVintage\b/gi, '复古');
+    translatedTitle = translatedTitle.replace(/\bLunch\b/gi, '午餐');
+    translatedTitle = translatedTitle.replace(/\bComputer\b/gi, '电脑');
+    translatedTitle = translatedTitle.replace(/\bAmazing\b/gi, '惊人');
+    translatedTitle = translatedTitle.replace(/\bWow\b/gi, '哇');
+    translatedTitle = translatedTitle.replace(/\bRocket\b/gi, '火箭');
+    translatedTitle = translatedTitle.replace(/\bJoy\b/gi, '快乐');
+    translatedTitle = translatedTitle.replace(/\bEating\b/gi, '吃饭');
+    translatedTitle = translatedTitle.replace(/\bFood\b/gi, '食物');
+    translatedTitle = translatedTitle.replace(/\bCutie\b/gi, '可爱');
+    translatedTitle = translatedTitle.replace(/\bPatootie\b/gi, '小宝贝');
     
     return translatedTitle;
   };
@@ -263,7 +263,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const translatePersonality = (trait: string): string => {
     if (language === 'en') return trait;
     
-    // Map English personality traits to Korean translations
+    // Map English personality traits to Chinese translations
     const personalityMap: { [key: string]: string } = {
       'Round gray penguin who cares for Sickyaki': t('personality.round_gray_penguin'),
       'Gentle and nurturing companion': t('personality.gentle_nurturing'),
@@ -281,66 +281,66 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const translateTag = (tag: string): string => {
     if (language === 'en') return tag;
     
-    // Translate common GIF tags to Korean
+    // Translate common GIF tags to Chinese
     const tagTranslations: { [key: string]: string } = {
-      'dancing': '댄싱',
-      'love': '러브',
-      'kiss': '키스',
-      'excited': '신남',
-      'sad': '슬픔',
-      'heart': '하트',
-      'chick': '병아리',
-      'gas': '가스',
-      'shake': '흔들기',
-      'shaking': '흔들기',
-      'jump': '점프',
-      'jumping': '점프',
-      'happy': '행복',
-      'cute': '귀여움',
-      'funny': '재미',
-      'bounce': '튀기',
-      'lying': '누움',
-      'floating': '둥둥',
-      'work': '일',
-      'busy': '바쁨',
-      'paper': '종이',
-      'note': '노트',
-      'fun': '재미',
-      'vote': '투표',
-      'peace': '평화',
-      'spank': '때리기',
-      'playful': '장난스러운',
-      'kawaii': '카와이',
-      'sing': '노래',
-      'singing': '노래',
-      'way': '길',
-      'back': '돌아가기',
-      'home': '집',
-      'miss': '그리워',
-      'you': '너를',
-      'sick': '아픈',
-      'yaki': '야키',
-      'workout': '운동',
-      'exercise': '운동',
-      'down': '다운',
-      'twerking': '트워킹',
-      'box': '박스',
-      'hiding': '숨기',
-      'headphones': '헤드폰',
-      'music': '음악',
-      'retro': '레트로',
-      'classic': '클래식',
-      'vintage': '빈티지',
-      'lunch': '점심',
-      'computer': '컴퓨터',
-      'amazing': '놀라운',
-      'wow': '와우',
-      'rocket': '로켓',
-      'joy': '기쁨',
-      'eating': '먹기',
-      'food': '음식',
-      'cutie': '귀염둥이',
-      'patootie': '꼬마'
+      'dancing': '跳舞',
+      'love': '爱',
+      'kiss': '亲吻',
+      'excited': '兴奋',
+      'sad': '伤心',
+      'heart': '心形',
+      'chick': '小鸡',
+      'gas': '气体',
+      'shake': '摇摆',
+      'shaking': '摇摆',
+      'jump': '跳跃',
+      'jumping': '跳跃',
+      'happy': '快乐',
+      'cute': '可爱',
+      'funny': '有趣',
+      'bounce': '弹跳',
+      'lying': '躺下',
+      'floating': '飘浮',
+      'work': '工作',
+      'busy': '忙碌',
+      'paper': '纸张',
+      'note': '笔记',
+      'fun': '有趣',
+      'vote': '投票',
+      'peace': '和平',
+      'spank': '打击',
+      'playful': '顽皮',
+      'kawaii': '可爱',
+      'sing': '唱歌',
+      'singing': '唱歌',
+      'way': '道路',
+      'back': '回来',
+      'home': '家',
+      'miss': '想念',
+      'you': '你',
+      'sick': '生病',
+      'yaki': '病鸡',
+      'workout': '锻炼',
+      'exercise': '运动',
+      'down': '下来',
+      'twerking': '扭动',
+      'box': '盒子',
+      'hiding': '隐藏',
+      'headphones': '耳机',
+      'music': '音乐',
+      'retro': '复古',
+      'classic': '经典',
+      'vintage': '复古',
+      'lunch': '午餐',
+      'computer': '电脑',
+      'amazing': '惊人',
+      'wow': '哇',
+      'rocket': '火箭',
+      'joy': '快乐',
+      'eating': '吃饭',
+      'food': '食物',
+      'cutie': '可爱',
+      'patootie': '小宝贝'
     };
     
     return tagTranslations[tag.toLowerCase()] || tag;

@@ -6,7 +6,7 @@ export default function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
 
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'ko' : 'en');
+    setLanguage(language === 'en' ? 'zh' : 'en');
   };
 
   return (
@@ -19,7 +19,7 @@ export default function LanguageToggle() {
     >
       <Languages className="w-4 h-4" />
       <span className="font-medium">
-        {language === 'en' ? '한국어' : 'English'}
+        {language === 'en' ? '中文' : 'English'}
       </span>
     </Button>
   );
