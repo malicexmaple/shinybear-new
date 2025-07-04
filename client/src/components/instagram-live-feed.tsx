@@ -116,7 +116,7 @@ export default function InstagramLiveFeed() {
           
           
           {/* Instagram Feed Section */}
-          <div className="w-full relative z-20 mt-[44px] mb-[20px] pt-[60px] pb-[20px]" style={{ marginTop: '100px' }}>
+          <div className="w-full relative z-20 mt-[20px] mb-[20px] pt-[20px] pb-[20px]" style={{ marginTop: '40px' }}>
             
             {/* Fallback Content While Widget Loads */}
             <div className="w-full mb-8">
