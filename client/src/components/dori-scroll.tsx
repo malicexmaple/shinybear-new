@@ -42,7 +42,7 @@ export default function DoriScroll() {
         <img
           src={isSickyaki ? sickyakiGif : pingdoriGif}
           alt={isSickyaki ? "Sickyaki character" : "Pingdori character"}
-          className="w-[96px] h-[96px] object-contain relative z-[9999]"
+          className="w-[160px] h-[160px] object-contain relative z-[9999]"
         />
       </div>
     );
