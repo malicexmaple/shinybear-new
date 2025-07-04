@@ -3,6 +3,7 @@ import { Character } from "@shared/schema";
 import { Heart } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import heroVideo from "@assets/e21e-910b-46ef-833c-72f1024cb81e_1751285187310.mp4";
+import heroBackground from "@assets/5c89c3_63d7527fc15547e5afd6317102edd986~mv2_d_3508_2480_s_4_2_1751636222448.png";
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -38,7 +39,7 @@ export default function HeroSection() {
   const dori = characters?.find(c => c.name === "Dori");
 
   return (
-    <section id="home" className="pt-20 pb-4 bg-white">
+    <section id="home" className="pt-20 pb-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBackground})` }}>
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="animate-float mb-2">
           <h1 
