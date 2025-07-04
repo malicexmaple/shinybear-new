@@ -20,7 +20,7 @@ export default function HeroSection() {
 
   if (isLoading) {
     return (
-      <section id="home" className="pt-4 pb-4 gradient-kawaii flex items-center" style={{ height: '50vh', minHeight: '300px', margin: '0', padding: '0' }}>
+      <section id="home" className="pt-4 pb-4 gradient-kawaii flex items-center" style={{ height: '100vh', minHeight: '600px', margin: '0', padding: '0' }}>
         <div className="max-w-6xl mx-auto px-4 text-center">
           <div className="animate-pulse">
             <div className="h-16 bg-white/20 rounded-lg mb-4"></div>
@@ -34,11 +34,11 @@ export default function HeroSection() {
   const dori = characters?.find(c => c.name === "Dori");
 
   return (
-    <section id="home" className="bg-contain bg-center bg-no-repeat pt-[20px] pb-[20px]" style={{ backgroundImage: `url(${heroBackground})`, height: '50vh', minHeight: '300px', margin: '0', padding: '0', backgroundSize: 'contain', backgroundPosition: 'center center', width: '100vw' }}>
+    <section id="home" className="bg-cover bg-center bg-no-repeat pt-[20px] pb-[20px]" style={{ backgroundImage: `url(${heroBackground})`, height: '100vh', minHeight: '600px', margin: '0', padding: '0', backgroundSize: 'cover', backgroundPosition: 'center center', width: '100vw' }}>
       <div className="max-w-6xl mx-auto px-4 text-center h-full flex items-center justify-center">
         <div className="animate-float">
           <h1 
-            className="text-4xl md:text-6xl font-bold text-[#000000] sinchon-font wiggle-pulse-text"
+            className="text-6xl md:text-8xl font-bold text-[#000000] sinchon-font wiggle-pulse-text"
           >
             {t('hero.title')}
           </h1>
