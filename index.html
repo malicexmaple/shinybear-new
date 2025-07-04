@@ -408,13 +408,15 @@
             border: 4px solid black;
             border-radius: 10px;
             padding: 20px;
-            margin: 0 auto 30px;
+            margin: 0 auto;
             max-width: 800px;
             box-shadow: 4px 4px 0px #000000, -4px -4px 0px #000000, 4px -4px 0px #000000, -4px 4px 0px #000000, 6px 6px 0px #000000, 8px 8px 0px #000000;
             animation: wiggle-pulse 3s ease-in-out infinite;
-            transform: translateY(-200px);
-            position: relative;
-            z-index: 100;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) translateY(-250px);
+            z-index: 1000;
         }
         
         .contract-content {
@@ -567,22 +569,22 @@
         </div>
     </section>
 
-    <!-- Instagram Feed Section with Contract Box -->
+    <!-- Floating Contract Address Box -->
+    <div class="contract-box">
+        <div class="contract-content">
+            <div class="contract-address">
+                <span class="lang-en">COMING SOON</span>
+                <span class="lang-zh">即将推出</span>
+            </div>
+            <button class="copy-button" onclick="copyContract()">
+                <span id="copy-icon">📋</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Instagram Feed Section -->
     <section id="instagram" class="instagram-feed">
         <div class="container">
-            <!-- Contract Address Box -->
-            <div class="contract-box">
-                <div class="contract-content">
-                    <div class="contract-address">
-                        <span class="lang-en">COMING SOON</span>
-                        <span class="lang-zh">即将推出</span>
-                    </div>
-                    <button class="copy-button" onclick="copyContract()">
-                        <span id="copy-icon">📋</span>
-                    </button>
-                </div>
-            </div>
-            
             <!-- Instagram Title -->
             <h2 class="instagram-title">
                 <span class="lang-en">Instagram Feed</span>
