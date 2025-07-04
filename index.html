@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sickyaki & Pingdori - Kawaii Characters</title>
+    <meta name="description" content="Meet Sickyaki and Pingdori, adorable kawaii characters from Korean artist Wookiema. Discover their world of cute GIFs and heartwarming adventures.">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Sickyaki & Pingdori - Kawaii Characters">
+    <meta property="og:description" content="Meet Sickyaki and Pingdori, adorable kawaii characters from Korean artist Wookiema. Discover their world of cute GIFs and heartwarming adventures.">
+    <meta property="og:image" content="./attached_assets/5c89c3_63d7527fc15547e5afd6317102edd986~mv2_d_3508_2480_s_4_2_1751651740801.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <style>
+        @font-face {
+            font-family: 'QianTuXiaoTuTi';
+            src: url('./attached_assets/QianTuXiaoTuTi-2_1751651083091.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sinchon Rhapsody';
+            src: url('./attached_assets/SinchonRhapsodyTTF-ExtraBold_(2)_1751287709875.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'QianTuXiaoTuTi', 'Sinchon Rhapsody', 'Comic Neue', cursive;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        nav .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #666;
+        }
+        
+        .language-toggle {
+            display: flex;
+            background: #f0f0f0;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        
+        .language-toggle button {
+            background: none;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .language-toggle button.active {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            background: url('./attached_assets/5c89c3_63d7527fc15547e5afd6317102edd986~mv2_d_3508_2480_s_4_2_1751651740801.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            margin-top: -200px;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff;
+            transform: perspective(300px) rotateX(25deg);
+            animation: wiggle-pulse 3s ease-in-out infinite;
+        }
+        
+        .hero h2 {
+            font-size: 2rem;
+            color: #000;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 0px #ffffff, -1px -1px 0px #ffffff;
+        }
+        
+        .hero button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        
+        .hero button:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+        
+        /* Animations */
+        @keyframes wiggle-pulse {
+            0%, 100% { transform: perspective(300px) rotateX(25deg) rotate(0deg) scale(1); }
+            25% { transform: perspective(300px) rotateX(25deg) rotate(1deg) scale(1.02); }
+            50% { transform: perspective(300px) rotateX(25deg) rotate(0deg) scale(1.05); }
+            75% { transform: perspective(300px) rotateX(25deg) rotate(-1deg) scale(1.02); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Instagram Section */
+        .instagram-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f, #4ecdc4, #45b7d1);
+            text-align: center;
+        }
+        
+        .instagram-section h2 {
+            font-size: 3rem;
+            color: #000;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 0px #ffffff, -1px -1px 0px #ffffff;
+        }
+        
+        .instagram-link {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+        
+        .instagram-link:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+        
+        /* Character Sections */
+        .character-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .character-section.pink {
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+        }
+        
+        .character-section.blue {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+        
+        .character-section.yellow {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+        }
+        
+        .character-section h2 {
+            font-size: 3.5rem;
+            color: #000;
+            margin-bottom: 30px;
+            animation: wiggle-pulse 3s ease-in-out infinite;
+        }
+        
+        .character-description {
+            font-size: 1.3rem;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+        
+        .character-gifs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .character-gif {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .character-gif:hover {
+            transform: scale(1.05);
+        }
+        
+        .character-gif img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        
+        .gallery-section h2 {
+            font-size: 3.5rem;
+            color: #000;
+            text-align: center;
+            margin-bottom: 50px;
+            animation: wiggle-pulse 3s ease-in-out infinite;
+        }
+        
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        
+        .filter-tabs button {
+            background: #f0f0f0;
+            border: none;
+            padding: 12px 25px;
+            margin: 0 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        
+        .filter-tabs button.active,
+        .filter-tabs button:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        .gif-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .gif-item {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .gif-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gif-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .gif-item h3 {
+            padding: 15px;
+            font-size: 1.1rem;
+            color: #333;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        
+        /* Footer */
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        footer p {
+            font-size: 1.1rem;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            
+            .character-section h2,
+            .gallery-section h2 {
+                font-size: 2.5rem;
+            }
+            
+            .instagram-section h2 {
+                font-size: 2rem;
+            }
+            
+            .character-description {
+                font-size: 1.1rem;
+            }
+            
+            .gif-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        
+        /* Hidden elements for JavaScript toggling */
+        .hidden {
+            display: none;
+        }
+        
+        /* Language specific content */
+        .lang-en { display: block; }
+        .lang-zh { display: none; }
+        
+        body.lang-zh .lang-en { display: none; }
+        body.lang-zh .lang-zh { display: block; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <h1>SHINY BEAR</h1>
+            <ul>
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#sickyaki" onclick="scrollToSection('sickyaki')">Sickyaki</a></li>
+                <li><a href="#pingdori" onclick="scrollToSection('pingdori')">Pingdori</a></li>
+                <li><a href="#gallery" onclick="scrollToSection('gallery')">Gallery</a></li>
+                <li><a href="#instagram" onclick="scrollToSection('instagram')">Instagram</a></li>
+            </ul>
+            <div class="language-toggle">
+                <button onclick="setLanguage('en')" class="active" id="btn-en">EN</button>
+                <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>
+                <span class="lang-en">Sickyaki</span>
+                <span class="lang-zh">生病小鸡</span>
+            </h1>
+            <h2>
+                <span class="lang-en">& Pingdori</span>
+                <span class="lang-zh">与 企鹅朋友</span>
+            </h2>
+            <button onclick="scrollToSection('gallery')">
+                <span class="lang-en">Explore Our World</span>
+                <span class="lang-zh">探索我们的世界</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="instagram-section">
+        <div class="container">
+            <h2>
+                <span class="lang-en">Instagram Feed</span>
+                <span class="lang-zh">Instagram 动态</span>
+            </h2>
+            <p style="font-size: 1.3rem; color: #000; margin-bottom: 20px;">
+                <span class="lang-en">Stay updated with the latest Sickyaki & Pingdori adventures on Instagram</span>
+                <span class="lang-zh">在Instagram上关注生病小鸡和企鹅朋友的最新冒险</span>
+            </p>
+            <a href="https://www.instagram.com/sick_yaki/" target="_blank" class="instagram-link">
+                <span class="lang-en">Follow @sick_yaki</span>
+                <span class="lang-zh">关注 @sick_yaki</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sickyaki Character Section -->
+    <section id="sickyaki" class="character-section pink">
+        <div class="container">
+            <h2>
+                <span class="lang-en">Sickyaki</span>
+                <span class="lang-zh">生病小鸡</span>
+            </h2>
+            <div class="character-description">
+                <p>
+                    <span class="lang-en">Meet Sickyaki, the adorable yellow chick who loves to dance and share special moments with her beloved companion Pingdori! She's a small, weak chick that is crinkly, doesn't have energy to take problems seriously, and lives in a desolate city, adapting in her own way.</span>
+                    <span class="lang-zh">认识生病小鸡，这只可爱的黄色小鸡喜欢跳舞，并与她心爱的伙伴企鹅朋友分享特殊时刻！她是一只小小的、虚弱的小鸡，皱巴巴的，没有精力认真对待问题，住在一个荒凉的城市里，以自己的方式适应着。</span>
+                </p>
+            </div>
+            <div class="character-gifs">
+                <div class="character-gif">
+                    <img src="./attached_assets/I Love You Chick Sticker_1751292334055.gif" alt="Yaki I Love You">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/Chick Dancing Sticker_1751292354200.gif" alt="Yaki Dancing">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/Excited Chick Sticker_1751292354200.gif" alt="Yaki Excited">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/Chick Love Sticker_1751292354200.gif" alt="Yaki Love">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pingdori Character Section -->
+    <section id="pingdori" class="character-section blue">
+        <div class="container">
+            <h2>
+                <span class="lang-en">Pingdori</span>
+                <span class="lang-zh">企鹅朋友</span>
+            </h2>
+            <div class="character-description">
+                <p>
+                    <span class="lang-en">Say hello to Pingdori, the cutest gray penguin who shares an unbreakable bond with Sickyaki and loves expressing affection! He's a round gray penguin who cares for Sickyaki, gentle and nurturing companion, often shown massaging or comforting Yaki.</span>
+                    <span class="lang-zh">向企鹅朋友问好，这只最可爱的灰色企鹅与生病小鸡有着不可分割的纽带，喜欢表达爱意！他是一只圆圆的灰色企鹅，照顾着生病小鸡，是温柔且有nurturing的伙伴，经常被描绘为给小鸡按摩或安慰。</span>
+                </p>
+            </div>
+            <div class="character-gifs">
+                <div class="character-gif">
+                    <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751292334055.gif" alt="Dori Dancing">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/Penguin Kiss Sticker_1751292354200.gif" alt="Dori Kiss">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/I Love You Kiss Sticker_1751295478948.gif" alt="Dori I Love You Kiss">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/Penguin Kawai Sticker_1751342571422.gif" alt="Dori Kawaii">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yellow Character Section -->
+    <section class="character-section yellow">
+        <div class="container">
+            <h2>
+                <span class="lang-en">Together Forever</span>
+                <span class="lang-zh">永远在一起</span>
+            </h2>
+            <div class="character-description">
+                <p>
+                    <span class="lang-en">Sickyaki and Pingdori represent the beautiful bond of friendship and care. Created by Korean artist Wookiema (@sick_yaki, 1M+ followers), these characters have touched hearts worldwide with their gentle, vulnerable, and endearing personalities.</span>
+                    <span class="lang-zh">生病小鸡和企鹅朋友代表着友谊和关怀的美好纽带。由韩国艺术家Wookiema创作（@sick_yaki，100万+粉丝），这些角色以其温柔、脆弱和可爱的个性触动了全世界的心。</span>
+                </p>
+            </div>
+            <div class="character-gifs">
+                <div class="character-gif">
+                    <img src="./attached_assets/Excited Jump Sticker_1751292354200.gif" alt="Yaki Excited Jump">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/Sing A Song Singing Sticker_1751292354200.gif" alt="Yaki Singing">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/Penguin Dancingpenguin Sticker(1)_1751292354200.gif" alt="Dori Dancing 2">
+                </div>
+                <div class="character-gif">
+                    <img src="./attached_assets/Shakeit Sticker(1)_1751292354200.gif" alt="Yaki Shake It">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>
+                <span class="lang-en">GIF Gallery</span>
+                <span class="lang-zh">GIF 图库</span>
+            </h2>
+            
+            <div class="filter-tabs">
+                <button onclick="filterGifs('all')" class="active" id="filter-all">
+                    <span class="lang-en">All</span>
+                    <span class="lang-zh">全部</span>
+                </button>
+                <button onclick="filterGifs('yaki')" id="filter-yaki">
+                    <span class="lang-en">Sickyaki</span>
+                    <span class="lang-zh">生病小鸡</span>
+                </button>
+                <button onclick="filterGifs('dori')" id="filter-dori">
+                    <span class="lang-en">Pingdori</span>
+                    <span class="lang-zh">企鹅朋友</span>
+                </button>
+            </div>
+            
+            <div class="gif-grid" id="gif-grid">
+                <!-- Yaki GIFs -->
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/I Love You Chick Sticker_1751292334055.gif" alt="Yaki I Love You">
+                    <h3>
+                        <span class="lang-en">Yaki I Love You Chick</span>
+                        <span class="lang-zh">小鸡我爱你</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Gas Love Sticker_1751292334055.gif" alt="Yaki Gas Love">
+                    <h3>
+                        <span class="lang-en">Yaki Gas Love</span>
+                        <span class="lang-zh">小鸡气爱</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Miss You Kiss Sticker_1751292334055.gif" alt="Yaki Miss You Kiss">
+                    <h3>
+                        <span class="lang-en">Yaki Miss You Kiss</span>
+                        <span class="lang-zh">小鸡想你吻</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Chick Spank Sticker_1751292334055.gif" alt="Yaki Chick Spank">
+                    <h3>
+                        <span class="lang-en">Yaki Chick Spank</span>
+                        <span class="lang-zh">小鸡拍打</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Shakeit Sticker_1751292334055.gif" alt="Yaki Shake It">
+                    <h3>
+                        <span class="lang-en">Yaki Shake It</span>
+                        <span class="lang-zh">小鸡摇摆</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Chick Dancing Sticker_1751292354200.gif" alt="Yaki Dancing">
+                    <h3>
+                        <span class="lang-en">Yaki Chick Dancing</span>
+                        <span class="lang-zh">小鸡跳舞</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Excited Chick Sticker_1751292354200.gif" alt="Yaki Excited">
+                    <h3>
+                        <span class="lang-en">Yaki Excited Chick</span>
+                        <span class="lang-zh">小鸡兴奋</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Chick Love Sticker_1751292354200.gif" alt="Yaki Love">
+                    <h3>
+                        <span class="lang-en">Yaki Chick Love</span>
+                        <span class="lang-zh">小鸡爱心</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Sad To Do Sticker_1751292354200.gif" alt="Yaki Sad To Do">
+                    <h3>
+                        <span class="lang-en">Yaki Sad To Do</span>
+                        <span class="lang-zh">小鸡难过要做</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Excited Jump Sticker_1751292354200.gif" alt="Yaki Excited Jump">
+                    <h3>
+                        <span class="lang-en">Yaki Excited Jump</span>
+                        <span class="lang-zh">小鸡兴奋跳跃</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/I Love You Heart Sticker_1751292354200.gif" alt="Yaki I Love You Heart">
+                    <h3>
+                        <span class="lang-en">Yaki I Love You Heart</span>
+                        <span class="lang-zh">小鸡我爱你心</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Chick Kawai Sticker_1751292354200.gif" alt="Yaki Kawaii">
+                    <h3>
+                        <span class="lang-en">Yaki Chick Kawaii</span>
+                        <span class="lang-zh">小鸡可爱</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Sad Chick Sticker_1751292354200.gif" alt="Yaki Sad Chick">
+                    <h3>
+                        <span class="lang-en">Yaki Sad Chick</span>
+                        <span class="lang-zh">小鸡难过</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Sickyaki Sticker_1751292354200.gif" alt="Yaki Sickyaki">
+                    <h3>
+                        <span class="lang-en">Yaki Sickyaki</span>
+                        <span class="lang-zh">生病小鸡</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="yaki">
+                    <img src="./attached_assets/Sing A Song Singing Sticker_1751292354200.gif" alt="Yaki Sing A Song">
+                    <h3>
+                        <span class="lang-en">Yaki Sing A Song</span>
+                        <span class="lang-zh">小鸡唱歌</span>
+                    </h3>
+                </div>
+                
+                <!-- Dori GIFs -->
+                <div class="gif-item" data-category="dori">
+                    <img src="./attached_assets/Penguin Dancingpenguin Sticker_1751292334055.gif" alt="Dori Dancing">
+                    <h3>
+                        <span class="lang-en">Dori Dancing</span>
+                        <span class="lang-zh">企鹅跳舞</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="dori">
+                    <img src="./attached_assets/Penguin Gas Sticker_1751292334055.gif" alt="Dori Gas">
+                    <h3>
+                        <span class="lang-en">Dori Gas</span>
+                        <span class="lang-zh">企鹅气体</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="dori">
+                    <img src="./attached_assets/Penguin Kiss Sticker_1751292354200.gif" alt="Dori Kiss">
+                    <h3>
+                        <span class="lang-en">Dori Kiss</span>
+                        <span class="lang-zh">企鹅吻</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="dori">
+                    <img src="./attached_assets/I Love You Heart Sticker(1)_1751292354200.gif" alt="Dori I Love You Heart">
+                    <h3>
+                        <span class="lang-en">Dori I Love You Heart</span>
+                        <span class="lang-zh">企鹅我爱你心</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="dori">
+                    <img src="./attached_assets/Excited Jump Sticker(1)_1751292354200.gif" alt="Dori Excited Jump">
+                    <h3>
+                        <span class="lang-en">Dori Excited Jump</span>
+                        <span class="lang-zh">企鹅兴奋跳跃</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="dori">
+                    <img src="./attached_assets/I Love You Kiss Sticker_1751295478948.gif" alt="Dori I Love You Kiss">
+                    <h3>
+                        <span class="lang-en">Dori I Love You Kiss</span>
+                        <span class="lang-zh">企鹅我爱你吻</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="dori">
+                    <img src="./attached_assets/Penguin Kawai Sticker_1751342571422.gif" alt="Dori Kawaii">
+                    <h3>
+                        <span class="lang-en">Dori Kawaii</span>
+                        <span class="lang-zh">企鹅可爱</span>
+                    </h3>
+                </div>
+                
+                <div class="gif-item" data-category="dori">
+                    <img src="./attached_assets/Penguin Dancingpenguin Sticker(1)_1751292354200.gif" alt="Dori Dancing 2">
+                    <h3>
+                        <span class="lang-en">Dori Dancing 2</span>
+                        <span class="lang-zh">企鹅跳舞2</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>
+                <span class="lang-en">© 2024 Sickyaki & Pingdori. Made with love for kawaii fans worldwide.</span>
+                <span class="lang-zh">© 2024 生病小鸡和企鹅朋友。为全世界的可爱粉丝制作。</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Language switching
+        function setLanguage(lang) {
+            document.body.className = lang === 'zh' ? 'lang-zh' : '';
+            
+            // Update active button
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+            
+            // Store preference
+            localStorage.setItem('language', lang);
+        }
+
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // GIF filtering
+        function filterGifs(category) {
+            const gifItems = document.querySelectorAll('.gif-item');
+            const filterButtons = document.querySelectorAll('.filter-tabs button');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            document.getElementById('filter-' + category).classList.add('active');
+            
+            // Show/hide GIF items
+            gifItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load saved language preference
+            const savedLang = localStorage.getItem('language') || 'en';
+            setLanguage(savedLang);
+            
+            // Initialize background music
+            const audio = new Audio('./attached_assets/stream cafe - boba date ♥ (1 hour) _ cute music_1751377086426.mp3');
+            audio.loop = true;
+            audio.volume = 0.15;
+            audio.preload = 'auto';
+            
+            // Auto-play when user interacts with the page
+            const playAudio = () => {
+                audio.play().catch(console.warn);
+                document.removeEventListener('click', playAudio);
+                document.removeEventListener('keydown', playAudio);
+            };
+            
+            document.addEventListener('click', playAudio);
+            document.addEventListener('keydown', playAudio);
+            
+            // Animate GIFs on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationDelay = Math.random() * 2 + 's';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all GIF items
+            document.querySelectorAll('.gif-item, .character-gif').forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
