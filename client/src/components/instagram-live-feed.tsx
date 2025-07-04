@@ -83,7 +83,7 @@ export default function InstagramLiveFeed() {
           animation-play-state: paused;
         }
       `}</style>
-      <section className="w-full bg-black relative" style={{ height: '100vh', minHeight: '600px', margin: '0', padding: '0', width: '100vw' }} id="instagram">
+      <section className="w-full bg-black relative" style={{ height: '50vh', minHeight: '300px', margin: '0', padding: '0', width: '100vw' }} id="instagram">
         <div className="w-full px-4 h-full flex flex-col justify-center">
           {/* Contract Address Copy Box */}
           <div className="flex justify-center mb-2 relative">
