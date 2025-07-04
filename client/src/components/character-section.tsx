@@ -128,14 +128,23 @@ export default function CharacterSection({ characterName, useYellowBackground = 
         <div className="text-center mb-4 flex flex-col items-center">
           <h2 
             className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font animate-wiggle-pulse"
+            style={{ 
+              textShadow: '2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+            }}
           >
             {t(`character.${characterName}.name`)}
           </h2>
           <div className="space-y-1">
-            <p className="text-sm font-semibold text-black uppercase tracking-wide sinchon-font">
+            <p className="text-sm font-semibold text-black uppercase tracking-wide sinchon-font"
+               style={{ 
+                 textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+               }}>
               {t(`character.${characterName}.type`)}
             </p>
-            <p className="text-lg text-black max-w-3xl mx-auto sinchon-font">
+            <p className="text-lg text-black max-w-3xl mx-auto sinchon-font"
+               style={{ 
+                 textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+               }}>
               {t(`character.${characterName}.description`)}
             </p>
           </div>
@@ -145,6 +154,9 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''} flex flex-col justify-center`}>
             <h3 
               className="text-xl md:text-2xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
+              style={{ 
+                textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+              }}
             >
               {t(`character.${characterName}.personality`)}
             </h3>
@@ -156,7 +168,10 @@ export default function CharacterSection({ characterName, useYellowBackground = 
                     index % 4 === 1 ? 'bg-pink-400' :
                     index % 4 === 2 ? 'bg-green-400' : 'bg-purple-400'
                   }`}></div>
-                  <span className="text-base md:text-lg text-black sinchon-font">{translatePersonality(trait)}</span>
+                  <span className="text-base md:text-lg text-black sinchon-font"
+                        style={{ 
+                          textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+                        }}>{translatePersonality(trait)}</span>
                 </div>
               ))}
             </div>
@@ -172,10 +187,16 @@ export default function CharacterSection({ characterName, useYellowBackground = 
               <div className="text-center">
                 <h4 
                   className="text-lg md:text-xl font-bold text-black mb-1 sinchon-font animate-wiggle-pulse-alt"
+                  style={{ 
+                    textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+                  }}
                 >
                   {translateGifTitle(mainGif.title)}
                 </h4>
-                <p className="text-sm md:text-base text-black sinchon-font">
+                <p className="text-sm md:text-base text-black sinchon-font"
+                   style={{ 
+                     textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+                   }}>
                   {isYaki ? t('character.yaki.gifDescription') : t('character.dori.gifDescription')}
                 </p>
               </div>
