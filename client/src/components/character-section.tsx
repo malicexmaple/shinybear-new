@@ -150,7 +150,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6 items-center justify-items-center pt-2 pb-2 mt-0 mb-0 mx-auto max-w-5xl">
+        <div className="grid md:grid-cols-2 gap-4 items-center justify-items-center pt-1 pb-1 mt-0 mb-0 mx-auto max-w-5xl">
           <div className={`space-y-2 ${!isYaki ? 'md:order-2' : ''} flex flex-col justify-center`}>
             <h3 
               className="text-xl md:text-2xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
