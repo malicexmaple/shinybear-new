@@ -24,7 +24,7 @@ const translations = {
     
     // Hero Section
     'hero.title': 'Sickyaki & Pingdori',
-    'hero.subtitle': 'Two hearts, one love story - the cutest kawaii couple bringing joy to your day!',
+    'hero.subtitle': '',
     'hero.videoDescription': 'Watch our adorable characters in action!',
     'hero.exploreButton': 'Explore Our World',
     
@@ -108,7 +108,7 @@ const translations = {
     
     // Hero Section
     'hero.title': '식야키 & 핑도리',
-    'hero.subtitle': '두 마음, 하나의 사랑 이야기 - 당신의 하루에 기쁨을 가져다주는 가장 귀여운 카와이 커플!',
+    'hero.subtitle': '',
     'hero.videoDescription': '우리의 사랑스러운 캐릭터들을 만나보세요!',
     'hero.exploreButton': '우리 세상 탐험하기',
     
