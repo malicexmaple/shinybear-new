@@ -95,20 +95,18 @@ export default function CharacterSection({ characterName, useYellowBackground = 
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'scroll',
         backgroundColor: hasBackground ? 'transparent' : 'white',
-        height: '60vh',
-        minHeight: '400px',
+        height: 'auto',
+        minHeight: '500px',
         width: '100vw',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        display: 'block',
         margin: '0',
-        padding: usePinkBackground ? '100px 0 20px 0' : '20px 0',
+        padding: usePinkBackground ? '120px 20px 60px 20px' : '40px 20px 60px 20px',
         border: 'none',
         outline: 'none',
         boxSizing: 'border-box'
       }}
     >
-      <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center h-full py-8">
+      <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center">
         <div className="text-center mb-6 flex flex-col items-center">
           <h2 
             className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font animate-wiggle-pulse"
