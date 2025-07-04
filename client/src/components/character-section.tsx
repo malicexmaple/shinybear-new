@@ -125,16 +125,16 @@ export default function CharacterSection({ characterName, useYellowBackground = 
     >
       <div className="w-full max-w-6xl mx-auto px-6 flex flex-col items-center justify-center h-full">
 
-        <div className="text-center mb-4 flex flex-col items-center">
+        <div className="text-center mb-2 flex flex-col items-center">
           <h2 
-            className="text-4xl md:text-[60px] font-bold mb-2 text-[#000000] sinchon-font animate-wiggle-pulse"
+            className="text-4xl md:text-[60px] font-bold mb-1 text-[#000000] sinchon-font animate-wiggle-pulse"
             style={{ 
               textShadow: '2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
             }}
           >
             {t(`character.${characterName}.name`)}
           </h2>
-          <div className="space-y-1">
+          <div className="space-y-0">
             <p className="text-sm font-semibold text-black uppercase tracking-wide sinchon-font"
                style={{ 
                  textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
@@ -150,8 +150,8 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 items-center justify-items-center pt-4 pb-4 mt-0 mb-0 mx-auto max-w-5xl">
-          <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''} flex flex-col justify-center`}>
+        <div className="grid md:grid-cols-2 gap-6 items-center justify-items-center pt-2 pb-2 mt-0 mb-0 mx-auto max-w-5xl">
+          <div className={`space-y-2 ${!isYaki ? 'md:order-2' : ''} flex flex-col justify-center`}>
             <h3 
               className="text-xl md:text-2xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
               style={{ 
@@ -160,7 +160,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
             >
               {t(`character.${characterName}.personality`)}
             </h3>
-            <div className="space-y-2">
+            <div className="space-y-1">
               {character.personality.map((trait, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className={`w-3 h-3 rounded-full ${
