@@ -112,17 +112,7 @@ export default function InstagramLiveFeed() {
             </div>
           </div>
           
-          <div className="mb-12 text-center relative z-10">
-            {/* GIF positioned to not interfere with other elements */}
-            <div className="relative">
-              <img 
-                src="/attached_assets/SnapInsta_1751351039676.gif" 
-                alt="Sickyaki and Pingdori with stretchy connection" 
-                className="absolute left-1/2 transform -translate-x-1/2 opacity-90 z-0"
-                style={{ width: 'auto', height: 'auto', top: '-100px' }}
-              />
-            </div>
-          </div>
+          
           
           {/* Instagram Feed Section */}
           <div className="w-full relative z-20 mt-[44px] mb-[20px] pt-[60px] pb-[20px]" style={{ marginTop: '100px' }}>
