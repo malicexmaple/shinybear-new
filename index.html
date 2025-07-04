@@ -409,12 +409,11 @@
             border-radius: 10px;
             padding: 20px;
             margin: 0 auto 30px;
-            max-width: 4xl;
-            width: 100%;
+            max-width: 800px;
             box-shadow: 4px 4px 0px #000000, -4px -4px 0px #000000, 4px -4px 0px #000000, -4px 4px 0px #000000, 6px 6px 0px #000000, 8px 8px 0px #000000;
             animation: wiggle-pulse 3s ease-in-out infinite;
-            position: static;
-            transform: translateY(-250px);
+            position: relative;
+            transform: translateY(-150px);
             z-index: 100;
         }
         
@@ -568,18 +567,22 @@
         </div>
     </section>
 
-    <!-- Floating Contract Address Box -->
-    <div class="contract-box">
-        <div class="contract-content">
-            <div class="contract-address">
-                <span class="lang-en">COMING SOON</span>
-                <span class="lang-zh">即将推出</span>
+    <!-- Contract Address Section -->
+    <section style="padding: 20px 0; background: transparent;">
+        <div class="container">
+            <div class="contract-box">
+                <div class="contract-content">
+                    <div class="contract-address">
+                        <span class="lang-en">COMING SOON</span>
+                        <span class="lang-zh">即将推出</span>
+                    </div>
+                    <button class="copy-button" onclick="copyContract()">
+                        <span id="copy-icon">📋</span>
+                    </button>
+                </div>
             </div>
-            <button class="copy-button" onclick="copyContract()">
-                <span id="copy-icon">📋</span>
-            </button>
         </div>
-    </div>
+    </section>
 
     <!-- Instagram Feed Section -->
     <section id="instagram" class="instagram-feed">
