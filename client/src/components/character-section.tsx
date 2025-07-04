@@ -125,8 +125,8 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-4 items-center pt-[0px] pb-[0px] mt-[-5px] mb-[-5px] mx-auto max-w-4xl">
-          <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''}`}>
+        <div className="grid md:grid-cols-2 gap-6 items-center justify-items-center pt-[0px] pb-[0px] mt-[-5px] mb-[-5px] mx-auto max-w-5xl">
+          <div className={`space-y-3 ${!isYaki ? 'md:order-2' : ''} flex flex-col justify-center`}>
             <h3 
               className="text-xl md:text-2xl font-bold text-black sinchon-font animate-wiggle-pulse-fast"
             >
@@ -147,7 +147,7 @@ export default function CharacterSection({ characterName, useYellowBackground = 
           </div>
           
           {mainGif && (
-            <div className={`character-card rounded-3xl p-6 ${!isYaki ? 'md:order-1' : ''} transform scale-[0.7]`}>
+            <div className={`character-card rounded-3xl p-6 ${!isYaki ? 'md:order-1' : ''} transform scale-[0.7] origin-center`}>
               <img 
                 src={isYaki && usePinkBackground ? "/attached_assets/face panda Sticker by Shiny bear_1751641007580.gif" : mainGif.url} 
                 alt={mainGif.title} 
