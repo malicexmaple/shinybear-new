@@ -70,16 +70,30 @@ export default function CharacterSection({ characterName, useYellowBackground = 
     ? gifs?.[0] 
     : gifs?.find(gif => gif.title === 'Dori Kawai') || gifs?.[0];
 
-  const hasBackground = useYellowBackground || useBlueBackground || usePinkBackground;
-  const backgroundImage = useYellowBackground ? characterBackground : 
-                         useBlueBackground ? characterBackgroundBlue : 
-                         usePinkBackground ? characterBackgroundPink : null;
+  let backgroundImage = null;
+  let hasBackground = false;
+  
+  if (useYellowBackground) {
+    backgroundImage = characterBackground;
+    hasBackground = true;
+  } else if (useBlueBackground) {
+    backgroundImage = characterBackgroundBlue;
+    hasBackground = true;
+  } else if (usePinkBackground) {
+    backgroundImage = characterBackgroundPink;
+    hasBackground = true;
+  }
 
   return (
     <section 
       id={characterName} 
-      className={`py-0 mt-[-60px] mb-[-60px] pt-[60px] pb-[60px] ${hasBackground ? 'bg-cover bg-center bg-no-repeat min-h-[400px]' : 'bg-white min-h-[400px]'}`}
-      style={hasBackground ? { backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' } : {}}
+      className={`py-0 mt-[-60px] mb-[-60px] pt-[60px] pb-[60px] min-h-[400px] ${hasBackground ? 'bg-cover bg-center bg-no-repeat' : 'bg-white'}`}
+      style={hasBackground ? { 
+        backgroundImage: `url(${backgroundImage})`, 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        backgroundRepeat: 'no-repeat' 
+      } : {}}
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-2">
