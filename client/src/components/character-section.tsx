@@ -5,9 +5,10 @@ import characterBackground from "@assets/5c89c3_a238bc5784294ab4a208adf22de1ca03
 
 interface CharacterSectionProps {
   characterName: string;
+  useYellowBackground?: boolean;
 }
 
-export default function CharacterSection({ characterName }: CharacterSectionProps) {
+export default function CharacterSection({ characterName, useYellowBackground = false }: CharacterSectionProps) {
   const { t, translateGifTitle, translatePersonality } = useLanguage();
   const { data: characters, isLoading: charactersLoading } = useQuery<Character[]>({
     queryKey: ["/api/characters"],
@@ -68,8 +69,8 @@ export default function CharacterSection({ characterName }: CharacterSectionProp
   return (
     <section 
       id={characterName} 
-      className="py-6 bg-cover bg-center bg-no-repeat pt-[15px] pb-[15px] mt-[0px] mb-[0px] min-h-[400px]"
-      style={{ backgroundImage: `url(${characterBackground})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+      className={`py-6 pt-[15px] pb-[15px] mt-[0px] mb-[0px] ${useYellowBackground ? 'bg-cover bg-center bg-no-repeat min-h-[400px]' : 'bg-white'}`}
+      style={useYellowBackground ? { backgroundImage: `url(${characterBackground})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' } : {}}
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-2">
