@@ -55,6 +55,18 @@ div, section, main, header, nav, footer {
   outline: none !important;
 }
 
+/* Gentle wobble animation for sections */
+@keyframes gentle-wobble {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(0.3deg) scale(1.002); }
+  50% { transform: rotate(0deg) scale(1); }
+  75% { transform: rotate(-0.3deg) scale(1.002); }
+}
+
+.gentle-wobble {
+  animation: gentle-wobble 4s ease-in-out infinite;
+}
+
 /* SVG Curved text container */
 .curved-text-container {
   display: flex;
