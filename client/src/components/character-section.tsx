@@ -144,7 +144,8 @@ export default function CharacterSection({ characterName, useYellowBackground = 
             </p>
             <p className="text-lg text-black max-w-3xl mx-auto sinchon-font"
                style={{ 
-                 textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff'
+                 textShadow: '1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff',
+                 marginTop: '30px'
                }}>
               {t(`character.${characterName}.description`)}
             </p>
