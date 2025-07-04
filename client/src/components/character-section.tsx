@@ -87,20 +87,26 @@ export default function CharacterSection({ characterName, useYellowBackground = 
   return (
     <section 
       id={characterName}
-      className="py-0 min-h-[400px] mt-[-60px] mb-[-60px] pt-[157px] pb-[157px]"
+      className="w-full relative"
       style={{
         backgroundImage: hasBackground ? `url(${backgroundImage})` : 'none',
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        backgroundColor: hasBackground ? 'transparent' : 'white'
+        backgroundColor: hasBackground ? 'transparent' : 'white',
+        height: '100vh',
+        minHeight: '600px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: '0',
+        padding: '0'
       }}
     >
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-2">
+      <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center h-full">
+        <div className="text-center mb-2 flex flex-col items-center">
           <h2 
             className="text-6xl md:text-[90px] font-bold mb-2 text-[#000000] sinchon-font wiggle-pulse-text animate-wiggle-pulse"
-            style={{ marginLeft: isYaki ? '300px' : '-300px' }}
           >
             {t(`character.${characterName}.name`)}
           </h2>

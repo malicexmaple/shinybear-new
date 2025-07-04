@@ -15,9 +15,11 @@ export default function Home() {
       <HeroSection />
       <InstagramLiveFeed />
       <InstagramFeed />
-      <CharacterSection characterName="yaki" usePinkBackground={true} />
-      <CharacterSection characterName="dori" useBlueBackground={true} />
-      <CharacterSection characterName="yaki" useYellowBackground={true} />
+      <div className="w-full" style={{ margin: 0, padding: 0 }}>
+        <CharacterSection characterName="yaki" usePinkBackground={true} />
+        <CharacterSection characterName="dori" useBlueBackground={true} />
+        <CharacterSection characterName="yaki" useYellowBackground={true} />
+      </div>
       <DoriScroll />
       <GallerySection />
       <Footer />
