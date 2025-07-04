@@ -25,18 +25,29 @@ body, html {
   font-family: 'Sinchon Rhapsody', 'Comic Neue', cursive !important;
 }
 
-/* Remove gaps between character sections */
-section {
+/* Remove gaps between all sections */
+section, div, main, header, footer, nav {
   margin: 0 !important;
   padding: 0 !important;
   border: none !important;
   display: block !important;
 }
 
-/* Ensure sections are perfectly connected */
-section + section {
+/* Ensure all elements are perfectly connected */
+section + section,
+div + div,
+section + div,
+div + section {
   margin-top: 0 !important;
+  margin-bottom: 0 !important;
   border-top: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove default spacing from common elements */
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* SVG Curved text container */

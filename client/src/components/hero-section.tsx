@@ -20,7 +20,7 @@ export default function HeroSection() {
 
   if (isLoading) {
     return (
-      <section id="home" className="pt-20 pb-16 gradient-kawaii min-h-screen flex items-center">
+      <section id="home" className="gradient-kawaii min-h-screen flex items-center" style={{ margin: 0, padding: 0 }}>
         <div className="max-w-6xl mx-auto px-4 text-center">
           <div className="animate-pulse">
             <div className="h-20 bg-white/20 rounded-lg mb-4"></div>
@@ -39,7 +39,7 @@ export default function HeroSection() {
   const dori = characters?.find(c => c.name === "Dori");
 
   return (
-    <section id="home" className="bg-contain bg-center bg-no-repeat pt-[81px] pb-[81px] min-h-screen" style={{ backgroundImage: `url(${heroBackground})` }}>
+    <section id="home" className="bg-contain bg-center bg-no-repeat min-h-screen" style={{ backgroundImage: `url(${heroBackground})`, margin: 0, padding: 0 }}>
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="animate-float mb-2" style={{ marginTop: '200px' }}>
           <h1 
