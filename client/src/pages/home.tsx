@@ -16,7 +16,7 @@ export default function Home() {
       <InstagramLiveFeed />
       <InstagramFeed />
       <CharacterSection characterName="yaki" />
-      <CharacterSection characterName="dori" />
+      <CharacterSection characterName="dori" useBlueBackground={true} />
       <CharacterSection characterName="yaki" useYellowBackground={true} />
       <DoriScroll />
       <GallerySection />

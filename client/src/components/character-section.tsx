@@ -2,13 +2,15 @@ import { useQuery } from "@tanstack/react-query";
 import { Character, Gif } from "@shared/schema";
 import { useLanguage } from "@/contexts/LanguageContext";
 import characterBackground from "@assets/5c89c3_a238bc5784294ab4a208adf22de1ca03~mv2_d_3508_2480_s_4_2_1751637207667.png";
+import characterBackgroundBlue from "@assets/5c89c3_bb89df4410964acd9c27b6df5e796547~mv2_d_3508_2480_s_4_2_1751637395119.png";
 
 interface CharacterSectionProps {
   characterName: string;
   useYellowBackground?: boolean;
+  useBlueBackground?: boolean;
 }
 
-export default function CharacterSection({ characterName, useYellowBackground = false }: CharacterSectionProps) {
+export default function CharacterSection({ characterName, useYellowBackground = false, useBlueBackground = false }: CharacterSectionProps) {
   const { t, translateGifTitle, translatePersonality } = useLanguage();
   const { data: characters, isLoading: charactersLoading } = useQuery<Character[]>({
     queryKey: ["/api/characters"],
@@ -66,11 +68,14 @@ export default function CharacterSection({ characterName, useYellowBackground = 
     ? gifs?.[0] 
     : gifs?.find(gif => gif.title === 'Dori Kawai') || gifs?.[0];
 
+  const hasBackground = useYellowBackground || useBlueBackground;
+  const backgroundImage = useYellowBackground ? characterBackground : useBlueBackground ? characterBackgroundBlue : null;
+
   return (
     <section 
       id={characterName} 
-      className={`py-6 pt-[15px] pb-[15px] mt-[0px] mb-[0px] ${useYellowBackground ? 'bg-cover bg-center bg-no-repeat min-h-[400px]' : 'bg-white'}`}
-      style={useYellowBackground ? { backgroundImage: `url(${characterBackground})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' } : {}}
+      className={`py-6 pt-[15px] pb-[15px] mt-[0px] mb-[0px] ${hasBackground ? 'bg-cover bg-center bg-no-repeat min-h-[400px]' : 'bg-white'}`}
+      style={hasBackground ? { backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' } : {}}
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-2">
